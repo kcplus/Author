@@ -1,0 +1,108 @@
+.btn.btn-primary {
+    background-color: #212020;
+    color: #fff;
+    border: 1px solid #212020;
+    margin: 5px;
+    transition: background-color 0.3s; /* Добавляем переход для цвета фона */
+}
+
+.btn.btn-primary:hover {
+    background-color: #8416FB;
+}
+
+.btn-container .btn {
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+[type=button]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn {
+    border-radius: 0;
+    box-shadow: none!important;
+}
+
+.btn-primary {
+    width: 611px;
+    height: 142px;
+}
+
+.btn.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 10px);
+    border: 1px solid #212020;
+    z-index: -1;
+    transition: top 0.3s, left 0.3s;
+}
+
+.btn.btn-primary:hover::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1200px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+    .btn {
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        color: #302f2f;
+        cursor: pointer;
+        display: inline-block;
+        font-size: calc(1.275rem + .3vw);
+        font-weight: 400;
+        line-height: 1.48;
+        padding: .625rem 1.25rem;
+        text-align: center;
+        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        vertical-align: middle;
+    }
+    [type=button], [type=submit], button {
+        -webkit-appearance: button;
+    }
+    button, select {
+        text-transform: none;
+    }
+    button, input, select, textarea {
+        font-family: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        margin: 0;
+    }
+    button {
+        border-radius: 20%;
+    }
+
+    /*.btn-container:not(.disabled):after {
+        border: 1px solid #302f2f;
+        content: "";
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        -webkit-transform: translate(9px, 9px);
+        transform: translate(9px, 9px);
+        transition: -webkit-transform .3s;
+        transition: transform .3s;
+        transition: transform .3s, -webkit-transform .3s;
+        width: 100%;
+    }*/
+
+    *, :after, :before {
+        box-sizing: border-box;
+    }
+}

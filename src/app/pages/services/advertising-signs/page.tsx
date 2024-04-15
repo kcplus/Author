@@ -1,15 +1,28 @@
 'use client'
 import React, {useState} from 'react';
-import styles from "../volumetric-letters/volumetric.module.css";
+import styles from "./advertising.module.css";
 import Header from "../../../components/Header/Header";
 import Image from "next/image";
 import arrow from "../../../assets/Vector.svg";
-import cat from "../../../assets/Pages/Advertising-signs/Group 8.svg";
+import cat from "../../../assets/Pages/Light-boxes/специалист1 1.svg";
 import {adversiting_signs_arr} from "../../../constants/PagesConstants/Advertising-signs/constants";
+import Button from "../../../components/Button/Button";
+import TaplinkButton from "../../../components/TaplinkButton/TaplinkButton";
+import Contact from "../../../components/Contact/Contact";
 
 const AdversitingSigns = () => {
-
     const [isHovered, setIsHovered] = useState(null);
+    const [click, setClick] = useState(false)
+    const marginTop = 50
+    const marginLeft = 470
+
+    const onClickHandler = () => {
+        setClick(!click)
+    }
+
+    const onCloseHandler = () => {
+        setClick(false)
+    }
 
     const onMouseEnterHandler = (id) => {
         setIsHovered(id)
@@ -37,11 +50,18 @@ const AdversitingSigns = () => {
                             </div>
                         </div>
                     ))}
-                    <button className={styles.no_background}>
-                        <Image src={cat} alt={'Кот контакт'} className={styles.image_cat}/>
-                    </button>
+                </div>
+                <div className={styles.button}>
+                    <Button>Заказать</Button>
                 </div>
             </div>
+            {!click ? (
+                <button className={styles.no_background} onClick={onClickHandler}>
+                    <TaplinkButton/>
+                </button>
+            ) : (
+                <Contact src={cat} onCloseHandler={onCloseHandler} marginTop={marginTop} marginLeft={marginLeft}/>
+            )}
         </div>
     );
 };

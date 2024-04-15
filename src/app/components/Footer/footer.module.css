@@ -1,0 +1,77 @@
+.container {
+    width: 100%;
+    min-height: 100%;
+}
+.imageContainer {
+    margin-top: 300px;
+    margin-left: 5%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.contactBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-bottom: 230px;
+    margin-top: 200px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 130px;
+}
+.text {
+    width: 260px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -2px;
+    line-height: 30px;
+}
+.textBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.item {
+    flex: 0 1 calc(100%/8 - 30px*2);
+}
+.itemBox {
+    width: 100%;
+    text-align: center;
+}
+.itemBox img {
+    width: 100px;
+    height: 100px;
+}
+

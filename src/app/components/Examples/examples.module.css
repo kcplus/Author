@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    min-height: 600px;
+    background-color: #000000
+}
+.textContainer {
+    width: 300px;
+    height: 350px;
+    left: 480px;
+    position: absolute;
+    color: white;
+    margin-top: 100px
+}
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    width: 323px
+}
+.spanText {
+    width: 260px;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -5px;
+}
+.imageConnected {
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 810px
+}
+
+@media screen and (max-width: 1500px) {
+    .textContainer {
+        left: 370px
+    }
+    .imageConnected {
+        margin-left: 700px
+    }
+}
+
+@media screen and (max-width: 1436px) {
+    .textContainer {
+        left: 280px
+    }
+    .imageConnected {
+        margin-left: 600px
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .textContainer {
+        left: 180px
+    }
+    .imageConnected {
+        margin-left: 500px
+    }
+}

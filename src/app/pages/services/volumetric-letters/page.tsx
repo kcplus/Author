@@ -4,7 +4,7 @@ import styles from './volumetric.module.css'
 import Header from "../../../components/Header/Header";
 import Image from "next/image";
 import arrow from "../../../assets/Vector.svg";
-import cat from '../../../assets/Pages/Volumetric-letters/специалистб 1.svg'
+import cat from '../../../assets/Pages/Volumetric-letters/specialist.svg'
 import {volumetric_letters_arr} from "../../../constants/PagesConstants/Volumetric-letters/constants";
 import Button from '../../../components/Button/Button';
 import TaplinkButton from '../../../components/TaplinkButton/TaplinkButton';
@@ -14,7 +14,7 @@ import Contact from '../../../components/Contact/Contact';
 const VolumetricLetters = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
-    const marginTop = 33
+    const marginTop = 50
     const marginLeft = 490
 
     const onClickHandler = () => {

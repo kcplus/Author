@@ -4,11 +4,25 @@ import styles from "../volumetric-letters/volumetric.module.css";
 import Header from "../../../components/Header/Header";
 import Image from "next/image";
 import arrow from "../../../assets/Vector.svg";
-import cat from "../../../assets/Pages/Tables/Group 9.svg";
+import cat from "../../../assets/Pages/Signs/специалист2 1.svg";
 import {tables_arr} from "../../../constants/PagesConstants/Tables/constants";
+import Button from "../../../components/Button/Button";
+import TaplinkButton from "../../../components/TaplinkButton/TaplinkButton";
+import Contact from "../../../components/Contact/Contact";
 
 const Tables = () => {
     const [isHovered, setIsHovered] = useState(null);
+    const [click, setClick] = useState(false)
+    const marginTop = 33
+    const marginLeft = 490
+
+    const onClickHandler = () => {
+        setClick(!click)
+    }
+
+    const onCloseHandler = () => {
+        setClick(false)
+    }
 
     const onMouseEnterHandler = (id) => {
         setIsHovered(id)
@@ -36,11 +50,18 @@ const Tables = () => {
                             </div>
                         </div>
                     ))}
-                    <button className={styles.no_background}>
-                        <Image src={cat} alt={'Кот контакт'} className={styles.image_cat}/>
-                    </button>
+                </div>
+                <div className={styles.button}>
+                    <Button>Заказать</Button>
                 </div>
             </div>
+            {!click ? (
+                <button className={styles.no_background} onClick={onClickHandler}>
+                    <TaplinkButton/>
+                </button>
+            ) : (
+                <Contact src={cat} onCloseHandler={onCloseHandler} marginTop={marginTop} marginLeft={marginLeft}/>
+            )}
         </div>
     );
 };

@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    min-height: 893px;
+    background: #8416FB;
+
+}
+.mainText {
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 89px;
+    line-height: 107px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item {
+    flex: 0 1 calc(100%/4 - 20px*2);
+}
+.itemBox {
+    width: 100%;
+    text-align: center;
+}
+.itemBox img {
+    width: 200px;
+    height: 200px;
+}

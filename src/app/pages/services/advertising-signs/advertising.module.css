@@ -49,8 +49,9 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    bottom: -300px;
-    right: 0;
+    bottom: -330px;
+    right: 90px;
+    height: 300px;
 }
 .imageBlock {
     position: absolute;
@@ -63,6 +64,11 @@
     position: absolute;
     width: 356px;
     height: 338px;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 @media screen and (max-width: 670px) {

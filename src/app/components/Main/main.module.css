@@ -1,0 +1,118 @@
+.container {
+    width: 100%;
+    color: white
+}
+.h1, .h2, .h3 {
+    color: #FFF;
+    font-style: normal;
+    font-size: 89.35px;
+    font-weight: 600;
+}
+
+.h2 {
+    margin-top: -70px;
+}
+
+.h3 {
+    margin-top: -80px;
+}
+
+.textBlock {
+    width: 840px;
+    height: 311px;
+    margin-left: 260px;
+    margin-top: 100px;
+}
+
+.image {
+    position: absolute;
+    top: 430px;
+    left: 260px;
+    width: 250px;
+}
+.text {
+    line-height: 25px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.container_text {
+    position: absolute;
+    margin-top: -70px;
+}
+.button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.hand_one {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+}
+.hand_two {
+    position: absolute;
+    bottom: -542px;
+    right: 100px;
+    width: 400px;
+}
+@media screen and (max-width: 1150px) {
+    .hand_one {
+        display: none;
+    }
+    .hand_two {
+        display: none;
+    }
+    .textBlock {
+        margin-left: 200px;
+    }
+    .image {
+        left: 200px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .textBlock {
+        margin-left: 50px;
+    }
+    .image {
+        left: 30px;
+        top: 320px;
+        width: 140px
+    }
+    .h1, .h2, .h3 {
+        color: #FFF;
+        font-style: normal;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .h2 {
+        margin-top: -20px;
+    }
+
+    .h3 {
+        margin-top: -20px;
+    }
+    .container_text {
+        margin-top: -10px;
+    }
+    .button {
+        margin-top: 110px
+    }
+}
+@media screen and (max-width: 414px) {
+    .h1, .h2, .h3 {
+        color: #FFF;
+        font-style: normal;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
