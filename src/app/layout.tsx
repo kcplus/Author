@@ -1,5 +1,6 @@
 import type {Metadata, Viewport} from "next";
 import "./globals.css";
+import {useParams} from "next/navigation";
 
 export const viewport: Viewport = {
     initialScale: 1,

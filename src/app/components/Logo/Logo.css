@@ -6,4 +6,5 @@
     margin-top: 10px;
     margin-left: 50px;
     cursor: pointer;
+    z-index: 1;
 }
