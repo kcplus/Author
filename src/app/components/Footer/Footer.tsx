@@ -7,7 +7,7 @@ import logo from '../../assets/black_logo.svg'
 import inst from '../../assets/Social_icons/instagram.svg'
 import tiktok from '../../assets/Social_icons/tik-tok.svg'
 import butt from '../../assets/call_me.svg'
-import {payments_icon} from "../../constants/Constants";
+import {inst_URL, payments_icon, tiktok_URL} from "../../constants/Constants";
 import color_logo from '../../assets/color_logo.svg'
 import white_butt from '../../assets/Social_icons/кнопка.svg'
 import white_inst from '../../assets/Social_icons/кнопка instagram.svg'
@@ -36,10 +36,16 @@ const Footer = ({clientPage}) => {
                                   style={clientPage ? {color: 'white', whiteSpace: 'nowrap'} : {whiteSpace: 'nowrap'}}>+375 (44) 496-68-66</span>
                         </div>
                     </div>
-                    <Image src={clientPage ? white_inst : inst} alt={'Инстаграмм'}/>
-                    <Image src={clientPage ? white_tiktok : tiktok} alt={'ТикТок'}/>
+                    <a href={inst_URL}>
+                        <Image src={clientPage ? white_inst : inst} style={{cursor: 'pointer'}} alt={'Инстаграмм'}/>
+                    </a>
+                    <a href={tiktok_URL}>
+                        <Image src={clientPage ? white_tiktok : tiktok} style={{cursor: 'pointer'}} alt={'ТикТок'}/>
+                    </a>
                     <button className={styles.button}>
-                        <Image src={clientPage ? white_butt : butt} alt={'Связаться'}/>
+                        <a href={'/pages/contacts'}>
+                            <Image src={clientPage ? white_butt : butt} alt={'Связаться'}/>
+                        </a>
                     </button>
                 </div>
                 <div className={styles.gallery}>
