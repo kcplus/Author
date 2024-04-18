@@ -1,0 +1,97 @@
+/*.container {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(102, 102, 102, 0.7)), url("../../assets/коллаж из рекламы2.jpg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}*/
+.mainBlock {
+    display: flex;
+    margin-top: 50px;
+}
+.contactBlockPosition {
+    position: absolute;
+    right: 3%;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.item {
+    flex: 0 1 calc(100% / 8 - 30px * 2);
+}
+
+.itemBox {
+    width: 100%;
+    text-align: center;
+}
+
+.itemBox img {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    width: 450px;
+    font-weight: 400;
+    font-size: 89.35px;
+    line-height: 107.1px;
+    color: white;
+    margin-top: 0;
+    margin-left: 250px;
+}
+
+.text {
+    display: inline-block;
+    width: 700px;
+    height: 141px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    color: white;
+    margin-left: 250px;
+}
+
+.contactBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 23%;
+    margin-bottom: 50px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 130px;
+}
+
+.textContacts {
+    width: 527px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 90px;
+    color: white;
+}
+.address {
+    width: 527px;
+    font-weight: 400;
+    letter-spacing: -5px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120px;
+    color: white;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+}
