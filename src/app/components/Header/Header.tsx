@@ -23,8 +23,8 @@ const Header = ({services}) => {
         <header className="header">
             <nav className="nav container">
                 <Logo services={services}/>
-                <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
-                    <Nav closeMenuOnMobile={closeMenuOnMobile} toggleMenu={toggleMenu} services={services}/>
+                <div className={'nav__menu'} id="nav-menu">
+                    <Nav services={services}/>
                 </div>
                 <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
                     {/*<IoMenu color={services === true ? 'black' : 'white'}/>*/}
@@ -35,3 +35,4 @@ const Header = ({services}) => {
 };
 
 export default Header;
+/*className={`nav__menu ${showMenu ? "show-menu" : ""}`}*/

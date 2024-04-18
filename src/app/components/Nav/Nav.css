@@ -24,6 +24,13 @@
     margin-top: -12px;
     cursor: pointer;
 }
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+}
 .nav__close {
     position: absolute;
     top: 1rem;
