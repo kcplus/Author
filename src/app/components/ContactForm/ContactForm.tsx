@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import {useForm, ValidationError} from "@formspree/react";
+import styles from './contactForm.module.css'
 
 const ContactForm = () => {
     const [state, handleSubmit] = useForm("mnqelapa");
@@ -8,7 +9,7 @@ const ContactForm = () => {
         return <p>Thanks for joining!</p>;
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={styles.form}>
             <label htmlFor="name">
                 Ваше Имя
             </label>
@@ -16,6 +17,7 @@ const ContactForm = () => {
                 id="name"
                 type="text"
                 name="имя"
+                className={styles.input}
             />
             <ValidationError
                 prefix="name"
@@ -27,7 +29,7 @@ const ContactForm = () => {
             </label>
             <input
                 id="phone"
-                type="number"
+                type="tel"
                 name="phone"
             />
             <ValidationError
@@ -38,9 +40,10 @@ const ContactForm = () => {
             <label htmlFor="service">
                 Какую продукцию желаете заказать?
             </label>
-            <textarea
+            <input
                 id="message"
                 name="услуга"
+                type={'text'}
             />
             <ValidationError
                 prefix="Message"

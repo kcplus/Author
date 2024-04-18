@@ -1,0 +1,25 @@
+.form {
+    width: 606px;
+    height: 486px;
+    background-color: #34eed9;
+    top: 181px;
+    left: 1220px;
+    border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Добавьте остальные стили для текста, цвета фона и т.д. */
+}
+.input {
+    border: none;
+    border-bottom: 1px solid #b20d0d;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    width: 300px;
+    height: 30px;
+    /* Добавьте другие стили по необходимости */
+}
+.form label, .form input {
+    margin-bottom: 10px; /* Добавляет отступ снизу каждого label и input */
+}

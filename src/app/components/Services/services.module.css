@@ -14,14 +14,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-left: 130px;
+    margin-left: 120px;
 }
 .item {
-    flex: 0 1 calc(100%/5 - 20px*2);
+    flex: 0 1 calc(100%/5);
 }
 .itemBox {
-    width: 350px;
-    height: 100%;
+    width: 250px;
+    height: 250px;
     text-align: center;
 }
 .itemBox img {

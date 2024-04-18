@@ -40,6 +40,8 @@ import engraving from "../assets/Services/image18.svg";
 import threeD_modeling from "../assets/Services/image19.svg";
 import souvenir_products from "../assets/Services/image20.svg";
 import design_services from "../assets/Services/image21.svg";
+import stickers from "../assets/Services/Стикеры.svg";
+
 
 export const examples_text = ['Готовы', 'Воплотить', 'Все', 'Ваши', 'Идеи', 'В жизнь']
 
@@ -101,6 +103,7 @@ export const services_array = [
     {id: 18, value: threeD_modeling, alt: '3д моделированние', href: '/pages/services/threeD-modeling'},
     {id: 19, value: souvenir_products, alt: 'Сувенирная продукция', href: '/pages/services/souvenir-products'},
     {id: 20, value: design_services, alt: 'Услуги дизайна', href: '/pages/services/design-services'},
+    {id: 21, value: stickers, alt: 'Стикеры', href: '/pages/services/stickers'},
 ]
 
 export const about_text_array = [

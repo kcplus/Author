@@ -1,20 +1,20 @@
 'use client'
 import React, {useState} from 'react';
-import styles from './information_stands.module.css'
+import styles from './stickers.module.css'
 import Header from "../../../components/Header/Header";
 import Image from "next/image";
 import arrow from "../../../assets/Vector.svg";
 import Button from "../../../components/Button/Button";
 import TaplinkButton from "../../../components/TaplinkButton/TaplinkButton";
 import Contact from "../../../components/Contact/Contact";
-import cat from "../../../assets/Pages/Light-boxes/специалист1 1.svg";
-import {information_stands_arr} from "../../../constants/PagesConstants/Information-stands/constants";
+import cat from "../../../assets/Pages/Large-printing/специалист3 1.svg";
+import {stickers_arr} from "../../../constants/PagesConstants/Stickers/constants";
 
-const InformationStands = () => {
+const Stickers = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
-    const marginTop = 50
-    const marginLeft = 470
+    const marginTop = 33
+    const marginLeft = 490
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,9 +35,9 @@ const InformationStands = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Информационные стенды</h1>
+                <h1>Стикеры</h1>
                 <div className={styles.boxes_block}>
-                    {information_stands_arr.map((box) => (
+                    {stickers_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>
                             <div className={styles.box}
                                  onMouseEnter={() => onMouseEnterHandler(box.id)}
@@ -66,4 +66,4 @@ const InformationStands = () => {
     );
 };
 
-export default InformationStands;
+export default Stickers;

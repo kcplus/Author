@@ -12,11 +12,12 @@ const Services = () => {
             <div className={styles.gallery}>
                 {services_array.map((item) => (
                     <div className={styles.item} key={item.id}>
-                        <a href={item.href}>
-                            <div className={styles.itemBox}>
-                                <Image key={item.id} src={item.value} alt={item.alt} width={300} height={300}/>
-                            </div>
-                        </a>
+                        <div className={styles.itemBox}>
+                            <a href={item.href}>
+                                <Image key={item.id} src={item.value} alt={item.alt}/>
+                            </a>
+                        </div>
+
                     </div>
                 ))}
             </div>
