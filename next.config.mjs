@@ -2,7 +2,6 @@
 
 const nextConfig = {
     output: "export",
-    basePath: '/Author_new',
     distDir: 'dist',
     images: {
         unoptimized: true
