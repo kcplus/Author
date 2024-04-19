@@ -70,10 +70,10 @@ export const payments_icon = [
     {id: 7, value: sber, alt: 'Сбер'}
 ]
 export const nav_array = [
-    {id: 0, value: 'О нас', href: 'Author_new/pages/about'},
+    {id: 0, value: 'О нас', href: '/pages/about'},
     {id: 1, value: 'Портфолио', href: '/pages/portfolio'},
     {id: 2, value: 'Услуги', href: ''},
-    {id: 3, value: 'Контакты', href: 'Author_new/pages/contacts'},
+    {id: 3, value: 'Контакты', href: '/pages/contacts'},
     {id: 4, value: 'Позвонить', href: '/pages/contacts'},
 ]
 export const services_array = [
