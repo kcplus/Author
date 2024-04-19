@@ -2,8 +2,10 @@
 
 const nextConfig = {
     output: "export",
-    basePath: '/Author_new/',
-    assetPrefix: '/pages/',
+    distDir: 'dist',
+    images: {
+        unoptimized: true
+    },
     reactStrictMode: true,
 };
 
