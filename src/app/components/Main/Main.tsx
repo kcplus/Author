@@ -19,9 +19,11 @@ const Main = () => {
                     <div className={styles.text}>Мы креативная команда,</div>
                     <div className={styles.text}>готовая воплотить все ваши идеи в жизнь</div>
                 </div>
-                <button className={styles.button}>
-                    Связь с менеджером
-                </button>
+                <a href={'pages/contacts'}>
+                    <button className={styles.button}>
+                        Связь с менеджером
+                    </button>
+                </a>
                 <div>
                     <Image src={hand1} alt={"Рука1"} className={styles.hand_one}/>
                 </div>
