@@ -2,7 +2,7 @@
 
 const nextConfig = {
     output: "export",
-    basePath: '/Author_new',
+    basePath: '/Author_new/',
     assetPrefix: '/pages/',
     reactStrictMode: true,
 };
