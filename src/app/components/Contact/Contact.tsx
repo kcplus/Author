@@ -6,7 +6,7 @@ import whatsupIcon from "../../assets/image 24.svg";
 import telegramIcon from "../../assets/free-icon-telegram-2111646 2.svg";
 import closeIcon from "../../assets/связь с менеджером закрытие.svg";
 
-const Contact = ({src, onCloseHandler, marginTop, marginLeft}) => {
+const Contact = ({src, onCloseHandler, marginTop, marginLeft}: any) => {
     return (
         <div className={styles.contact_block}>
             <button className={styles.iconViber}>

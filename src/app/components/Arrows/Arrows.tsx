@@ -5,7 +5,7 @@ import arrowRight from "../../assets/VectorRight.svg";
 import React from "react";
 
 
-export const PrevArrow = (props) => {
+export const PrevArrow = (props: any) => {
     const {className, style, onClick} = props;
     return (
         <>
@@ -17,7 +17,7 @@ export const PrevArrow = (props) => {
         </>
     )
 }
-export const NextArrow = (props) => {
+export const NextArrow = (props: any) => {
     const {className, style, onClick} = props;
     return (
         <>

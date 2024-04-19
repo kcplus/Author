@@ -6,7 +6,7 @@ import './Header.css'
 import Nav from "../Nav/Nav";
 
 
-const Header = ({services}) => {
+const Header = ({services}: any) => {
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {

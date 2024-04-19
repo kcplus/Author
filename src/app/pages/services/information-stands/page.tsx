@@ -24,7 +24,7 @@ const InformationStands = () => {
         setClick(false)
     }
 
-    const onMouseEnterHandler = (id) => {
+    const onMouseEnterHandler = (id: any) => {
         setIsHovered(id)
     }
     const onMouseLeaveHandler = () => {

@@ -3,9 +3,9 @@ import './Nav.css'
 import {nav_array} from "../../constants/Constants";
 
 
-const Nav = ({services}) => {
+const Nav = ({services}: any) => {
     const scrollToBlock = () => {
-        const block = document.getElementById('services');
+        const block: any = document.getElementById('services');
         block.scrollIntoView({behavior: 'smooth'});
     }
 
@@ -14,9 +14,9 @@ const Nav = ({services}) => {
             {nav_array.map((item, index) => (
                 <li key={item.id} className={index === nav_array.length - 1 ? 'button' : ''}>
                     <a className={'nav__link'}
-                       href={index === 2 ? null : item.href}
+                       href={index === 2 ? undefined : item.href}
                        style={services === true ? {color: 'black'} : {color: 'white'}}
-                       onClick={item.id === 2 ? scrollToBlock : null}
+                       onClick={item.id === 2 ? scrollToBlock : undefined}
                     >
                         {item.value}
                     </a>

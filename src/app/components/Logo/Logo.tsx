@@ -4,7 +4,7 @@ import logo from '../../assets/logo.svg'
 import color_logo from '../../assets/color_logo.svg'
 import'./Logo.css'
 
-const Logo = ({services}) => {
+const Logo = ({services}: any) => {
     return (
         <>
             <a className={'nav__logo'} href={'/'}>

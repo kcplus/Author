@@ -5,23 +5,23 @@ import second from '../../assets/коллаж из рекламы.jpg'
 import styles from './overlayImage.module.css'
 import background from '../../assets/фон.jpg'
 
-const OverlayImage = ({children, contacts}) => {
+const OverlayImage = ({children, contacts}: any) => {
     return (
         <div className={styles.container} style={contacts === true ? {minHeight: '100%'} : {}}>
             {contacts === true ? (
                 <Image src={background}
-                       alt={1}
+                       alt={'Фон'}
                        className={styles.image1}
                        style={contacts === true ? {minHeight: '100%'} : {}}
                 />
             ) : (
                 <Image src={first}
-                       alt={1}
+                       alt={'Фон'}
                        className={styles.image1}
                 />
             )}
             <Image src={second}
-                   alt={2}
+                   alt={'Картинка'}
                    className={styles.image2}
                    style={contacts === true ? {opacity: '0.05', minHeight: '100%'} : {}}
             />

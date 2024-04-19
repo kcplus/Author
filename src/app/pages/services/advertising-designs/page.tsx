@@ -24,7 +24,7 @@ const AdvertisingDesigns = () => {
         setClick(false)
     }
 
-    const onMouseEnterHandler = (id) => {
+    const onMouseEnterHandler = (id: any) => {
         setIsHovered(id)
     }
     const onMouseLeaveHandler = () => {
@@ -37,7 +37,7 @@ const AdvertisingDesigns = () => {
             <div className={styles.container_boxes}>
                 <h1>Рекламные конструкции</h1>
                 <div className={styles.boxes_block}>
-                    {advertising_designs_arr.map((box) => (
+                    {advertising_designs_arr.map((box: any) => (
                         <div key={box.id} style={{position: 'relative'}}>
                             <div className={styles.box}
                                  onMouseEnter={() => onMouseEnterHandler(box.id)}

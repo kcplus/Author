@@ -24,7 +24,7 @@ const FormatPrinting = () => {
         setClick(false)
     }
 
-    const onMouseEnterHandler = (id) => {
+    const onMouseEnterHandler = (id: any) => {
         setIsHovered(id)
     }
 

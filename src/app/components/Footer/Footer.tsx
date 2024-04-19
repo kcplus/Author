@@ -13,8 +13,7 @@ import white_butt from '../../assets/Social_icons/кнопка.svg'
 import white_inst from '../../assets/Social_icons/кнопка instagram.svg'
 import white_tiktok from '../../assets/Social_icons/кнопка тик ток.svg'
 
-const Footer = ({clientPage}) => {
-
+const Footer = ({clientPage}: any) => {
     return (
         <div className={styles.container} style={clientPage === true ? {
             background: 'linear-gradient(to bottom, #000000 0%, #666666 100%)',
