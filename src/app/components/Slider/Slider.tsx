@@ -37,7 +37,7 @@ export const SimpleSlider = () => {
             <Slider {...settings}>
                 {image_slider_arr.map((item) => (
                     <div key={item.id}>
-                        <Image src={item.image} alt={item.alt} width={600} height={350}/>
+                        <Image src={item.image} alt={item.alt} width={825} height={563}/>
                     </div>
                 ))}
             </Slider>

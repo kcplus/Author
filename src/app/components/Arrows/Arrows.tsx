@@ -11,7 +11,7 @@ export const PrevArrow = (props: any) => {
         <>
             <Image src={arrowLeft} alt={'Стрелка в лево'} className={className} style={{
                 ...style,
-                display: "block", marginLeft: '-440px', width: '50px',
+                display: "block", marginLeft: '-410px', width: '50px',
                 height: '142px'
             }} onClick={onClick}/>
         </>

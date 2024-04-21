@@ -2,6 +2,14 @@
     font-family: 'custom-font';
     src: url("assets/fonts/2237-font.otf") format('opentype');
 }
+@font-face {
+    font-family: 'custom-font-second';
+    src: url("assets/fonts/arubricaxtcn.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'my-font';
+    src: url("assets/fonts/Unutterable-Regular.ttf") format('truetype');
+}
 
 body {
     font-family: custom-font;

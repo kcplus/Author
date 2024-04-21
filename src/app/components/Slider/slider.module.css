@@ -1,9 +1,9 @@
 .container {
     position: absolute;
-    margin-top: 100px;
-    width: 600px;
-    height: 350px;
-    left: 810px
+    margin-top: 151px;
+    width: 825px;
+    height: 563px;
+    left: 712px
 }
 @media screen and (max-width: 1500px) {
     .container {

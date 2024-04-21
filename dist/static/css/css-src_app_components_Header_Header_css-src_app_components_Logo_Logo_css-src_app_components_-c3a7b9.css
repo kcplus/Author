@@ -1,0 +1,483 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/Clients/clients.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+.clients_container__Y__tv {
+    width: 100%;
+    min-height: 893px;
+    background: #8416FB;
+
+}
+.clients_mainText__affhp {
+    padding-top: 50px;
+    font-weight: 400;
+    font-size: 89px;
+    line-height: 107px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.clients_gallery__QS3nm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.clients_item__0bRlO {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(100%/4 - 20px*2);
+}
+.clients_itemBox___LPnD {
+    width: 100%;
+    text-align: center;
+}
+.clients_itemBox___LPnD img {
+    width: 200px;
+    height: 200px;
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/Footer/footer.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_container__IxwGR {
+    width: 100%;
+    min-height: 100%;
+    margin-top: 300px;
+}
+.footer_imageContainer__mXTK0 {
+    margin-left: 5%;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer_logo__dmCnX {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.footer_contactBlock__LcXHK {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-bottom: 230px;
+    margin-top: 200px;
+}
+
+.footer_contactInfo__5gxcP {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 130px;
+}
+.footer_text__jwp3n {
+    width: 260px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: -2px;
+    line-height: 30px;
+}
+.footer_textBlock__p4o6x {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_button__KBXSa {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+    background-color: transparent;
+}
+
+.footer_gallery__mvDPH {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+.footer_item__fWx76 {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(100%/8 - 30px*2);
+}
+.footer_itemBox__KwgM6 {
+    width: 100%;
+    text-align: center;
+}
+.footer_itemBox__KwgM6 img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/Logo/Logo.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.nav__logo {
+    color: var(--first-color);
+    transition: color 0.4s;
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    margin-top: 10px;
+    margin-left: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/Header/Header.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.header {
+    width: 100%;
+    background-color: transparent;
+    min-height: 128px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 128px;
+}
+
+.nav__toggle,
+.nav__close {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.nav__cta {
+    background-color: var(--first-color);
+    color: var(--title-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding: 0.75rem 1.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsla(0, 0%, 6%, 0.2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        width: 80%;
+        height: 100%;
+        padding: 6rem 3rem 0;
+        transition: right 0.4s;
+    }
+}
+@media screen and (max-width: 300px) {
+    .nav__menu {
+        padding: 4rem 1rem 2rem;
+    }
+
+    .nav__list {
+        row-gap: 1rem;
+    }
+
+    .nav__link,
+    .nav__cta {
+        text-decoration: none;
+        /*font-size: var(--smaller-font-size);*/
+    }
+
+    .nav__cta {
+        padding: 8px 16px;
+        font-size: 12px;
+        margin-top: 1rem;
+        width: auto;
+        white-space: nowrap;
+    }
+}
+
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.show-menu {
+    right: 0;
+}
+.nav__listt {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+}
+
+.nav__menu_mobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: hsla(0, 0%, 6%, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    width: 80%;
+    height: 100%;
+    padding: 6rem 3rem 0;
+    transition: right 0.4s;
+}
+@media screen and (min-width: 1150px) {
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./src/app/components/Nav/Nav.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+    list-style: none;
+    margin-right: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20.91px;
+    font-weight: bold;
+    line-height: 25.07px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.button {
+    border: 0;
+    border-radius: 15px;
+    background: #34eed9;
+    color: #070707;
+    padding: 8px 16px;
+    transform: rotate(-5deg);
+    margin-bottom: 20px;
+    text-decoration: none;
+    margin-top: -12px;
+    cursor: pointer;
+}
+.nav__link {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+@media screen and (min-width: 1150px) {
+    .nav__list {
+        flex-direction: row;
+        column-gap: 2.5rem;
+    }
+}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/OverlayImage/overlayImage.module.css ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************/
+.overlayImage_container___IOrm {
+    position: relative;
+    width: 100%;
+    min-height: 1080px;
+}
+
+.overlayImage_image1__UchGu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+}
+
+.overlayImage_image2__3JgWc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px;
+    opacity: 0.2;
+}
+
+.overlayImage_overlayContent__gcR_e {
+    position: relative;
+    z-index: 1;
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/Main/main.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.main_container__2gAFc {
+    width: 100%;
+    color: white
+}
+.main_h1__A1CLk, .main_h2__HLcCR, .main_h3__wo2_R {
+    color: #FFF;
+    font-style: normal;
+    font-size: 89.35px;
+    font-weight: 600;
+}
+
+.main_h2__HLcCR {
+    margin-top: -70px;
+}
+
+.main_h3__wo2_R {
+    margin-top: -80px;
+}
+
+.main_textBlock__ous4g {
+    width: 840px;
+    height: 311px;
+    margin-left: 260px;
+    margin-top: 100px;
+}
+
+.main_image__nISwt {
+    position: absolute;
+    top: 430px;
+    left: 260px;
+    width: 250px;
+}
+.main_text__5Mdmy {
+    line-height: 25px;
+    font-size: 21px;
+    font-weight: 400;
+}
+.main_container_text__XPach {
+    position: absolute;
+    margin-top: -70px;
+}
+.main_button__SVrs5 {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.main_hand_one__YxZAo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 400px;
+    z-index: -1;
+}
+.main_hand_two__7W_P9 {
+    position: absolute;
+    bottom: -542px;
+    right: 100px;
+    width: 400px;
+}
+@media screen and (max-width: 1150px) {
+    .main_hand_one__YxZAo {
+        display: none;
+    }
+    .main_hand_two__7W_P9 {
+        display: none;
+    }
+    .main_textBlock__ous4g {
+        margin-left: 200px;
+    }
+    .main_image__nISwt {
+        left: 200px;
+    }
+}
+@media screen and (max-width: 930px) {
+    .main_textBlock__ous4g {
+        margin-left: 50px;
+    }
+    .main_image__nISwt {
+        left: 30px;
+        top: 320px;
+        width: 140px
+    }
+    .main_h1__A1CLk, .main_h2__HLcCR, .main_h3__wo2_R {
+        color: #FFF;
+        font-style: normal;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .main_h2__HLcCR {
+        margin-top: -20px;
+    }
+
+    .main_h3__wo2_R {
+        margin-top: -20px;
+    }
+    .main_container_text__XPach {
+        margin-top: -10px;
+    }
+    .main_button__SVrs5 {
+        margin-top: 110px
+    }
+}
+@media screen and (max-width: 414px) {
+    .main_h1__A1CLk, .main_h2__HLcCR, .main_h3__wo2_R {
+        color: #FFF;
+        font-style: normal;
+        font-size: 30px;
+        font-weight: 600;
+    }
+}
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/components/Services/services.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.services_container__8MHmI {
+    width: 100%;
+    height: 100%;
+}
+.services_mainText__RsF89 {
+    font-weight: 400;
+    font-size: 89px;
+    line-height: 107px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.services_gallery__aGFm1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 120px;
+}
+.services_item__M9dKT {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: calc(100%/5);
+}
+.services_itemBox__7dQOd {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.services_itemBox__7dQOd img {
+    width: 100%; /* Задаем фиксированную ширину */
+    height: 100%; /* Задаем фиксированную высоту */
+}

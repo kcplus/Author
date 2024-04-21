@@ -1,31 +1,49 @@
 .container {
     width: 100%;
-    min-height: 600px;
+    min-height: 892px;
     background-color: #000000
 }
 .textContainer {
-    width: 300px;
-    height: 350px;
-    left: 480px;
+    width: 323px;
+    height: 628px;
+    left: 358px;
     position: absolute;
     color: white;
-    margin-top: 100px
+    margin-top: 140px
 }
 .textBlock {
     display: flex;
     flex-direction: column;
-    width: 323px
+    width: 323px;
+    height: 628px;
 }
 .spanText {
     width: 260px;
+    font-family: custom-font-second;
     font-weight: 400;
-    font-size: 50px;
-    letter-spacing: -5px;
+    font-size: 100px;
+    line-height: 100px;
+}
+.spanTextDouble {
+    font-family: custom-font-second;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100px;
+}
+.block {
+    margin-left: -300px;
+}
+.creativeText {
+    font-family: my-font;
+    font-size: 64px;
+    line-height: 73px;
+    font-weight: 400;
+    color: #8416FB; /* Add your desired styles here */
 }
 .imageConnected {
     position: absolute;
-    margin-top: 500px;
-    margin-left: 810px
+    margin-top: 730px;
+    margin-left: 710px
 }
 
 @media screen and (max-width: 1500px) {

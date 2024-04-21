@@ -12,7 +12,15 @@ const Examples = () => {
             <div className={styles.textContainer}>
                 <div className={styles.textBlock}>
                     {examples_text.map((text, index) => (
-                        <span key={index} className={styles.spanText} style={{whiteSpace: 'nowrap'}}>{text}</span>
+                        text === 'ТВОРЧЕСКИЕ ИДЕИ' ? (
+                            // eslint-disable-next-line react/jsx-key
+                            <span className={styles.block}>
+                                <span className={styles.creativeText}>ТВОРЧЕСКИЕ</span>
+                                <span className={styles.spanTextDouble}> ИДЕИ</span>
+                            </span>
+                        ) : (
+                            <span key={index} className={styles.spanText}>{text}</span>
+                        )
                     ))}
                 </div>
             </div>

@@ -43,7 +43,7 @@ import design_services from "../assets/Services/image21.svg";
 import stickers from "../assets/Services/Стикеры.svg";
 
 
-export const examples_text = ['Готовы', 'Воплотить', 'Все', 'Ваши', 'Идеи', 'В жизнь']
+export const examples_text = ['ГОТОВЫ', 'ВОПЛОТИТЬ', 'ВСЕ', 'ВАШИ', 'ТВОРЧЕСКИЕ ИДЕИ', 'В ЖИЗНЬ']
 
 export const clients_array = [
     {id: 0, value: mahorka, alt: 'Махорка'},
