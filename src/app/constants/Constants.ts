@@ -12,13 +12,15 @@ import mirtek from "../assets/Clients/Group 1.svg";
 import elena from "../assets/Clients/image 9.svg";
 import htp from "../assets/Clients/image 10.svg";
 import visa from "../assets/Payments/pngwing 1.svg";
-import visaElectron from "../assets/Payments/visa-electron-logo-png-transparent 1.svg";
+import visaElectron from "../assets/Payments/image 208.svg";
 import masterCard from "../assets/Payments/pngwing 2.svg";
-import maestro from "../assets/Payments/pngwing 3.svg";
-import yandex from "../assets/Payments/pngwing 4.svg";
-import alfa from "../assets/Payments/Alfabank_logo 1.svg";
-import qiwi from "../assets/Payments/1280px-QIWI_logo 1.svg";
-import sber from "../assets/Payments/Sberbank_Logo_2020 1.svg";
+import mir from '../assets/Payments/image 206.svg';
+import unionPay from '../assets/Payments/image 205.svg';
+import halva from '../assets/Payments/image 204.svg';
+import assist from '../assets/Payments/image 203.svg';
+import belkart from '../assets/Payments/image 201.svg';
+import raschet from '../assets/Payments/image 202.svg'
+import qiwi from '../assets/Payments/1280px-QIWI_logo 1.svg'
 import light_boxes from "../assets/Services/image1.svg";
 import signs from "../assets/Services/image2.svg";
 import large_format_printing from "../assets/Services/image3.svg";
@@ -63,11 +65,13 @@ export const payments_icon = [
     {id: 0, value: visa, alt: 'Виза'},
     {id: 1, value: visaElectron, alt: 'Виза электрон'},
     {id: 2, value: masterCard, alt: 'Мастеркард'},
-    {id: 3, value: maestro, alt: 'Маеэстро'},
-    {id: 4, value: yandex, alt: 'Яндекс'},
-    {id: 5, value: alfa, alt: 'Альфа'},
-    {id: 6, value: qiwi, alt: 'Киви'},
-    {id: 7, value: sber, alt: 'Сбер'}
+    {id: 3, value: mir, alt: 'МИР'},
+    {id: 4, value: unionPay, alt: 'Юнион пэй'},
+    {id: 6, value: halva, alt: 'Халва'},
+    {id: 7, value: assist, alt: 'Ассист'},
+    {id: 8, value: belkart, alt: 'Белкарт'},
+    {id: 9, value: raschet, alt: 'Расчет'},
+    {id: 10, value: qiwi, alt: 'Киви'},
 ]
 export const nav_array = [
     {id: 0, value: 'О нас', href: 'pages/about'},

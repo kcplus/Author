@@ -20,14 +20,14 @@
 .textBlock {
     width: 840px;
     height: 311px;
-    margin-left: 260px;
-    margin-top: 100px;
+    margin-left: 335px;
+    margin-top: 175px;
 }
 
 .image {
     position: absolute;
-    top: 430px;
-    left: 260px;
+    top: 505px;
+    left: 320px;
     width: 250px;
 }
 .text {
@@ -43,14 +43,17 @@
     background-color: #000;
     color: #fff;
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 38px;
     text-align: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: custom-font;
 
     font-weight: 400;
     font-size: 21px;
     line-height: 25px;
+    width: 409px;
+    height: 64px;
 }
 
 .hand_one {
@@ -62,7 +65,7 @@
 }
 .hand_two {
     position: absolute;
-    bottom: -542px;
+    bottom: -466px;
     right: 100px;
     width: 400px;
 }

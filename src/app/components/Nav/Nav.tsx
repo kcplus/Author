@@ -12,7 +12,7 @@ const Nav = ({services}: any) => {
     return (
         <ul className="nav__list">
             {nav_array.map((item, index) => (
-                <li key={item.id} className={index === nav_array.length - 1 ? 'button' : ''}>
+                <li key={item.id}  className={index === nav_array.length - 1 ? 'button' : ''}>
                     <a className={'nav__link'}
                        href={index === 2 ? undefined : item.href}
                        style={services === true ? {color: 'black'} : {color: 'white'}}
@@ -20,6 +20,8 @@ const Nav = ({services}: any) => {
                     >
                         {item.value}
                     </a>
+                    {/*{index === nav_array.length - 1 ?
+                        <a className={'button'}>Позвонить</a> : ''}*/}
                 </li>
             ))}
         </ul>
@@ -27,7 +29,6 @@ const Nav = ({services}: any) => {
 };
 
 export default Nav;
-
 
 
 {/*<div className="nav__close" id="nav-close" onClick={toggleMenu}>

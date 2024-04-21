@@ -13,7 +13,7 @@ const About = () => {
     return (
         <>
             <div className={styles.container}>
-                <Header/>
+                <Header />
                 <div className={styles.infoBlock}>
                     <div style={{width: '900px'}}>
                         <Image src={poster} alt={'Постер'} width={900} height={1500} className={styles.posterStyle}/>

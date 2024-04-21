@@ -6,6 +6,7 @@ export const viewport: Viewport = {
     initialScale: 1,
     height: 1080,
     width: 1920,
+    maximumScale: 1,
     userScalable: true,
 }
 export const metadata: Metadata = {

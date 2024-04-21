@@ -40,7 +40,7 @@ const Contacts = () => {
                         </a>
                     </div>
                 </div>
-                <div style={{marginLeft: '250px'}}>
+                <div style={{marginLeft: '250px', marginTop: '100px'}}>
                     <span className={styles.address}>г.ГОМЕЛЬ, ул. Могилевская 2д</span>
                 </div>
                 <div className={styles.gallery}>

@@ -12,7 +12,7 @@ const Services = () => {
             <div className={styles.gallery}>
                 {services_array.map((item) => (
                     <div className={styles.item} key={item.id}>
-                        <div className={styles.itemBox}>
+                        <div className={styles.itemBox} style={item.id === 6 ? {marginTop: '30px'} : {}}>
                             <a href={item.href}>
                                 <Image key={item.id} src={item.value} alt={item.alt}/>
                             </a>
