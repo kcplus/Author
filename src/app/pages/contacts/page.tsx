@@ -29,7 +29,7 @@ const Contacts = () => {
                         <div className={styles.textBlock}>
                             <span className={styles.textContacts}>4966866@GMAIL.COM</span>
                             <span className={styles.textContacts}
-                                  style={{whiteSpace: 'nowrap'}}>+375 (44) 496-68-666</span>
+                                  style={{whiteSpace: 'nowrap'}}>+375 (44) 496-68-66</span>
                         </div>
                     </div>
                     <div>
