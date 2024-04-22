@@ -7,11 +7,12 @@ import logo from '../../assets/black_logo.svg'
 import inst from '../../assets/Social_icons/instagram.svg'
 import tiktok from '../../assets/Social_icons/tik-tok.svg'
 import butt from '../../assets/call_me.svg'
-import {inst_URL, payments_icon, tiktok_URL} from "../../constants/Constants";
+import {inst_URL, tiktok_URL} from "../../constants/Constants";
 import color_logo from '../../assets/color_logo.svg'
 import white_butt from '../../assets/Social_icons/кнопка.svg'
 import white_inst from '../../assets/Social_icons/кнопка instagram.svg'
 import white_tiktok from '../../assets/Social_icons/кнопка тик ток.svg'
+import payments from '../../assets/виды оплат.svg'
 
 const Footer = ({clientPage}: any) => {
     return (
@@ -22,8 +23,9 @@ const Footer = ({clientPage}: any) => {
             <div style={{top: '300px'}}>
                 <div className={styles.imageContainer}>
                     <Image src={line} alt={'Линия'}/>
-                    <div className={styles.logo} style={clientPage === true ? {left: '50%'} : {}}>
-                        <Image src={clientPage === true ? color_logo : logo} alt={'Лого'}/>
+                    <div className={styles.logo} style={clientPage === true ? {left: '49%'} : {}}>
+                        <Image src={clientPage === true ? color_logo : logo} alt={'Лого'} width={clientPage ? 335 : undefined}
+                               height={clientPage ? 103 : undefined}/>
                     </div>
                 </div>
                 <div className={styles.contactBlock}>
@@ -48,13 +50,7 @@ const Footer = ({clientPage}: any) => {
                     </button>
                 </div>
                 <div className={styles.gallery}>
-                    {payments_icon.map((item) => (
-                        <div className={styles.item} key={item.id}>
-                            <div className={styles.itemBox}>
-                                <Image key={item.id} src={item.value} alt={item.alt}/>
-                            </div>
-                        </div>
-                    ))}
+                    <Image src={payments} alt={'Виды оплат'} style={{}}/>
                 </div>
             </div>
         </div>

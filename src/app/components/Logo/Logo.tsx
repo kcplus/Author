@@ -4,11 +4,11 @@ import logo from '../../assets/logo.svg'
 import color_logo from '../../assets/color_logo.svg'
 import'./Logo.css'
 
-const Logo = ({services}: any) => {
+const Logo = ({services, clientPage}: any) => {
     return (
         <>
             <a className={'nav__logo'} href={'/Author_new'}>
-                <Image src={services === true ? color_logo : logo} alt={'Logo'} />
+                <Image src={services || clientPage === true ? color_logo : logo} alt={'Logo'} />
             </a>
         </>
     );

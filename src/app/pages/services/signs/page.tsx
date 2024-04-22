@@ -15,7 +15,7 @@ const Signs = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 33
-    const marginLeft = 490
+    const marginLeft = 370
 
     const onClickHandler = () => {
         setClick(!click)
@@ -37,7 +37,7 @@ const Signs = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Вывески</h1>
+                <h1 className={styles.title}>Вывески</h1>
                 <div className={styles.boxes_block}>
                     {signs_array.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

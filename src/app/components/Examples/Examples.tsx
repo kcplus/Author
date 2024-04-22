@@ -5,6 +5,7 @@ import arrow from '../../assets/butt.svg'
 import Image from "next/image";
 import {examples_text} from "../../constants/Constants";
 import {SimpleSlider} from "../Slider/Slider";
+import creative from '../../assets/творческие.svg'
 
 const Examples = () => {
     return (
@@ -15,8 +16,8 @@ const Examples = () => {
                         text === 'ТВОРЧЕСКИЕ ИДЕИ' ? (
                             // eslint-disable-next-line react/jsx-key
                             <span className={styles.block}>
-                                <span className={styles.creativeText}>ТВОРЧЕСКИЕ</span>
-                                <span className={styles.spanTextDouble}> ИДЕИ</span>
+                                 <Image src={creative} alt="" style={{}}/>
+                                 <span className={styles.spanTextDouble}> ИДЕИ</span>
                             </span>
                         ) : (
                             <span key={index} className={styles.spanText}>{text}</span>

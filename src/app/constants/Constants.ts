@@ -11,16 +11,6 @@ import gefest from "../assets/Clients/image 8.svg";
 import mirtek from "../assets/Clients/Group 1.svg";
 import elena from "../assets/Clients/image 9.svg";
 import htp from "../assets/Clients/image 10.svg";
-import visa from "../assets/Payments/pngwing 1.svg";
-import visaElectron from "../assets/Payments/image 208.svg";
-import masterCard from "../assets/Payments/pngwing 2.svg";
-import mir from '../assets/Payments/image 206.svg';
-import unionPay from '../assets/Payments/image 205.svg';
-import halva from '../assets/Payments/image 204.svg';
-import assist from '../assets/Payments/image 203.svg';
-import belkart from '../assets/Payments/image 201.svg';
-import raschet from '../assets/Payments/image 202.svg'
-import qiwi from '../assets/Payments/1280px-QIWI_logo 1.svg'
 import light_boxes from "../assets/Services/image1.svg";
 import signs from "../assets/Services/image2.svg";
 import large_format_printing from "../assets/Services/image3.svg";
@@ -60,18 +50,6 @@ export const clients_array = [
     {id: 9, value: mirtek, alt: 'Миртек'},
     {id: 10, value: elena, alt: 'Елена'},
     {id: 11, value: htp, alt: 'Эйчтипи'},
-]
-export const payments_icon = [
-    {id: 0, value: visa, alt: 'Виза'},
-    {id: 1, value: visaElectron, alt: 'Виза электрон'},
-    {id: 2, value: masterCard, alt: 'Мастеркард'},
-    {id: 3, value: mir, alt: 'МИР'},
-    {id: 4, value: unionPay, alt: 'Юнион пэй'},
-    {id: 6, value: halva, alt: 'Халва'},
-    {id: 7, value: assist, alt: 'Ассист'},
-    {id: 8, value: belkart, alt: 'Белкарт'},
-    {id: 9, value: raschet, alt: 'Расчет'},
-    {id: 10, value: qiwi, alt: 'Киви'},
 ]
 export const nav_array = [
     {id: 0, value: 'О нас', href: 'pages/about'},

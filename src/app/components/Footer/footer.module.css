@@ -62,16 +62,6 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
-}
-.item {
-    flex: 0 1 calc(100%/8 - 55px*2);
-}
-.itemBox {
-    width: 100%;
-    text-align: center;
-}
-.itemBox img {
-    width: 100px;
-    height: 100px;
+    padding-bottom: 30px;
 }
 

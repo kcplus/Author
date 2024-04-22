@@ -14,7 +14,7 @@ const InteriorDesigns = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 50
-    const marginLeft = 480
+    const marginLeft = 375
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,7 +35,7 @@ const InteriorDesigns = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Интерьерное оформление</h1>
+                <h1 className={styles.title}>Интерьерное оформление</h1>
                 <div className={styles.boxes_block}>
                     {interior_designs_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

@@ -14,7 +14,7 @@ const FormatPrinting = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 33
-    const marginLeft = 490
+    const marginLeft = 370
 
     const onClickHandler = () => {
         setClick(!click)
@@ -36,7 +36,7 @@ const FormatPrinting = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Широкоформатная печать</h1>
+                <h1 className={styles.title}>Широкоформатная печать</h1>
                 <div className={styles.boxes_block}>
                     {format_printing_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

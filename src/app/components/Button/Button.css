@@ -4,6 +4,7 @@
     border: 1px solid #212020;
     margin: 5px;
     transition: background-color 0.3s; /* Добавляем переход для цвета фона */
+    font-size: 36px;
 }
 
 .btn.btn-primary:hover {

@@ -8,11 +8,11 @@
 }
 @font-face {
     font-family: 'my-font';
-    src: url("assets/fonts/Unutterable-Regular.ttf") format('truetype');
+    src: url("assets/fonts/ofont.ru_Unutterable.ttf") format('truetype');
 }
 @font-face {
     font-family: 'Bebas';
-    src: url("assets/fonts/BebasNeue-Regular.ttf") format('truetype');
+    src: url("assets/fonts/ofont.ru_Bebas Neue.ttf") format('truetype');
 }
 
 body {

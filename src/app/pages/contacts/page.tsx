@@ -3,11 +3,12 @@ import React from 'react';
 import Header from "../../components/Header/Header";
 import ContactForm from "../../components/ContactForm/ContactForm";
 import styles from './contacts.module.css'
-import {inst_URL, payments_icon, tiktok_URL} from "../../constants/Constants";
+import {inst_URL, tiktok_URL} from "../../constants/Constants";
 import Image from "next/image";
 import OverlayImage from "../../components/OverlayImage/OverlayImage";
 import white_inst from "../../assets/Social_icons/кнопка instagram.svg";
 import white_tiktok from "../../assets/Social_icons/кнопка тик ток.svg";
+import payments from "../../assets/виды оплат.svg";
 
 const Contacts = () => {
     return (
@@ -28,7 +29,7 @@ const Contacts = () => {
                         <div className={styles.textBlock}>
                             <span className={styles.textContacts}>4966866@GMAIL.COM</span>
                             <span className={styles.textContacts}
-                                  style={{whiteSpace: 'nowrap'}}>+375 (44) 496-68-66</span>
+                                  style={{whiteSpace: 'nowrap'}}>+375 (44) 496-68-666</span>
                         </div>
                     </div>
                     <div>
@@ -40,17 +41,11 @@ const Contacts = () => {
                         </a>
                     </div>
                 </div>
-                <div style={{marginLeft: '250px', marginTop: '100px'}}>
+                <div style={{marginLeft: '250px', marginTop: '50px'}}>
                     <span className={styles.address}>г.ГОМЕЛЬ, ул. Могилевская 2д</span>
                 </div>
                 <div className={styles.gallery}>
-                    {payments_icon.map((item) => (
-                        <div className={styles.item} key={item.id}>
-                            <div className={styles.itemBox}>
-                                <Image key={item.id} src={item.value} alt={item.alt}/>
-                            </div>
-                        </div>
-                    ))}
+                    <Image src={payments} alt={'Виды оплат'} style={{}}/>
                 </div>
             </OverlayImage>
         </>

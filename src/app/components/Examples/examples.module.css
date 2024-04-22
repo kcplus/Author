@@ -33,13 +33,7 @@
 .block {
     margin-left: -300px;
 }
-.creativeText {
-    font-family: my-font;
-    font-size: 64px;
-    line-height: 73px;
-    font-weight: 400;
-    color: #8416FB; /* Add your desired styles here */
-}
+
 .imageConnected {
     position: absolute;
     margin-top: 730px;
