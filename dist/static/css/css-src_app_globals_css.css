@@ -3,19 +3,19 @@
   \*****************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
     font-family: 'custom-font';
-    src: url(/Author_new/_next/static/media/2237-font.2f8aeaee.otf) format('opentype');
+    src: url(/_next/static/media/2237-font.2f8aeaee.otf) format('opentype');
 }
 @font-face {
     font-family: 'custom-font-second';
-    src: url(/Author_new/_next/static/media/arubricaxtcn.ecb9e3e7.ttf) format('truetype');
+    src: url(/_next/static/media/arubricaxtcn.ecb9e3e7.ttf) format('truetype');
 }
 @font-face {
     font-family: 'my-font';
-    src: url(/Author_new/_next/static/media/ofont.ru_Unutterable.75aa86ec.ttf) format('truetype');
+    src: url(/_next/static/media/ofont.ru_Unutterable.75aa86ec.ttf) format('truetype');
 }
 @font-face {
     font-family: 'Bebas';
-    src: url("/Author_new/_next/static/media/ofont.ru_Bebas Neue.8e22970b.ttf") format('truetype');
+    src: url("/_next/static/media/ofont.ru_Bebas Neue.8e22970b.ttf") format('truetype');
 }
 
 body {

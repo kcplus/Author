@@ -1,4 +1,8 @@
 {
+  "/pages/about/page": "app/pages/about/page.js",
+  "/pages/services/advertising-stands-and-pylons/page": "app/pages/services/advertising-stands-and-pylons/page.js",
+  "/pages/contacts/page": "app/pages/contacts/page.js",
+  "/pages/services/panel-bracket/page": "app/pages/services/panel-bracket/page.js",
   "/page": "app/page.js",
-  "/pages/portfolio/page": "app/pages/portfolio/page.js"
+  "/pages/services/light-boxes/page": "app/pages/services/light-boxes/page.js"
 }

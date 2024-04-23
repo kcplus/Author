@@ -192,7 +192,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "ff95bc72533c3255"; }
+/******/ 		__webpack_require__.h = function() { return "b2230a535baec127"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -700,7 +700,7 @@
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "/Author_new/_next/";
+/******/ 		__webpack_require__.p = "/_next/";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/react refresh */
@@ -830,8 +830,11 @@
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = __webpack_require__.hmrS_jsonp = __webpack_require__.hmrS_jsonp || {
 /******/ 			"webpack": 0,
+/******/ 			"css-src_app_components_OverlayImage_overlayImage_module_css": 0,
+/******/ 			"css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422": 0,
 /******/ 			"css-src_app_globals_css": 0,
-/******/ 			"css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-d0d789": 0
+/******/ 			"css-src_app_pages_services_advertising-stands-and-pylons_advertising_stands_and_pylons_module_css": 0,
+/******/ 			"css-src_app_pages_services_panel-bracket_panelBracket_module_css": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = function(chunkId, promises) {
@@ -843,7 +846,7 @@
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(/^(app(\/(page(|s\/portfolio\/page)|layout)|\-pages\-internals)|main\-app)$/.test(chunkId)) {
+/******/ 						if(/^(app(\/(page(s\/(services\/((advertising\-stands\-and\-pylon|light\-boxe|sign)s|panel\-bracket)\/page|(about|contacts|portfolio)\/page)|)|layout)|\-pages\-internals)|main\-app)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise(function(resolve, reject) { installedChunkData = installedChunks[chunkId] = [resolve, reject]; });
 /******/ 							promises.push(installedChunkData[2] = promise);

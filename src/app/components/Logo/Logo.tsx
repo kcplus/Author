@@ -7,7 +7,7 @@ import'./Logo.css'
 const Logo = ({services, clientPage}: any) => {
     return (
         <>
-            <a className={'nav__logo'} href={'/Author_new'}>
+            <a className={'nav__logo'} href={'/'}>
                 <Image src={services || clientPage === true ? color_logo : logo} alt={'Logo'} />
             </a>
         </>

@@ -52,15 +52,15 @@ export const clients_array = [
     {id: 11, value: htp, alt: 'Эйчтипи'},
 ]
 export const nav_array = [
-    {id: 0, value: 'О нас', href: 'pages/about'},
+    {id: 0, value: 'О нас', href: '/pages/about'},
     {id: 1, value: 'Портфолио', href: '/pages/portfolio'},
     {id: 2, value: 'Услуги', href: ''},
-    {id: 3, value: 'Контакты', href: 'pages/contacts'},
-    {id: 4, value: 'Позвонить', href: 'pages/contacts'},
+    {id: 3, value: 'Контакты', href: '/pages/contacts'},
+    {id: 4, value: 'Позвонить', href: '/pages/contacts'},
 ]
 export const services_array = [
-    {id: 0, value: light_boxes, alt: 'Световые короба', href: 'pages/services/light-boxes'},
-    {id: 1, value: signs, alt: 'Вывески', href: 'pages/services/signs'},
+    {id: 0, value: light_boxes, alt: 'Световые короба', href: '/pages/services/light-boxes'},
+    {id: 1, value: signs, alt: 'Вывески', href: '/pages/services/signs'},
     {id: 2, value: large_format_printing, alt: 'Широкоформатная печать', href: 'pages/services/large-format-printing'},
     {id: 3, value: roof_installations, alt: 'Крышные установки', href: 'pages/services/roof-installations'},
     {id: 4, value: interior_designs, alt: 'Интерьерное оформление', href: 'pages/services/interior-designs'},

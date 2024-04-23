@@ -4,7 +4,9 @@ import './Button.css'
 const Button = ({children}: any) => {
     return (
         <div className="btn-container">
-            <button className="btn btn-primary" type="button">{children}</button>
+            <a href={'/pages/contacts'}>
+                <button className="btn btn-primary" type="button">{children}</button>
+            </a>
         </div>
     );
 };

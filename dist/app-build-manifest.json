@@ -1,22 +1,62 @@
 {
   "pages": {
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_components_OverlayImage_overlayImage_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/chunks/app/page.js"
+    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/css-src_app_globals_css.css",
       "static/chunks/app/layout.js"
     ],
-    "/page": [
+    "/pages/about/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-d0d789.css",
-      "static/chunks/app/page.js"
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/chunks/app/pages/about/page.js"
     ],
     "/pages/portfolio/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-d0d789.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
       "static/chunks/app/pages/portfolio/page.js"
+    ],
+    "/pages/services/light-boxes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/chunks/app/pages/services/light-boxes/page.js"
+    ],
+    "/pages/services/signs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/chunks/app/pages/services/signs/page.js"
+    ],
+    "/pages/services/advertising-stands-and-pylons/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_advertising-stands-and-pylons_advertising_stands_and_pylons_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/chunks/app/pages/services/advertising-stands-and-pylons/page.js"
+    ],
+    "/pages/contacts/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/css/css-src_app_components_OverlayImage_overlayImage_module_css.css",
+      "static/chunks/app/pages/contacts/page.js"
+    ],
+    "/pages/services/panel-bracket/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_panel-bracket_panelBracket_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/chunks/app/pages/services/panel-bracket/page.js"
     ]
   }
 }
