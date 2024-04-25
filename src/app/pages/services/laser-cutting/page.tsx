@@ -14,7 +14,7 @@ const LaserCutting = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 50
-    const marginLeft = 490
+    const marginLeft = 385
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,7 +35,7 @@ const LaserCutting = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Лазерная резкаы</h1>
+                <h1 className={styles.title}>Лазерная резкаы</h1>
                 <div className={styles.boxes_block}>
                     {laser_cutting_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

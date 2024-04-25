@@ -14,7 +14,7 @@ const InformationStands = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 50
-    const marginLeft = 470
+    const marginLeft = 365
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,7 +35,7 @@ const InformationStands = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Информационные стенды</h1>
+                <h1 className={styles.title}>Информационные стенды</h1>
                 <div className={styles.boxes_block}>
                     {information_stands_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

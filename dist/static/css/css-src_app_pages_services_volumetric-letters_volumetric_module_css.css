@@ -1,0 +1,91 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/pages/services/volumetric-letters/volumetric.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************/
+.volumetric_container_page__pNgLx {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 50px;
+    position: relative;
+}
+.volumetric_container_boxes__7IBFc {
+    margin-left: 60px;
+}
+.volumetric_title__DfD23 {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76px;
+}
+.volumetric_boxes_block__nYFge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: -47px;
+}
+
+.volumetric_box__KRPoI {
+    width: 356px;
+    height: 338px;
+    border: 1px solid #b4b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.volumetric_text__UXrqI {
+    width: 320px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28.77px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.volumetric_image_style__o9lLc {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 48px;
+    height: 45px;
+}
+.volumetric_image_cat__Y8I3j {
+    width: 750px;
+    height: 290px;
+    margin-top: 50px;
+}
+.volumetric_no_background__cJVku {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -330px;
+    right: 90px;
+    height: 300px;
+}
+.volumetric_imageBlock__QXgda {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    width: 356px;
+    height: 338px;
+}
+.volumetric_imageBlockEnter__5Qxtt {
+    position: absolute;
+    width: 356px;
+    height: 338px;
+}
+.volumetric_button__BlTAr {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 670px) {
+    .volumetric_no_background__cJVku {
+        position: static;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+

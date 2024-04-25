@@ -14,7 +14,7 @@ const ThreeDModeling = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 50
-    const marginLeft = 480
+    const marginLeft = 380
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,7 +35,7 @@ const ThreeDModeling = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>3D моделирование</h1>
+                <h1 className={styles.title}>3D моделирование</h1>
                 <div className={styles.boxes_block}>
                     {threeD_modeling_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

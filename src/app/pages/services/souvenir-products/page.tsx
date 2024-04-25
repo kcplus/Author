@@ -14,7 +14,7 @@ const SouvenirProducts = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 50
-    const marginLeft = 470
+    const marginLeft = 370
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,7 +35,7 @@ const SouvenirProducts = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Сувенирная продукция</h1>
+                <h1 className={styles.title}>Сувенирная продукция</h1>
                 <div className={styles.boxes_block}>
                     {souvenir_products_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

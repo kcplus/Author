@@ -14,7 +14,7 @@ const PanelBracket = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 50
-    const marginLeft = 490
+    const marginLeft = 385
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,7 +35,7 @@ const PanelBracket = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Панель-кронштейн</h1>
+                <h1 className={styles.title}>Панель-кронштейн</h1>
                 <div className={styles.boxes_block}>
                     {panel_bracket_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

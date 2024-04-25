@@ -9,7 +9,7 @@
     right: 40px;
     opacity: 0;
     animation: fade-in 0.5s ease-in-out forwards;
-    bottom: -360px;
+    bottom: -400px;
 }
 
 @keyframes fade-in {

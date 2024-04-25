@@ -1,16 +1,16 @@
 'use client'
-import mahorka from "../assets/Clients/image 1.svg";
-import svyaznoi from "../assets/Clients/image 2.svg";
-import ziko from "../assets/Clients/image 3.svg";
-import invitro from "../assets/Clients/image 4.svg";
-import mts from "../assets/Clients/image 5.svg";
-import milavitsa from "../assets/Clients/799px-Logo_Milavitsa-removebg-preview 1.svg";
-import oz from "../assets/Clients/image 7.svg";
-import gazprom from "../assets/Clients/image 6.svg";
-import gefest from "../assets/Clients/image 8.svg";
-import mirtek from "../assets/Clients/Group 1.svg";
-import elena from "../assets/Clients/image 9.svg";
-import htp from "../assets/Clients/image 10.svg";
+import mahorka from "../assets/Clients/махорка 1.svg";
+import svyaznoi from "../assets/Clients/связной 1.svg";
+import ziko from "../assets/Clients/ZIKO 1.svg";
+import invitro from "../assets/Clients/invitro 1.svg";
+import mts from "../assets/Clients/МТС.svg";
+import milavitsa from "../assets/Clients/MILAVITSA.svg";
+import oz from "../assets/Clients/OZ.svg";
+import gazprom from "../assets/Clients/Газпром.svg";
+import gefest from "../assets/Clients/Gefest.svg";
+import mirtek from "../assets/Clients/Миртек.svg";
+import elena from "../assets/Clients/ELEMA.svg";
+import htp from "../assets/Clients/HTP.svg";
 import light_boxes from "../assets/Services/image1.svg";
 import signs from "../assets/Services/image2.svg";
 import large_format_printing from "../assets/Services/image3.svg";
@@ -54,7 +54,7 @@ export const clients_array = [
 export const nav_array = [
     {id: 0, value: 'О нас', href: '/pages/about'},
     {id: 1, value: 'Портфолио', href: '/pages/portfolio'},
-    {id: 2, value: 'Услуги', href: ''},
+    {id: 2, value: 'Услуги', href: '/'},
     {id: 3, value: 'Контакты', href: '/pages/contacts'},
     {id: 4, value: 'Позвонить', href: '/pages/contacts'},
 ]

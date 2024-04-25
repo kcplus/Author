@@ -7,11 +7,16 @@
 .container_boxes {
     margin-left: 120px;
 }
-
+.title {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76px;
+}
 .boxes_block {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-top: -47px;
 }
 
 .box {

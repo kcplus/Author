@@ -1,29 +1,50 @@
-import React from 'react';
+'use client'
+import React, {useState} from 'react';
 import './Nav.css'
 import {nav_array} from "../../constants/Constants";
+import butt from '../../assets/Property 1=Frame 1.svg'
+import hover_button from '../../assets/Property 1=Frame 2.svg'
+import hover_button_black from '../../assets/Property 1=Frame 7.svg'
+import Image from "next/image";
 
 
-const Nav = ({services}: any) => {
+const Nav = ({services, clientPage}: any) => {
+    const [mouseEnter, setMouseEnter] = useState(false)
+
     const scrollToBlock = () => {
-        const block: any = document.getElementById('services');
-        block.scrollIntoView({behavior: 'smooth'});
+        if (services || clientPage === true) {
+            return
+        } else {
+            const block: any = document.getElementById('services');
+            block.scrollIntoView({behavior: 'smooth'});
+        }
     }
+    const handleMouseEnter = () => {
+        setMouseEnter(true);
+    };
+
+    const handleMouseLeave = () => {
+        setMouseEnter(false);
+    };
 
     return (
         <ul className="nav__list">
             {nav_array.map((item, index) => (
-                <li key={item.id}  className={index === nav_array.length - 1 ? 'button' : ''}>
-                    <a className={'nav__link'}
-                       href={index === 2 ? undefined : item.href}
-                       style={services === true ? {color: 'black'} : {color: 'white'}}
-                       onClick={item.id === 2 ? scrollToBlock : undefined}
-                    >
-                        {item.value}
-                    </a>
-                    {/*{index === nav_array.length - 1 ?
-                        <a className={'button'}>Позвонить</a> : ''}*/}
-                </li>
-            ))}
+                    <li key={item.id}>
+                        <a className={'nav__link'}
+                           href={services === true ? item.href : services || clientPage === true && index === 2 ? '/' : index === 2 ? '#' : item.href}
+                           style={services === true ? {color: 'black'} : {color: 'white'}}
+                           onClick={item.id === 2 ? scrollToBlock : undefined}
+                        >
+                            {item.id === 4 ?
+                                <Image
+                                    src={mouseEnter && services ? hover_button_black : mouseEnter ? hover_button : butt}
+                                    alt={''} style={{marginTop: '-23px'}}
+                                    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/> : item.value}
+                        </a>
+                    </li>
+                )
+            )}
         </ul>
     )
 };

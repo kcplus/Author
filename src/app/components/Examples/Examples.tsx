@@ -27,7 +27,9 @@ const Examples = () => {
             </div>
             <SimpleSlider/>
             <div className={styles.imageConnected}>
-                <Image src={arrow} alt={'Стрелка'}/>
+                <a href={'/pages/portfolio'}>
+                    <Image src={arrow} alt={'Стрелка'}/>
+                </a>
             </div>
         </div>
     );

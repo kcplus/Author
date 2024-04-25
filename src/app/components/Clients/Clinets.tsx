@@ -13,7 +13,12 @@ const Clients = () => {
                 {clients_array.map((item) => (
                     <div className={styles.item} key={item.id}>
                         <div className={styles.itemBox}>
-                            <Image key={item.id} src={item.value} alt={item.alt}/>
+                                <Image
+                                    key={item.id}
+                                    src={item.value}
+                                    alt={item.alt}
+                                    style={item.id === 5 || item.id === 7 ? {marginTop: '-20px'} : item.id === 9 ? {marginTop: '37px', marginLeft: '15px'} : {}}
+                                />
                         </div>
                     </div>
                 ))}

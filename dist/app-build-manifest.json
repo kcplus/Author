@@ -4,7 +4,7 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/css-src_app_components_OverlayImage_overlayImage_module_css.css",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
       "static/chunks/app/page.js"
     ],
     "/layout": [
@@ -13,50 +13,141 @@
       "static/css/css-src_app_globals_css.css",
       "static/chunks/app/layout.js"
     ],
-    "/pages/about/page": [
+    "/pages/services/life-figures/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
-      "static/chunks/app/pages/about/page.js"
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/life-figures/page.js"
     ],
-    "/pages/portfolio/page": [
+    "/pages/services/tables/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
-      "static/chunks/app/pages/portfolio/page.js"
+      "static/css/css-src_app_pages_services_volumetric-letters_volumetric_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/tables/page.js"
     ],
-    "/pages/services/light-boxes/page": [
+    "/pages/services/advertising-stands/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
-      "static/chunks/app/pages/services/light-boxes/page.js"
+      "static/css/css-src_app_pages_services_advertising-signs_advertising_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/advertising-stands/page.js"
     ],
-    "/pages/services/signs/page": [
+    "/pages/services/exhibition-stands/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
-      "static/chunks/app/pages/services/signs/page.js"
-    ],
-    "/pages/services/advertising-stands-and-pylons/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/css-src_app_pages_services_advertising-stands-and-pylons_advertising_stands_and_pylons_module_css.css",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
-      "static/chunks/app/pages/services/advertising-stands-and-pylons/page.js"
-    ],
-    "/pages/contacts/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
-      "static/css/css-src_app_components_OverlayImage_overlayImage_module_css.css",
-      "static/chunks/app/pages/contacts/page.js"
+      "static/css/css-src_app_pages_services_exhibition-stands_exhibitionStands_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/exhibition-stands/page.js"
     ],
     "/pages/services/panel-bracket/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/css-src_app_pages_services_panel-bracket_panelBracket_module_css.css",
-      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-8d9422.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
       "static/chunks/app/pages/services/panel-bracket/page.js"
+    ],
+    "/pages/services/advertising-stands-and-pylons/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_advertising-stands-and-pylons_advertising_stands_and_pylons_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/advertising-stands-and-pylons/page.js"
+    ],
+    "/pages/services/information-stands/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_information-stands_information_stands_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/information-stands/page.js"
+    ],
+    "/pages/services/advertising-designs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_advertising-designs_advertising_designs_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/advertising-designs/page.js"
+    ],
+    "/pages/services/milling/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_advertising-signs_advertising_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/milling/page.js"
+    ],
+    "/pages/services/laser-cutting/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_advertising-signs_advertising_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/laser-cutting/page.js"
+    ],
+    "/pages/services/engraving/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_engraving_engraving_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/engraving/page.js"
+    ],
+    "/pages/services/threeD-modeling/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_threeD-modeling_threeD-modeling_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/threeD-modeling/page.js"
+    ],
+    "/pages/services/souvenir-products/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_souvenir-products_souvenir-products_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/souvenir-products/page.js"
+    ],
+    "/pages/services/design-services/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_design-services_design-services_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/design-services/page.js"
+    ],
+    "/pages/services/stickers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_stickers_stickers_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/stickers/page.js"
+    ],
+    "/pages/about/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/about/page.js"
+    ],
+    "/pages/portfolio/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/portfolio/page.js"
+    ],
+    "/pages/contacts/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/css/css-src_app_components_OverlayImage_overlayImage_module_css.css",
+      "static/chunks/app/pages/contacts/page.js"
+    ],
+    "/pages/services/light-boxes/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/light-boxes/page.js"
+    ],
+    "/pages/services/signs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/css-src_app_pages_services_signs_signs_module_css.css",
+      "static/css/css-node_modules_slick-carousel_slick_slick-theme_css-node_modules_slick-carousel_slick_slick-13e646.css",
+      "static/chunks/app/pages/services/signs/page.js"
     ]
   }
 }

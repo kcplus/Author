@@ -14,7 +14,7 @@ const AdvertisingDesigns = () => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
     const marginTop = 40
-    const marginLeft = 490
+    const marginLeft = 370
 
     const onClickHandler = () => {
         setClick(!click)
@@ -35,7 +35,7 @@ const AdvertisingDesigns = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1>Рекламные конструкции</h1>
+                <h1 className={styles.title}>Рекламные конструкции</h1>
                 <div className={styles.boxes_block}>
                     {advertising_designs_arr.map((box: any) => (
                         <div key={box.id} style={{position: 'relative'}}>

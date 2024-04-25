@@ -1,14 +1,24 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Image from "next/image";
 import logo from '../../assets/logo.svg'
 import color_logo from '../../assets/color_logo.svg'
-import'./Logo.css'
+import './Logo.css'
 
 const Logo = ({services, clientPage}: any) => {
+    const [mouseEnter, setMouseEnter] = useState(false)
+
+    const handleMouseEnter = () => {
+        setMouseEnter(true);
+    };
+
+    const handleMouseLeave = () => {
+        setMouseEnter(false);
+    };
     return (
         <>
             <a className={'nav__logo'} href={'/'}>
-                <Image src={services || clientPage === true ? color_logo : logo} alt={'Logo'} />
+                <Image src={services || clientPage || mouseEnter === true ? color_logo : logo}
+                       onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} width={271} height={82} alt={'Logo'}/>
             </a>
         </>
     );

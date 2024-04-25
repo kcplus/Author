@@ -58,7 +58,7 @@ const Portfolio = () => {
     return (
         <>
             <div style={{width: '100%', height: '100%', position: 'relative', backgroundColor: 'black'}}>
-                <Header/>
+                <Header clientPage={true}/>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <h1 className={styles.title}>Наши работы</h1>
                     <Image src={vector} alt={'VECTOR'} style={{position: 'absolute', right: '580px', top: '172px'}}/>
@@ -89,12 +89,12 @@ const Portfolio = () => {
                 </div>
                 <div style={{display: 'flex'}}>
                     <Image src={image15} alt={''} style={{objectFit: 'cover'}}/>
-                    <div>
-                        <Image src={image16} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image17} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={454} height={362}/>
+                    <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                        <Image src={image16} alt={''} style={{objectFit: 'cover'}} width={377} height={365}/>
+                        <Image src={image17} alt={''} style={{objectFit: 'cover'}} width={483} height={366}/>
+                        <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={454} height={366}/>
                         <Image src={image19} alt={''} style={{objectFit: 'cover'}} height={364}/>
-                        <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={585} height={364}/>
+                        <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={588} height={364}/>
                     </div>
                 </div>
                 <div style={{display: 'flex', marginTop: '0'}}>

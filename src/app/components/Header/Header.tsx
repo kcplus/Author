@@ -24,7 +24,7 @@ const Header = ({services, clientPage}: any) => {
             <nav className="nav container">
                 <Logo services={services} clientPage={clientPage}/>
                 <div className={'nav__menu'} id="nav-menu">
-                    <Nav services={services} />
+                    <Nav services={services} clientPage={clientPage}/>
                 </div>
                 <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
                     {/*<IoMenu color={services === true ? 'black' : 'white'}/>*/}

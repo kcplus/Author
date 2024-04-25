@@ -10,11 +10,16 @@
 .panelBracket_container_boxes__K0WXl {
     margin-left: 60px;
 }
-
+.panelBracket_title__nGCe_ {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76px;
+}
 .panelBracket_boxes_block__xvA6U {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-top: -47px
 }
 
 .panelBracket_box__w62DJ {
@@ -52,7 +57,7 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    bottom: -230px;
+    bottom: -300px;
     right: 90px;
     height: 300px;
 }

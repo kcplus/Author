@@ -1,0 +1,91 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/pages/services/life-figures/lifeFigures.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+.lifeFigures_container_page__oJdYS {
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 50px;
+    position: relative;
+}
+.lifeFigures_container_boxes__1j_kr {
+    margin-left: 60px;
+}
+.lifeFigures_title__gEChi {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 76px;
+}
+.lifeFigures_boxes_block__JEAWs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: -47px
+}
+
+.lifeFigures_box__XikIw {
+    width: 356px;
+    height: 338px;
+    border: 1px solid #b4b0b0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.lifeFigures_text__lsau9 {
+    width: 320px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28.77px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.lifeFigures_image_style__bvZWS {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 48px;
+    height: 45px;
+}
+.lifeFigures_image_cat__oiURu {
+    width: 750px;
+    height: 290px;
+    margin-top: 50px;
+}
+.lifeFigures_no_background__VJ_fH {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -300px;
+    right: 90px;
+    height: 300px;
+}
+.lifeFigures_imageBlock__txrt8 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+    width: 356px;
+    height: 338px;
+}
+.lifeFigures_imageBlockEnter__2bJO4 {
+    position: absolute;
+    width: 356px;
+    height: 338px;
+}
+.lifeFigures_button__N3gsA {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 670px) {
+    .lifeFigures_no_background__VJ_fH {
+        position: static;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+

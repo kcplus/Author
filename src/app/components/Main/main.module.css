@@ -55,6 +55,10 @@
     width: 409px;
     height: 64px;
 }
+.button:hover {
+    background-color: transparent;
+    color: turquoise;
+}
 
 .hand_one {
     position: absolute;
