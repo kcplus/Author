@@ -14,7 +14,7 @@ const Contacts = () => {
     return (
         <>
             <OverlayImage contacts={true}>
-                <Header/>
+                <Header contactsPage={true}/>
                 <div className={styles.mainBlock}>
                     <div>
                         <h1 className={styles.title}>Готов с нами поработать?</h1>

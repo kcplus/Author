@@ -58,6 +58,7 @@
 .button:hover {
     background-color: transparent;
     color: turquoise;
+    border: 2px solid black
 }
 
 .hand_one {

@@ -35,7 +35,7 @@ const LaserCutting = () => {
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
-                <h1 className={styles.title}>Лазерная резкаы</h1>
+                <h1 className={styles.title}>Лазерная резка</h1>
                 <div className={styles.boxes_block}>
                     {laser_cutting_arr.map((box) => (
                         <div key={box.id} style={{position: 'relative'}}>

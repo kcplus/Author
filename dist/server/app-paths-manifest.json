@@ -1,10 +1,10 @@
 {
   "/page": "app/page.js",
-  "/pages/services/stickers/page": "app/pages/services/stickers/page.js",
-  "/pages/about/page": "app/pages/about/page.js",
-  "/pages/portfolio/page": "app/pages/portfolio/page.js",
+  "/pages/services/laser-cutting/page": "app/pages/services/laser-cutting/page.js",
   "/pages/contacts/page": "app/pages/contacts/page.js",
-  "/pages/services/light-boxes/page": "app/pages/services/light-boxes/page.js",
+  "/pages/portfolio/page": "app/pages/portfolio/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/pages/services/signs/page": "app/pages/services/signs/page.js"
+  "/pages/about/page": "app/pages/about/page.js",
+  "/pages/services/light-boxes/page": "app/pages/services/light-boxes/page.js",
+  "/pages/services/large-format-printing/page": "app/pages/services/large-format-printing/page.js"
 }

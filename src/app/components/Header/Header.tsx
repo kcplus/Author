@@ -6,7 +6,7 @@ import './Header.css'
 import Nav from "../Nav/Nav";
 
 
-const Header = ({services, clientPage}: any) => {
+const Header = ({services, clientPage, contactsPage}: any) => {
     const [showMenu, setShowMenu] = useState(false);
 
     const toggleMenu = () => {
@@ -24,7 +24,7 @@ const Header = ({services, clientPage}: any) => {
             <nav className="nav container">
                 <Logo services={services} clientPage={clientPage}/>
                 <div className={'nav__menu'} id="nav-menu">
-                    <Nav services={services} clientPage={clientPage}/>
+                    <Nav services={services} clientPage={clientPage} contactsPage={contactsPage}/>
                 </div>
                 <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
                     {/*<IoMenu color={services === true ? 'black' : 'white'}/>*/}
