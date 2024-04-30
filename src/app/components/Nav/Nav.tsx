@@ -13,7 +13,7 @@ const Nav = ({services, clientPage, contactsPage}: any) => {
 
     const scrollToBlock = () => {
         if (services || clientPage || contactsPage === true) {
-            return
+            return;
         } else {
             const block: any = document.getElementById('services');
             block.scrollIntoView({behavior: 'smooth'});
@@ -32,7 +32,7 @@ const Nav = ({services, clientPage, contactsPage}: any) => {
             {nav_array.map((item, index) => (
                     <li key={item.id}>
                         <a className={'nav__link'}
-                           href={services === true ? item.href : services || clientPage === true && index === 2 ? '/' :  contactsPage === true && index === 2 ? '/' : item.href}
+                           href={services === true ? item.href : services || clientPage === true && index === 2 ? '/' :  contactsPage === true && index === 2 ? '/' : index === 2 ? '#' : item.href}
                            style={services === true ? {color: 'black'} : {color: 'white'}}
                            onClick={item.id === 2 ? scrollToBlock : undefined}
                         >

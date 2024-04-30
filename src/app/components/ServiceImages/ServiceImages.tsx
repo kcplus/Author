@@ -6,7 +6,6 @@ import arrow from "../../assets/Vector.svg";
 import Button from "../Button/Button";
 import TaplinkButton from "../TaplinkButton/TaplinkButton";
 import Contact from "../Contact/Contact";
-import cat from "../../assets/Pages/Light-boxes/специалист1 1.svg";
 
 const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
     const [isHovered, setIsHovered] = useState(null);
@@ -29,7 +28,7 @@ const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
     return (
         <>
             <div className={styles.boxes_block}>
-                {imagesArray.map((box) => (
+                {imagesArray.map((box: any) => (
                     <div key={box.id} style={{position: 'relative'}}>
                         <div
                             className={styles.box}

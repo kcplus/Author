@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Header from "../../components/Header/Header";
 import vector from '../../assets/Vector.svg'
@@ -50,62 +51,8 @@ import image35 from '../../assets/Works/photo1704789601 (2) 1.jpg'
 import image36 from '../../assets/Works/797ff788-ce3d-4d8f-90b7-a476ed130efa 1.jpg'
 import image37 from '../../assets/Works/b7bfeedf-9b60-4daa-adfe-45877201dac0 1.jpg'
 import Footer from "../../components/Footer/Footer";
-import {Metadata} from "next";
 
-export const metadata: Metadata = {
-    title: "Наши работы",
-    description: "Наши работы",
-    keywords: ['изготовление изделий из фанеры на заказ',
-        'услуги лазерной резки фанеры цена',
-        'логотип изготовление',
-        'баннер растяжка цена',
-        'растяжка для баннера',
-        'баннер на растяжке',
-        'рекламные наклейки на авто',
-        'наклейки на стекло реклама',
-        'реклама на машину наклейки изготовление',
-        'наклейки с рекламой',
-        'рекламные наклейки стекло',
-        'заказать уголок потребителя',
-        'уголок потребителя для общепита',
-        'печать на холсте модульные картины',
-        'картина на холсте заказать',
-        'картина по фото на холсте',
-        'изготовление картин на холсте',
-        'производство картин на холсте',
-        'картины на холсте цена',
-        'напечатать картину на холсте недорого',
-        'логотип на заказ цена',
-        'заказать логотип компании',
-        'широкоформатная печать на баннерной ткани',
-        'карман оргстекло',
-        'карманы для стендов',
-        'цифровая печать на пленке',
-        'широкоформатная печать на пленке',
-        'типография печать на пленке',
-        'цветная печать на пленке',
-        'фотопечать на пленке',
-        'цветная печать на самоклеющейся пленке',
-        'срочная печать на самоклеющейся пленке',
-        'срочная печать на самоклейке',
-        'уф печать на прозрачной пленке',
-        'уф печать на самоклеющейся пленке',
-        'широкоформатная печать самоклеющаяся пленка',
-        'широкоформатная печать на самоклеющейся',
-        'фотопечать на прозрачной пленке',
-        'уф печать пленка',
-        'фрезеровка на заказ',
-        'резка на фрезерном станке',
-        'фрезерная резка пластика',
-        'фрезерная резка цена',
-        'срочная широкоформатная печать',
-        'широкоформатная печать прайс',
-        'широкоформатная печать для наружной рекламы',
-        'круглосуточная широкоформатная печать',
-        'широкоформатная печать цветная',
-        'тейбл тент'
-    ]
-};
+
 const Portfolio = () => {
     return (
         <>
@@ -115,19 +62,17 @@ const Portfolio = () => {
                     <h1 className={styles.title}>Наши работы</h1>
                     <Image src={vector} alt={'VECTOR'} style={{position: 'absolute', right: '580px', top: '172px'}}/>
                 </div>
-                <div style={{display: 'flex', width: '100%', height: '100%', overflow: 'hidden'}}>
-                    <div
-                        style={{display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', width: '100%', height: '100%'}}>
-                        <Image src={image1} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image2} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image3} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image4} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image5} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image6} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image7} alt={''} style={{objectFit: 'cover'}}/>
-                        <Image src={image8} alt={''} style={{objectFit: 'cover'}}/>
-
-                    </div>
+                <div style={{display: 'flex'}}>
+                    <Image src={image1} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image2} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image3} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image4} alt={''} style={{objectFit: 'cover'}}/>
+                </div>
+                <div style={{display: 'flex'}}>
+                    <Image src={image5} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image6} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image7} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image8} alt={''} style={{objectFit: 'cover'}}/>
                 </div>
                 <div style={{display: 'flex'}}>
                     <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522}/>
@@ -186,3 +131,77 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+
+/*<>
+    <div style={{width: '100%', height: '100%', position: 'relative', backgroundColor: 'black'}}>
+        <Header clientPage={true}/>
+        <div style={{display: 'flex', justifyContent: 'center'}}>
+            <h1 className={styles.title}>Наши работы</h1>
+            <Image src={vector} alt={'VECTOR'} style={{position: 'absolute', right: '580px', top: '172px'}}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image1} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image2} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image3} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image4} alt={''} style={{objectFit: 'cover'}} height={643} width={window.innerWidth === 1366 ? 563 : 454}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image5} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image6} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image7} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image8} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 563 : 454} height={362}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522}/>
+            <Image src={image10} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 1045 : 935} height={522}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image11} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image12} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image13} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image14} alt={''} style={{objectFit: 'cover'}} height={568} width={window.innerWidth === 1366 ? 563 : 450}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image15} alt={''} style={{objectFit: 'cover'}}/>
+            <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                <Image src={image16} alt={''} style={{objectFit: 'cover'}} width={377} height={365}/>
+                <Image src={image17} alt={''} style={{objectFit: 'cover'}} width={483} height={366}/>
+                <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 563 : 454} height={366}/>
+                <Image src={image19} alt={''} style={{objectFit: 'cover'}} height={364}/>
+                <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 698 : 588} height={364}/>
+            </div>
+        </div>
+        <div style={{display: 'flex', marginTop: '0'}}>
+            <Image src={image21} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image22} alt={''} style={{objectFit: 'cover'}} width={460} height={529}/>
+            <Image src={image23} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image24} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 477 : undefined} height={window.innerWidth === 1366 ? 529 : undefined}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image25} alt={''} style={{objectFit: 'cover'}} width={1025} height={466}/>
+            <Image src={image26} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 988 : 878}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image27} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image28} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image29} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 853 : 740} height={437}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image30} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image31} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image32} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image33} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 664 : 554} height={530}/>
+        </div>
+        <div style={{display: 'flex'}}>
+            <Image src={image34} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image35} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image36} alt={''} style={{objectFit: 'cover'}}/>
+            <Image src={image37} alt={''} style={{objectFit: 'cover'}} width={window.innerWidth === 1366 ? 405 : 299} height={461}/>
+        </div>
+        <div style={{marginTop: '250px'}}>
+            <Footer clientPage={true}/>
+        </div>
+    </div>
+
+</>*/

@@ -40,24 +40,25 @@
     margin-left: 710px
 }
 
-@media screen and (max-width: 1500px) {
+/*@media screen and (max-width: 1500px) {
     .textContainer {
         left: 370px
     }
     .imageConnected {
         margin-left: 700px
     }
-}
+}*/
 
-@media screen and (max-width: 1436px) {
+/*@media screen and (max-width: 1436px) {
     .textContainer {
         left: 280px
     }
     .imageConnected {
         margin-left: 600px
     }
-}
+}*/
 
+/*
 @media screen and (max-width: 1300px) {
     .textContainer {
         left: 180px
@@ -65,4 +66,4 @@
     .imageConnected {
         margin-left: 500px
     }
-}
+}*/
