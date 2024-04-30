@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import Header from "../../components/Header/Header";
 import ContactForm from "../../components/ContactForm/ContactForm";
@@ -9,7 +8,11 @@ import OverlayImage from "../../components/OverlayImage/OverlayImage";
 import white_inst from "../../assets/Social_icons/кнопка instagram.svg";
 import white_tiktok from "../../assets/Social_icons/кнопка тик ток.svg";
 import payments from "../../assets/виды оплат.svg";
-
+import {Metadata} from "next";
+export const metadata: Metadata = {
+    title: "Контакты",
+    description: "Напишите нам или отправьте электронное письмо. Мы хотим услышать о вашем проекте и реализовать его в жизнь!",
+};
 const Contacts = () => {
     return (
         <>

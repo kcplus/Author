@@ -11,17 +11,17 @@ const Contact = ({src, onCloseHandler, marginTop, marginLeft}: any) => {
         <div className={styles.contact_block}>
             <div className={styles.socialIcons}>
                 <button className={styles.iconViber}>
-                    <a href={'viber://chat?number=%2B375444966866'}>
+                    <a href={'viber://chat?number=%2B375444966866'} target={'_blank'}>
                         <Image src={viberIcon} alt={'Вайбер'} width={40} height={40}/>
                     </a>
                 </button>
                 <button className={styles.iconWhatsUp}>
-                    <a href={'https://wa.me/375444966866'}>
+                    <a href={'https://wa.me/375444966866'} target={'_blank'}>
                         <Image src={whatsupIcon} alt={'Вотсап'} width={40} height={40}/>
                     </a>
                 </button>
                 <button className={styles.iconTelegram}>
-                    <a href={'tg://resolve?domain=authorstudia'}>
+                    <a href={'tg://resolve?domain=authorstudia'} target={'_blank'}>
                         <Image src={telegramIcon} alt={'Телеграмм'} width={40} height={40}/>
                     </a>
                 </button>

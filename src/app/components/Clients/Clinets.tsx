@@ -10,7 +10,7 @@ const Clients = () => {
         <div className={styles.container}>
             <h2 className={styles.mainText}>НАШИ КЛИЕНТЫ</h2>
             <div className={styles.gallery}>
-                {clients_array.map((item) => (
+                {/*{clients_array.map((item) => (
                     <div className={styles.item} key={item.id}>
                         <div className={styles.itemBox}>
                                 <Image
@@ -21,7 +21,7 @@ const Clients = () => {
                                 />
                         </div>
                     </div>
-                ))}
+                ))}*/}
             </div>
         </div>
     );

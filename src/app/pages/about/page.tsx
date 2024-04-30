@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import Header from "../../components/Header/Header";
 import styles from './about.module.css'
@@ -8,7 +7,12 @@ import vector from '../../assets/Vector.svg'
 import Image from "next/image";
 import HighlightKeywords from "../../components/HighlightKeywords/HighlightKeywords";
 import Footer from "../../components/Footer/Footer";
+import type {Metadata} from "next";
 
+export const metadata: Metadata = {
+    title: "О нас",
+    description: "Мы креативная команда, готовая воплотить все ваши идеи в жизнь",
+};
 const About = () => {
     return (
         <>

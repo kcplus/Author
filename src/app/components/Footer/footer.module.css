@@ -1,5 +1,5 @@
 .container {
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
     margin-top: 300px;
 }

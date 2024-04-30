@@ -7,7 +7,7 @@
     "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {

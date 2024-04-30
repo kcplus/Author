@@ -37,10 +37,10 @@ const Footer = ({clientPage}: any) => {
                                   style={clientPage ? {color: 'white', whiteSpace: 'nowrap'} : {whiteSpace: 'nowrap'}}>+375 (44) 496-68-66</span>
                         </div>
                     </div>
-                    <a href={inst_URL}>
+                    <a href={inst_URL} target={'_blank'}>
                         <Image src={clientPage ? white_inst : inst} style={{cursor: 'pointer'}} alt={'Инстаграмм'}/>
                     </a>
-                    <a href={tiktok_URL}>
+                    <a href={tiktok_URL} target={'_blank'}>
                         <Image src={clientPage ? white_tiktok : tiktok} style={{cursor: 'pointer'}} alt={'ТикТок'}/>
                     </a>
                     <button className={styles.button}>
