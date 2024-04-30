@@ -66,13 +66,13 @@ const Portfolio = () => {
                     <Image src={image1} alt={''} style={{objectFit: 'cover'}}/>
                     <Image src={image2} alt={''} style={{objectFit: 'cover'}}/>
                     <Image src={image3} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image4} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image4} alt={''} style={{objectFit: 'cover'}} width={453} height={643}/>
                 </div>
                 <div style={{display: 'flex'}}>
                     <Image src={image5} alt={''} style={{objectFit: 'cover'}}/>
                     <Image src={image6} alt={''} style={{objectFit: 'cover'}}/>
                     <Image src={image7} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image8} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image8} alt={''} style={{objectFit: 'cover'}} width={453} height={362}/>
                 </div>
                 <div style={{display: 'flex'}}>
                     <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522}/>

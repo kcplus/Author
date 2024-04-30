@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://author.by
+
+# Sitemaps
+Sitemap: https://author.by/sitemap.xml
