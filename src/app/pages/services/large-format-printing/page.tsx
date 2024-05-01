@@ -1,67 +1,70 @@
-'use client'
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './formatPrinting.module.css'
 import cat from '../../../assets/Pages/Large-printing/специалист3 1.svg'
 import Header from "../../../components/Header/Header";
-import Image from "next/image";
-import arrow from "../../../assets/Vector.svg";
 import {format_printing_arr} from "../../../constants/PagesConstants/Large-format-printing/constants";
-import Button from "../../../components/Button/Button";
-import TaplinkButton from "../../../components/TaplinkButton/TaplinkButton";
-import Contact from "../../../components/Contact/Contact";
+import ServiceImages from "../../../components/ServiceImages/ServiceImages";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Широкоформатная печать",
+    description: "Широкоформатная печать",
+    keywords: [
+        'широкоформатная печать на холсте цена',
+        'баннер широкоформатная печать',
+        'широкоформатная печать баннеров дешево',
+        'широкоформатная печать баннеров цена',
+        'широкоформатная печать фото на холсте',
+        'широкоформатная печать на холсте',
+        'широкоформатная печать на пленке цена',
+        'реклама',
+        'печать',
+        'интерьерная широкоформатная печать',
+        'наружная широкоформатная печать',
+        'широкоформатная печать срочно',
+        'широкоформатная печать гомель',
+        'широкоформатная печать реклама',
+        'оперативная широкоформатная печать',
+        'широкоформатная печать на виниле',
+        'широкоформатная печать наклеек',
+        'рекламная широкоформатная печать',
+        'широкоформатная печать наружная реклама',
+        'цифровая широкоформатная печать',
+        'цифровая и широкоформатная печать',
+        'широкоформатная наружная печать',
+        'двусторонняя широкоформатная печать',
+        'полиграфия широкоформатная печать',
+        'широкоформатная и интерьерная печать',
+        'рекламное агентство широкоформатная печать',
+        'широкоформатная печать 5 метров',
+        'широкоформатная печать 3 метра',
+        'широкоформатная печать 1440',
+        'широкоформатная печать баннеров',
+        'широкоформатная печать на самоклеющейся пленке',
+        'широкоформатная печать на пленке самоклейке',
+        'широкоформатная печать на самоклейке',
+        'типография широкоформатная печать',
+        'широкоформатная печать цена',
+        'широкоформатная печать стоимость',
+        'широкоформатная печать заказать',
+        'цена широкоформатной печати',
+        'вывески широкоформатная печать',
+        'интерьерная и широкоформатная печать'
+    ]
+};
 
 const FormatPrinting = () => {
-    const [isHovered, setIsHovered] = useState(null);
-    const [click, setClick] = useState(false)
     const marginTop = 33
     const marginLeft = 370
-
-    const onClickHandler = () => {
-        setClick(!click)
-    }
-
-    const onCloseHandler = () => {
-        setClick(false)
-    }
-
-    const onMouseEnterHandler = (id: any) => {
-        setIsHovered(id)
-    }
-
-    const onMouseLeaveHandler = () => {
-        setIsHovered(null)
-    }
 
     return (
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
                 <h1 className={styles.title}>Широкоформатная печать</h1>
-                <div className={styles.boxes_block}>
-                    {format_printing_arr.map((box) => (
-                        <div key={box.id} style={{position: 'relative'}}>
-                            <div className={styles.box}
-                                 onMouseEnter={() => onMouseEnterHandler(box.id)}
-                                 onMouseLeave={() => onMouseLeaveHandler()}>
-                                <span className={styles.text}>{box.value}</span>
-                                <Image src={arrow} alt={'Стрелка'} className={styles.image_style}/>
-                                <Image src={box.image} alt={'Изображение товара'}
-                                       className={isHovered === null || isHovered !== box.id ? styles.imageBlock : styles.imageBlockEnter}/>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div className={styles.button}>
-                    <Button>Заказать</Button>
-                </div>
+                <ServiceImages imagesArray={format_printing_arr} cat={cat} marginTop={marginTop}
+                               marginLeft={marginLeft}/>
             </div>
-            {!click ? (
-                <button className={styles.no_background} onClick={onClickHandler}>
-                    <TaplinkButton/>
-                </button>
-            ) : (
-                <Contact src={cat} onCloseHandler={onCloseHandler} marginTop={marginTop} marginLeft={marginLeft}/>
-            )}
         </div>
     );
 };

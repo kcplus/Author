@@ -1,68 +1,76 @@
-'use client'
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './signs.module.css'
-import arrow from '../../../assets/Vector.svg'
 import Header from "../../../components/Header/Header";
 import cat from '../../../assets/Pages/Signs/специалист2 1.svg'
-import Image from "next/image";
 import {signs_array} from "../../../constants/PagesConstants/Signs/constants";
-import Button from "../../../components/Button/Button";
-import TaplinkButton from "../../../components/TaplinkButton/TaplinkButton";
-import Contact from "../../../components/Contact/Contact";
+import ServiceImages from "../../../components/ServiceImages/ServiceImages";
+import {Metadata} from "next";
 
-
+export const metadata: Metadata = {
+    title: "Вывески",
+    description: "Вывески",
+    keywords: [
+        'вывески',
+        'вывеска',
+        'Гомель',
+        'реклама',
+        'световые вывески',
+        'вывеска для магазина с подсветкой',
+        'заказать',
+        'изготовление световой вывески',
+        'вывески на продуктовый',
+        'световая вывеска заказать',
+        'обьемные световые вывески',
+        'вывески световые короба',
+        'рекламные вывески баннеры',
+        'баннеры вывески',
+        'изготовление наружной вывески',
+        'светодиодные вывески',
+        'световые вывески гомель',
+        'вывески на ресторанах',
+        'вывески на шиномонтаж',
+        'световые вывески и обьемные буквы',
+        'вывески наружная реклама',
+        'баннеры вывески таблички',
+        'вывески наружная реклама обьемные буквы',
+        'изготовление вывески',
+        'изготовление вывески реклама',
+        'цена вывески',
+        'стоимость изготовления вывески',
+        'цены на наружные вывески',
+        'обьемные буквы для вывески',
+        'монтаж вывески',
+        'вывески для пива',
+        'вывеска для офиса',
+        'вывеска для салона',
+        'вывеска для аптеки',
+        'вывеска для автозапчастей',
+        'вывеска на отель',
+        'вывеска на продукты',
+        'вывеска для стоматологии',
+        'вывеска на пекарню',
+        'вывеска на баню',
+        'вывеска на кондитерскую',
+        'вывеска для столовой',
+        'вывеска для автомойки',
+        'вывески для бани',
+        'вывеска на продуктовый магазин',
+        'вывеска для ип',
+        'вывеска для кондитерской',
+        'вывеска на автомойку'
+    ]
+};
 const Signs = () => {
-    const [isHovered, setIsHovered] = useState(null);
-    const [click, setClick] = useState(false)
     const marginTop = 33
     const marginLeft = 370
-
-    const onClickHandler = () => {
-        setClick(!click)
-    }
-
-    const onCloseHandler = () => {
-        setClick(false)
-    }
-
-    const onMouseEnterHandler = (id: any) => {
-        setIsHovered(id)
-    }
-
-    const onMouseLeaveHandler = () => {
-        setIsHovered(null)
-    }
 
     return (
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
                 <h1 className={styles.title}>Вывески</h1>
-                <div className={styles.boxes_block}>
-                    {signs_array.map((box) => (
-                        <div key={box.id} style={{position: 'relative'}}>
-                            <div className={styles.box}
-                                 onMouseEnter={() => onMouseEnterHandler(box.id)}
-                                 onMouseLeave={() => onMouseLeaveHandler()}>
-                                <span className={styles.text}>{box.value}</span>
-                                <Image src={arrow} alt={'Стрелка'} className={styles.image_style}/>
-                                <Image src={box.image} alt={'Изображение товара'}
-                                       className={isHovered === null || isHovered !== box.id ? styles.imageBlock : styles.imageBlockEnter}/>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div className={styles.button}>
-                    <Button>Заказать</Button>
-                </div>
+                <ServiceImages imagesArray={signs_array} marginTop={marginTop} marginLeft={marginLeft} cat={cat}/>
             </div>
-            {!click ? (
-                <button className={styles.no_background} onClick={onClickHandler}>
-                    <TaplinkButton/>
-                </button>
-            ) : (
-                <Contact src={cat} onCloseHandler={onCloseHandler} marginTop={marginTop} marginLeft={marginLeft}/>
-            )}
         </div>
     );
 };

@@ -7,7 +7,7 @@ import image6 from '../../../assets/Pages/Advertising-stands-and-pylons/image 15
 
 
 export const advertising_stands_and_pylons_arr = [
-    {id: 0, value: 'Рекласмные стеллы АЗС', image: image1},
+    {id: 0, value: 'Рекламные стеллы АЗС', image: image1},
     {id: 1, value: 'Информационные стеллы', image: image2},
     {id: 2, value: 'Уличные стеллы', image: image3},
     {id: 3, value: 'Стеллы для торгового центра', image: image4},

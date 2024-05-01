@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         type: "website",
         title: 'Author',
         description: 'Мы креативная команда, готовая воплотить все ваши идеи в жизнь',
-        url: 'http://author.by',
+        url: 'https://author.by',
         images: [
             {url: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fyandex.ru%2Fmaps%2Forg%2Fgomel_reklama%2F185542797553%2F&psig=AOvVaw3uGEWBeJHY0G7PJptJk6C1&ust=1714548557212000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICeyaC16YUDFQAAAAAdAAAAABAE'}
         ]

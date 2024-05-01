@@ -1,68 +1,78 @@
-'use client'
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './volumetric.module.css'
 import Header from "../../../components/Header/Header";
-import Image from "next/image";
-import arrow from "../../../assets/Vector.svg";
 import cat from '../../../assets/Pages/Volumetric-letters/specialist.svg'
 import {volumetric_letters_arr} from "../../../constants/PagesConstants/Volumetric-letters/constants";
-import Button from '../../../components/Button/Button';
-import TaplinkButton from '../../../components/TaplinkButton/TaplinkButton';
-import Contact from '../../../components/Contact/Contact';
+import ServiceImages from "../../../components/ServiceImages/ServiceImages";
+import {Metadata} from "next";
 
+export const metadata: Metadata = {
+    title: "Обьемные буквы",
+    description: "Обьемные буквы",
+    keywords: [
+        'объемные световые буквы',
+        'заказать световые объемные буквы',
+        'объемные буквы световые',
+        'световые буквы',
+        'световые буквы для наружной рекламы',
+        'реклама',
+        'гомель',
+        'буквы',
+        'световые',
+        'световые буквы пвх',
+        'буквы пвх 10 мм',
+        'изготовление объемных букв из акрила',
+        'объемные буквы из акрила',
+        'объемные световые буквы из акрила',
+        'буквы из акрила',
+        'световые акриловые буквы',
+        'световые вывески и объемные буквы',
+        'буквы световые объемные',
+        'буквы для рекламы',
+        'заказать буквы',
+        'несветовые объемные буквы',
+        'буквы рекламные',
+        'вывески наружная реклама объемные буквы',
+        'вывески объемные буквы реклама',
+        'вывески объемные буквы реклама',
+        'вывески наружная реклама объемные буквы',
+        'объемные буквы для вывески',
+        'реклама объемные буквы цена',
+        'виниловые буквы',
+        'акриловые объемные буквы',
+        'буквы из винила',
+        'объемные буквы изготовление',
+        'заказать объемные буквы',
+        'объемные буквы цена',
+        'вывеска объемные буквы',
+        'наружная вывеска объемные буквы',
+        'объемные буквы реклама',
+        'объемные буквы вывеска',
+        'наружная реклама объемные буквы',
+        'реклама объемные буквы',
+        'буквы объемные реклама',
+        'объемные буквы печать',
+        'буквы световые',
+        'вывески световые буквы',
+        'несветовые буквы',
+        'изготовление наружных букв',
+        'наружная реклама буквы',
+        'буквы для вывески',
+    ]
+};
 
 const VolumetricLetters = () => {
-    const [isHovered, setIsHovered] = useState(null);
-    const [click, setClick] = useState(false)
     const marginTop = 50
     const marginLeft = 385
-
-    const onClickHandler = () => {
-        setClick(!click)
-    }
-
-    const onCloseHandler = () => {
-        setClick(false)
-    }
-
-    const onMouseEnterHandler = (id: any) => {
-        setIsHovered(id)
-    }
-    const onMouseLeaveHandler = () => {
-        setIsHovered(null)
-    }
 
     return (
         <div className={styles.container_page}>
             <Header services={true}/>
             <div className={styles.container_boxes}>
                 <h1 className={styles.title}>Обьемные буквы</h1>
-                <div className={styles.boxes_block}>
-                    {volumetric_letters_arr.map((box) => (
-                        <div key={box.id} style={{position: 'relative'}}>
-                            <div className={styles.box}
-                                 onMouseEnter={() => onMouseEnterHandler(box.id)}
-                                 onMouseLeave={() => onMouseLeaveHandler()}
-                            >
-                                <span className={styles.text}>{box.value}</span>
-                                <Image src={arrow} alt={'Стрелка'} className={styles.image_style}/>
-                                <Image src={box.image} alt={'Изображение товара'}
-                                       className={isHovered === null || isHovered !== box.id ? styles.imageBlock : styles.imageBlockEnter}/>
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div className={styles.button}>
-                    <Button>Заказать</Button>
-                </div>
+                <ServiceImages imagesArray={volumetric_letters_arr} cat={cat} marginTop={marginTop}
+                               marginLeft={marginLeft}/>
             </div>
-            {!click ? (
-                <button className={styles.no_background} onClick={onClickHandler}>
-                    <TaplinkButton/>
-                </button>
-            ) : (
-                <Contact src={cat} onCloseHandler={onCloseHandler} marginTop={marginTop} marginLeft={marginLeft}/>
-            )}
         </div>
     );
 };
