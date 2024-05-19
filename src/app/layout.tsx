@@ -4,10 +4,10 @@ import {useParams} from "next/navigation";
 
 export const viewport: Viewport = {
     initialScale: 1,
-    height: 1080,
-    width: 1920,
-    maximumScale: 1,
-    userScalable: true,
+    width: 'device-width',
+    // height: 1080,
+    // width: 1920,
+    // userScalable: false,
 }
 export const metadata: Metadata = {
     title: "Author",

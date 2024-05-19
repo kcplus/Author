@@ -18,7 +18,7 @@ const Logo = ({services, clientPage}: any) => {
         <>
             <a className={'nav__logo'} href={'/'}>
                 <Image src={services || clientPage || mouseEnter === true ? color_logo : logo}
-                       onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} width={271} height={82} alt={'Logo'}/>
+                       onMouseLeave={handleMouseLeave} onMouseEnter={handleMouseEnter} className={'style_logo'} alt={'Logo'}/>
             </a>
         </>
     );

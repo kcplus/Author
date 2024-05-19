@@ -49,14 +49,13 @@ body {
     :root {
         Zoom: 0.6;
     }}
-@media screen and (max-width: 1366px) {
-    body {
-        zoom: 67%;
-    }
-}
-@media screen and (max-width: 1680px) {
-    body {
-        zoom: 85%;
-    }
-}
-
+/*@media screen and (max-width: 1366px) {*/
+/*    body {*/
+/*        zoom: 67%;*/
+/*    }*/
+/*}*/
+/*@media screen and (max-width: 1680px) {*/
+/*    body {*/
+/*        zoom: 85%;*/
+/*    }*/
+/*}*/

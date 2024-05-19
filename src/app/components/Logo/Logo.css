@@ -8,3 +8,20 @@
     cursor: pointer;
     z-index: 1;
 }
+.style_logo {
+    width: 271px;
+    height: 82px;
+}
+
+@media (max-width: 375px) {
+    .style_logo {
+        width: 108px;
+        height: 33px;
+    }
+}
+@media (max-width: 414px) {
+    .style_logo {
+        width: 108px;
+        height: 33px;
+    }
+}

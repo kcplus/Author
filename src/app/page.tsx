@@ -14,10 +14,10 @@ export default function Home() {
                 <Header/>
                 <Main/>
             </OverlayImage>
-            <Examples/>
-            <Services/>
-            <Clients/>
-            <Footer/>
+            {/*<Examples/>*/}
+            {/*<Services/>*/}
+            {/*<Clients/>*/}
+            {/*<Footer/>*/}
         </div>
     );
 }
