@@ -54,3 +54,30 @@
     right: 90px;
     height: 300px;
 }
+
+@media (max-width: 414px) {
+    .boxes_block {
+        margin-top: -15px;
+    }
+    .imageBlock {
+        width: 120px;
+        height: 114px
+    }
+    .box {
+        width: 120px;
+        height: 114px;
+    }
+    .imageBlockEnter {
+        width: 120px;
+        height: 114px
+    }
+    .text {
+         width: 300px;
+         font-size: 8px;
+         line-height: 9px;
+     }
+    .image_style {
+        width: 21px;
+        height: 18px;
+    }
+}

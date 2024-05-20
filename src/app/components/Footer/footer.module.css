@@ -65,3 +65,46 @@
     padding-bottom: 30px;
 }
 
+@media (max-width: 414px) {
+    .styleLine {
+        width: 328px;
+    }
+    .styleLogo {
+        width: 60px;
+        height: 22px;
+    }
+    .imageContainer {
+        margin-left: 15%;
+    }
+    .logo {
+        transform: translate(-8%, -9%);
+    }
+    .text {
+        width: 190px;
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .contactInfo {
+        /*margin-left: 200px;*/
+        width: 300px;
+        margin-right: -100px;
+    }
+    .button {
+        display: none;
+    }
+    .contactBlock {
+        margin-top: 100px;
+    }
+    .imageInst {
+        width: 64px;
+        height: 64px;
+    }
+    .imageTikTok {
+        width: 64px;
+        height: 64px;
+    }
+    .imagePayment {
+        width: 317px;
+    }
+}
+

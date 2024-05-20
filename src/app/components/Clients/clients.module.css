@@ -29,3 +29,10 @@
    /* width: 250px;*/
     height: 170px;
 }
+
+@media (max-width: 414px) {
+    .mainText {
+        font-size: 27px;
+        line-height: 33px;
+    }
+}

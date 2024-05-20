@@ -21,7 +21,16 @@ export const   SimpleSlider = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         prevArrow: <PrevArrow/>,
-        nextArrow: <NextArrow/>
+        nextArrow: <NextArrow/>,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
     const image_slider_arr = [
         {id: 0, image: img1, alt: 'Каритнка_1'},
@@ -38,8 +47,8 @@ export const   SimpleSlider = () => {
         <div className={styles.container}>
             <Slider {...settings}>
                 {image_slider_arr.map((item) => (
-                    <div key={item.id}>
-                        <Image src={item.image} alt={item.alt} width={825} height={563} style={{objectFit: 'contain'}}/>
+                    <div key={item.id} className={styles.image}>
+                        <Image src={item.image} alt={item.alt} className={styles.image} style={{objectFit: 'contain'}}/>
                     </div>
                 ))}
             </Slider>

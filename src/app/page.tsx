@@ -15,9 +15,9 @@ export default function Home() {
                 <Main/>
             </OverlayImage>
             {/*<Examples/>*/}
-            {/*<Services/>*/}
-            {/*<Clients/>*/}
-            {/*<Footer/>*/}
+            <Services/>
+            <Clients/>
+            <Footer/>
         </div>
     );
 }

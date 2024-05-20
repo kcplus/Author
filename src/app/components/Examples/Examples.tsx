@@ -16,7 +16,7 @@ const Examples = () => {
                         text === 'ТВОРЧЕСКИЕ ИДЕИ' ? (
                             // eslint-disable-next-line react/jsx-key
                             <span className={styles.block}>
-                                 <Image src={creative} alt="" style={{}}/>
+                                 <Image src={creative} alt="" className={styles.imageCreative}/>
                                  <span className={styles.spanTextDouble}> ИДЕИ</span>
                             </span>
                         ) : (
@@ -28,7 +28,7 @@ const Examples = () => {
             <SimpleSlider/>
             <div className={styles.imageConnected}>
                 <a href={'/pages/portfolio'}>
-                    <Image src={arrow} alt={'Стрелка'}/>
+                    <Image src={arrow} alt={'Стрелка'} className={styles.imageConnectedStyle}/>
                 </a>
             </div>
         </div>

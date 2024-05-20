@@ -40,6 +40,43 @@
     margin-left: 710px
 }
 
+@media (max-width: 414px) {
+    .container {
+        /*width: 375px;*/
+        min-height: 650px;
+        background-color: #000000;
+    }
+.textContainer {
+    left: 37px;
+    margin-top: 50px;
+}
+    .block {
+        margin-left: 0px;
+        margin-top: 230px;
+    }
+    .imageCreative {
+        width: 200px;
+        height: min-content;
+    }
+    .spanText {
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .spanTextDouble {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .imageConnected {
+        margin-top: 484px;
+        margin-left: 120px;
+    }
+    .imageConnectedStyle {
+        width: 200px;
+        height: 50px;
+    }
+}
+
 /*@media screen and (max-width: 1500px) {
     .textContainer {
         left: 370px

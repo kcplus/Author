@@ -6,9 +6,28 @@
     left: 712px
 }
 .image {
-    width: 100%;
-    height: 100%;
-    /*object-fit: fill;*/
+    width: 825px;
+    height: 563px;
+}
+
+.prevArrow {
+    display: block;
+    margin-left: -410px;
+    width: 50px;
+    height: 142px
+}
+
+@media (max-width: 414px) {
+    .container {
+        margin-top: 290px;
+        width: 825px;
+        height: 563px;
+        left: 95px
+    }
+    .image {
+        width: 280px;
+        height: 199px;
+    }
 }
 /*
 @media screen and (max-width: 1500px) {
