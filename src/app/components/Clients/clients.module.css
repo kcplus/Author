@@ -30,6 +30,13 @@
     height: 170px;
 }
 
+@media (max-width: 430px) {
+    .mainText {
+        font-size: 27px;
+        line-height: 33px;
+    }
+}
+
 @media (max-width: 414px) {
     .mainText {
         font-size: 27px;

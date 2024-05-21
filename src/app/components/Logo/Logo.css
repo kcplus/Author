@@ -13,13 +13,21 @@
     height: 82px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .style_logo {
         width: 108px;
         height: 33px;
     }
 }
+
 @media (max-width: 414px) {
+    .style_logo {
+        width: 108px;
+        height: 33px;
+    }
+}
+
+@media (max-width: 375px) {
     .style_logo {
         width: 108px;
         height: 33px;

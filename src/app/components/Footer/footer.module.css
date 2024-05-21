@@ -3,6 +3,7 @@
     min-height: 100%;
     margin-top: 300px;
 }
+
 .imageContainer {
     margin-left: 5%;
     width: fit-content;
@@ -20,6 +21,7 @@
     left: 48%;
     transform: translate(-50%, -50%);
 }
+
 .contactBlock {
     display: flex;
     align-items: center;
@@ -36,6 +38,7 @@
     text-align: center;
     margin-right: 130px;
 }
+
 .text {
     width: 527px;
     font-weight: 400;
@@ -43,6 +46,7 @@
     line-height: 90px;
     font-family: Bebas;
 }
+
 .textBlock {
     display: flex;
     flex-direction: column;
@@ -65,46 +69,175 @@
     padding-bottom: 30px;
 }
 
-@media (max-width: 414px) {
+.spanStyle {
+    position: absolute;
+    margin-top: -220px;
+    right: 107px;
+    font-family: Moloko;
+    font-size: 15px;
+    line-height: 14px;
+    color: #6B6B6B;
+    /*box-shadow: rgba(0, 0, 0, 0.25)*/
+}
+
+.vectorStyle {
+    position: absolute;
+    margin-top: -200px;
+    right: 125px;
+}
+
+.infoBlock {
+    position: absolute;
+    left: 100px;
+    margin-top: -220px;
+    width: 170px;
+    height: 115px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+@media (max-width: 430px) {
     .styleLine {
-        width: 328px;
+        width: 450px;
     }
+
     .styleLogo {
-        width: 60px;
-        height: 22px;
+        width: 80px;
+        height: 44px;
     }
+
     .imageContainer {
-        margin-left: 15%;
+        margin-left: 4%;
     }
+
     .logo {
-        transform: translate(-8%, -9%);
+        transform: translate(-11%, -18%);
     }
+
     .text {
         width: 190px;
-        font-size: 27px;
+        font-size: 33px;
         line-height: 32px;
     }
+
     .contactInfo {
         /*margin-left: 200px;*/
         width: 300px;
-        margin-right: -100px;
+        margin-right: -65px;
     }
+
     .button {
         display: none;
     }
+
     .contactBlock {
-        margin-top: 100px;
+        margin-top: 50px;
     }
+
     .imageInst {
-        width: 64px;
-        height: 64px;
+        width: 80px;
+        height: 80px;
     }
+
     .imageTikTok {
-        width: 64px;
-        height: 64px;
+        width: 80px;
+        height: 80px;
     }
+
     .imagePayment {
-        width: 317px;
+        width: 380px;
+    }
+
+    .gallery {
+        margin-top: -220px;
+        padding-bottom: 0;
     }
 }
 
+@media (max-width: 414px) {
+    .styleLine {
+        width: 450px;
+    }
+
+    .styleLogo {
+        width: 80px;
+        height: 44px;
+    }
+
+    .imageContainer {
+        margin-left: 4%;
+    }
+
+    .logo {
+        transform: translate(-11%, -18%);
+    }
+
+    .text {
+        width: 190px;
+        font-size: 33px;
+        line-height: 32px;
+    }
+
+    .contactInfo {
+        /*margin-left: 200px;*/
+        width: 300px;
+        margin-right: -65px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .contactBlock {
+        margin-top: 50px;
+    }
+
+    .imageInst {
+        width: 80px;
+        height: 80px;
+    }
+
+    .imageTikTok {
+        width: 80px;
+        height: 80px;
+    }
+
+    .imagePayment {
+        width: 380px;
+    }
+
+    .gallery {
+        margin-top: -220px;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .styleLine {
+        width: 405px;
+    }
+
+    .spanStyle {
+        right: 100px
+    }
+    .infoBlock {
+        left: 60px;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .styleLine {
+        width: 405px;
+    }
+    .infoBlock {
+        left: 60px;
+    }
+    .vectorStyle {
+        right: 145px;
+    }
+    .spanStyle {
+        right: 127px
+    }
+}

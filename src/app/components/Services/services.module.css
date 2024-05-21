@@ -29,6 +29,23 @@
     height: 100%; /* Задаем фиксированную высоту */
 }
 
+@media (max-width: 430px) {
+    .mainText {
+        font-size: 27px;
+        line-height: 33px;
+    }
+    .item {
+        flex: 0 1 calc(100%/3);
+    }
+    .itemBox {
+        width: 150px;
+        height: 100px;
+    }
+    .gallery {
+        margin-left: 16px;
+    }
+}
+
 @media (max-width: 414px) {
     .mainText {
         font-size: 27px;
@@ -43,5 +60,33 @@
     }
     .gallery {
         margin-left: 16px;
+    }
+}
+
+@media (max-width: 390px) {
+    .itemBox {
+        width: 135px;
+        height: 100px;
+    }
+    .item {
+        flex: 0 1 calc(300px/3);
+    }
+    .gallery {
+        align-items: center;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .itemBox {
+        width: 130px;
+        height: 120px;
+    }
+    .item {
+        flex: 0 1 calc(300px/3);
+    }
+    .gallery {
+        align-items: center;
+        margin-left: 30px;
     }
 }

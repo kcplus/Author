@@ -14,6 +14,10 @@
     font-family: 'Bebas';
     src: url("assets/fonts/ofont.ru_Bebas Neue.ttf") format('truetype');
 }
+@font-face {
+    font-family: 'Moloko';
+    src: url("assets/fonts/Moloko.ttf") format('truetype');
+}
 
 body {
     font-family: custom-font;

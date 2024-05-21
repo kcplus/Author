@@ -31,7 +31,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className={styles.textBlock}>
-                        <div className={styles.infoBlock}>
+                        <div className={styles.block}>
                             <h1 className={styles.title}>О НАС</h1>
                             <Image src={vector} alt={'Вектор'} className={styles.vectorStyle}/>
                         </div>

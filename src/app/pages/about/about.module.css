@@ -38,6 +38,9 @@
 .infoBlock {
     display: flex;
 }
+.block {
+    display: flex;
+}
 
 .vectorStyle {
     margin-left: 30px;
@@ -66,4 +69,53 @@
 
 .text3 {
     top: 1520px;
+}
+
+@media (max-width: 375px) {
+    .posterStyle {
+        width: 320px;
+        height: 500px;
+    }
+    .textBlock {
+        width: 796px;
+        height: 1375px;
+        position: absolute;
+        left: 10px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .vectorStyle {
+        width: 27px;
+        height: 34px;
+    }
+    .styleText {
+        font-size: 9px;
+        font-weight: 400;
+        display: inline-block;
+        line-height: 10px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .textBlock {
+        width: 348px;
+        height: 570px;
+        margin-top: 350px;
+        position: absolute;
+        left: 10%;
+    }
+    .block {
+        margin-top: -415px;
+        margin-left: 100px;
+        padding-bottom: 350px;
+    }
+    .vectorStyle {
+        margin-left: 15px;
+        margin-top: 17px
+    }
+    .textTest {
+        font-size: 15px;
+        line-height: 18px;
+    }
 }

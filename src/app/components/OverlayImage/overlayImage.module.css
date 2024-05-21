@@ -44,16 +44,14 @@
     z-index: 1;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
     .container {
         min-height: 852px;
     }
     .image1 {
-        width: 375px;
         height: 852px;
     }
     .image2 {
-        width: 375px;
         height: 852px;
     }
     .image2Container {
@@ -62,6 +60,20 @@
 }
 
 @media (max-width: 414px) {
+    .container {
+        min-height: 852px;
+    }
+    .image1 {
+        height: 852px;
+    }
+    .image2 {
+        height: 852px;
+    }
+    .image2Container {
+        height: 852px;
+    }
+}
+@media (max-width: 375px) {
     .container {
         min-height: 852px;
     }
