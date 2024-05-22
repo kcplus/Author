@@ -72,3 +72,28 @@
     font-size: 18px;
     line-height: 17px;
 }
+
+@media (max-width: 375px) {
+    .form {
+        width: 332px;
+        height: 300px;
+    }
+    .input {
+        width: 262px;
+        font-size: 11px;
+        margin-left: 30px;
+    }
+    .label {
+        margin-left: 30px;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .button {
+        width: 184px;
+        height: 45px;
+        margin-left: 70px;
+        margin-top: 10px;
+    }
+}

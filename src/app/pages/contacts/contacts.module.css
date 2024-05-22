@@ -2,6 +2,7 @@
     display: flex;
     margin-top: 50px;
 }
+
 .contactBlockPosition {
     position: absolute;
     right: 3%;
@@ -74,6 +75,7 @@
     color: white;
     font-family: Bebas;
 }
+
 .address {
     width: 527px;
     font-weight: 400;
@@ -86,4 +88,73 @@
 .textBlock {
     display: flex;
     flex-direction: column;
+}
+.addressBlock {
+    margin-left: 250px;
+    margin-top: 50px
+}
+
+@media (max-width: 375px) {
+    .imagesPayment {
+        width: 400px;
+        margin-top: 65px;
+        margin-left: 115px;
+    }
+    .gallery {
+        width: 320px;
+    }
+    .title {
+        width: 180px;
+        font-size: 38px;
+        line-height: 46px;
+        margin-left: 40px;
+    }
+    .text {
+        width: 327px;
+        height: 61px;
+        font-size: 11px;
+        line-height: 13px;
+        margin-left: 40px;
+    }
+    .textContacts {
+        width: 290px;
+        font-size: 43px;
+        line-height: 49px;
+    }
+    .socialsBlock {
+        margin-left: -120px;
+        margin-top: 190px;
+    }
+    .addressBlock {
+        width: 295px;
+        margin-left: 80px;
+        margin-top: -270px;
+    }
+    .address {
+        font-size: 45px;
+        line-height: 49px;
+    }
+    .contactBlockPosition {
+        margin-top: 240px;
+        right: 12%;
+    }
+    .mainBlock {
+        margin-top: 0;
+    }
+    .textPosition {
+        margin-left: 25px;
+    }
+    .contactBlock {
+        flex-direction: column;
+        margin-right: 0px;
+        margin-left: 100px;
+        margin-top: 400px;
+    }
+    .socialIcon {
+        width: 110px;
+        height: 110px;
+    }
+    .textBlock {
+        margin-left: 30px;
+    }
 }

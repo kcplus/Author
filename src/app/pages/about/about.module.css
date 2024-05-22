@@ -324,3 +324,18 @@
         background-color: black;
     }
 }
+
+@media (max-width: 360px) {
+    .textBlock {
+        left: 17%;
+    }
+    .text1 {
+        margin-left: 105px;
+    }
+    .text2 {
+        margin-left: 25px;
+    }
+    .text3 {
+        margin-left: 45px;
+    }
+}

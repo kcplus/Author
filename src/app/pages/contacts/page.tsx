@@ -19,7 +19,7 @@ const Contacts = () => {
             <OverlayImage contacts={true}>
                 <Header contactsPage={true}/>
                 <div className={styles.mainBlock}>
-                    <div>
+                    <div className={styles.textPosition}>
                         <h1 className={styles.title}>Готов с нами поработать?</h1>
                         <span className={styles.text}>Напишите нам или отправьте электронное письмо. Мы хотим услышать о вашем проекте и реализовать его в жизнь!</span>
                     </div>
@@ -35,20 +35,20 @@ const Contacts = () => {
                                   style={{whiteSpace: 'nowrap'}}>+375 (44) 496-68-66</span>
                         </div>
                     </div>
-                    <div>
+                    <div className={styles.socialsBlock}>
                         <a href={inst_URL}>
-                            <Image src={white_inst} style={{cursor: 'pointer'}} alt={'Инстаграмм'}/>
+                            <Image src={white_inst} style={{cursor: 'pointer'}} alt={'Инстаграмм'} className={styles.socialIcon}/>
                         </a>
                         <a href={tiktok_URL}>
-                            <Image src={white_tiktok} style={{cursor: 'pointer'}} alt={'ТикТок'}/>
+                            <Image src={white_tiktok} style={{cursor: 'pointer'}} alt={'ТикТок'} className={styles.socialIcon}/>
                         </a>
                     </div>
                 </div>
-                <div style={{marginLeft: '250px', marginTop: '50px'}}>
-                    <span className={styles.address}>г.ГОМЕЛЬ, ул. Могилевская 2д</span>
+                <div className={styles.addressBlock}>
+                    <span className={styles.address}>г.ГОМЕЛЬ, ул.Могилевская 2д</span>
                 </div>
                 <div className={styles.gallery}>
-                    <Image src={payments} alt={'Виды оплат'} style={{}}/>
+                    <Image src={payments} alt={'Виды оплат'} className={styles.imagesPayment}/>
                 </div>
             </OverlayImage>
         </>
