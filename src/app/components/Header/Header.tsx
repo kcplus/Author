@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Logo from "../Logo/Logo";
 import './Header.css'
 import Nav from "../Nav/Nav";
-import {IoMenu} from "react-icons/io5";
+import {IoClose, IoMenu} from "react-icons/io5";
 
 
 const Header = ({services, clientPage, contactsPage}: any) => {
@@ -18,6 +18,7 @@ const Header = ({services, clientPage, contactsPage}: any) => {
             setShowMenu(false);
         }
     };
+    console.log(showMenu, 'SHOW')
 
     return (
         <header className="header">
@@ -27,10 +28,10 @@ const Header = ({services, clientPage, contactsPage}: any) => {
                 <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
                     <Nav services={services} clientPage={clientPage} contactsPage={contactsPage}/>
                 </div>
-                <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-                    <IoMenu color={services === true ? 'black' : 'white'}
-                            style={{width: '80px', height: '40px'}}/>
-                </div>
+                    <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
+                        <IoMenu color={services === true ? 'black' : 'white'}
+                                style={{width: '80px', height: '40px'}}/>
+                    </div>
             </nav>
         </header>
     );

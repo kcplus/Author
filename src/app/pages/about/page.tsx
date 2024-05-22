@@ -21,7 +21,7 @@ const About = () => {
                 <div className={styles.infoBlock}>
                     <div style={{width: '900px'}}>
                         <Image src={poster} alt={'Постер'} width={900} height={1500} className={styles.posterStyle}/>
-                        <div style={{width: '500px'}}>
+                        <div className={styles.colorTextBlock}>
                         <span className={`${styles.textStyle} ${styles.text1}`}>
                             <span className={styles.textTest}>БОЛЕЕ 5000 м2</span> переработанно материалов</span>
                             <span className={`${styles.textStyle} ${styles.text2}`}>

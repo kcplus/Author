@@ -70,6 +70,183 @@
 .text3 {
     top: 1520px;
 }
+.colorTextBlock {
+    /*width: 500px;*/
+}
+
+@media (max-width: 430px) {
+    .posterStyle {
+        width: 320px;
+        height: 500px;
+    }
+    .textBlock {
+        width: 796px;
+        height: 1375px;
+        position: absolute;
+        left: 10px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .vectorStyle {
+        width: 27px;
+        height: 34px;
+    }
+    .styleText {
+        font-size: 9px;
+        font-weight: 400;
+        display: inline-block;
+        line-height: 10px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .textBlock {
+        width: 348px;
+        height: 570px;
+        margin-top: 350px;
+        position: absolute;
+        left: 30%;
+    }
+    .block {
+        margin-top: -415px;
+        margin-left: 30px;
+        padding-bottom: 350px;
+    }
+    .vectorStyle {
+        margin-left: 15px;
+        margin-top: 17px
+    }
+    .textTest {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .colorTextBlock {
+        position: absolute;
+        top: -1135px;
+        margin-left: 115px;
+        font-size: 8px;
+    }
+    .text1 {
+        transform: rotate(-90deg);
+        width: 300px;
+        top: 1400px;
+        margin-left: 200px;
+    }
+    .text2 {
+        transform: rotate(-90deg);
+        width: 500px;
+        margin-left: 115px;
+        top: 1300px;
+    }
+    .text3 {
+        transform: rotate(-90deg);
+        width: 500px;
+        margin-left: 130px;
+        top: 1300px;
+    }
+    .container {
+        height: 1300px;
+        background-color: black;
+    }
+}
+
+@media (max-width: 414px) {
+    .posterStyle {
+        width: 320px;
+        height: 500px;
+    }
+    .textBlock {
+        width: 796px;
+        height: 1375px;
+        position: absolute;
+        left: 10px;
+    }
+    .title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .vectorStyle {
+        width: 27px;
+        height: 34px;
+    }
+    .styleText {
+        font-size: 9px;
+        font-weight: 400;
+        display: inline-block;
+        line-height: 10px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    .textBlock {
+        width: 348px;
+        height: 570px;
+        margin-top: 350px;
+        position: absolute;
+        left: 28%;
+    }
+    .block {
+        margin-top: -415px;
+        margin-left: 30px;
+        padding-bottom: 350px;
+    }
+    .vectorStyle {
+        margin-left: 15px;
+        margin-top: 17px
+    }
+    .textTest {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .colorTextBlock {
+        position: absolute;
+        top: -1135px;
+        margin-left: 115px;
+        font-size: 8px;
+    }
+    .text1 {
+        transform: rotate(-90deg);
+        width: 300px;
+        top: 1400px;
+        margin-left: 182px;
+    }
+    .text2 {
+        transform: rotate(-90deg);
+        width: 500px;
+        margin-left: 97px;
+        top: 1300px;
+    }
+    .text3 {
+        transform: rotate(-90deg);
+        width: 500px;
+        margin-left: 110px;
+        top: 1300px;
+    }
+    .container {
+        height: 1300px;
+        background-color: black;
+    }
+}
+
+@media (max-width: 390px) {
+    .textBlock {
+        left: 23%;
+    }.text1 {
+         transform: rotate(-90deg);
+         width: 300px;
+         top: 1400px;
+         margin-left: 150px;
+     }
+    .text2 {
+        margin-left: 80px;
+    }
+    .text3 {
+        transform: rotate(-90deg);
+        width: 500px;
+        margin-left: 65px;
+        top: 1300px;
+    }
+}
 
 @media (max-width: 375px) {
     .posterStyle {
@@ -103,11 +280,11 @@
         height: 570px;
         margin-top: 350px;
         position: absolute;
-        left: 10%;
+        left: 21%;
     }
     .block {
         margin-top: -415px;
-        margin-left: 100px;
+        margin-left: 50px;
         padding-bottom: 350px;
     }
     .vectorStyle {
@@ -115,7 +292,35 @@
         margin-top: 17px
     }
     .textTest {
-        font-size: 15px;
+        font-size: 12px;
         line-height: 18px;
+    }
+    .colorTextBlock {
+        position: absolute;
+        top: -1135px;
+        margin-left: 115px;
+        font-size: 8px;
+    }
+    .text1 {
+        transform: rotate(-90deg);
+        width: 300px;
+        top: 1400px;
+        margin-left: 137px;
+    }
+    .text2 {
+        transform: rotate(-90deg);
+        width: 500px;
+        margin-left: 50px;
+        top: 1300px;
+    }
+    .text3 {
+        transform: rotate(-90deg);
+        width: 500px;
+        margin-left: 63px;
+        top: 1300px;
+    }
+    .container {
+        height: 1300px;
+        background-color: black;
     }
 }
