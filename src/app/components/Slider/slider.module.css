@@ -17,16 +17,46 @@
     height: 142px
 }
 
+@media (max-width: 430px) {
+    .container {
+        margin-top: 290px;
+        width: 350px;
+        height: 200px;
+        left: 80px
+    }
+    .image {
+        width: 350px;
+        height: 199px;
+    }
+}
+
 @media (max-width: 414px) {
     .container {
         margin-top: 290px;
-        width: 825px;
-        height: 563px;
+        width: 290px;
+        height: 200px;
         left: 95px
     }
     .image {
-        width: 280px;
+        width: 290px;
         height: 199px;
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        margin-top: 290px;
+        width: 290px;
+        height: 200px;
+        left: 80px
+    }
+    .image {
+        width: 290px;
+        height: 199px;
+    }
+}
+@media (max-width: 360px) {
+    .container {
+        left: 65px;
     }
 }
 /*

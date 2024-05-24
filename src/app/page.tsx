@@ -14,7 +14,7 @@ export default function Home() {
                 <Header/>
                 <Main/>
             </OverlayImage>
-            {/*<Examples/>*/}
+            <Examples/>
             <Services/>
             <Clients/>
             <Footer/>

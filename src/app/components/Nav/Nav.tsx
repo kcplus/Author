@@ -32,14 +32,14 @@ const Nav = ({services, clientPage, contactsPage}: any) => {
             {nav_array.map((item, index) => (
                     <li key={item.id}>
                         <a className={'nav__link'}
-                           href={services === true ? item.href : services || clientPage === true && index === 2 ? '/' :  contactsPage === true && index === 2 ? '/' : index === 2 ? '#' : item.href}
+                           href={services === true ? item.href : services || clientPage === true && index === 2 ? '/' : contactsPage === true && index === 2 ? '/' : index === 2 ? '#' : item.href}
                            style={services === true ? {color: 'black'} : {color: 'white'}}
                            onClick={item.id === 2 ? scrollToBlock : undefined}
                         >
                             {item.id === 4 ?
                                 <Image
                                     src={mouseEnter && services ? hover_button_black : mouseEnter ? hover_button : butt}
-                                    alt={''} style={{marginTop: '-23px'}}
+                                    alt={''} style={{marginTop: '5px'}}
                                     onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}/> : item.value}
                         </a>
                     </li>

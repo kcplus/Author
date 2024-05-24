@@ -14,8 +14,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import {NextArrow, PrevArrow} from "../Arrows/Arrows";
 import styles from './slider.module.css'
+import {Swiper, SwiperSlide} from 'swiper/react';
+// import 'swiper/swiper-bundle.min.css';
 
-export const   SimpleSlider = () => {
+export const SimpleSlider = () => {
     let settings = {
         speed: 500,
         slidesToShow: 1,
@@ -43,6 +45,7 @@ export const   SimpleSlider = () => {
         {id: 7, image: img8, alt: 'Каритнка_7'},
     ]
 
+
     return (
         <div className={styles.container}>
             <Slider {...settings}>
@@ -55,3 +58,15 @@ export const   SimpleSlider = () => {
         </div>
     );
 }
+
+
+// <Swiper slidesPerView={1}>
+//     {image_slider_arr.map((item) => (
+//         <SwiperSlide key={item.id} style={{width: '350px'}}>
+//             <div key={item.id} className={styles.image}>
+//                 <Image src={item.image} alt={item.alt} className={styles.image}
+//                        style={{objectFit: 'contain'}}/>
+//             </div>
+//         </SwiperSlide>
+//     ))}
+// </Swiper>

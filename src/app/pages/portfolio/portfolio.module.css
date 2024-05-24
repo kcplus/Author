@@ -4,3 +4,263 @@
     font-weight: 400;
     color: white;
 }
+
+@media (max-width: 414px) {
+    .img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .imgBlock {
+        width: 220px;
+        height: 130px;
+    }
+
+    .title {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    .img11 {
+        width: 140px;
+        height: 106px;
+    }
+
+    .img12 {
+        width: 80px;
+        height: 106px;
+    }
+
+    .img13 {
+        width: 110px;
+        height: 106px;
+    }
+
+    .img14 {
+        width: 110px;
+        height: 106px;
+    }
+
+    .img15 {
+        width: 278px;
+        height: 136px;
+    }
+    .img16 {
+        width: 80.5px;
+        height: 67px;
+    }
+    .img17 {
+        width: 109.5px;
+        height: 67px;
+    }
+    .img18 {
+        width: 110px;
+        height: 67px;
+    }
+    .img19 {
+        width: 160px;
+        height: 69px;
+    }
+    .img20 {
+        width: 140px;
+        height: 69px;
+    }
+    .img21 {
+        width: 139.5px;
+        height: 99px;
+    }
+    .img22 {
+        width: 100px;
+        height: 99px;
+    }
+    .img23 {
+        width: 100px;
+        height: 99px;
+    }
+    .img24 {
+        width: 100px;
+        height: 99px;
+    }
+    .img25 {
+        width: 239.5px;
+        height: 86px;
+    }
+    .img26 {
+        width: 201px;
+        height: 86px;
+    }
+    .img27 {
+        width: 160px;
+        height: 82px;
+    }
+    .img28 {
+        width: 110px;
+        height: 82px;
+    }
+    .img29 {
+        width: 170px;
+        height: 82px;
+    }
+    .img30 {
+        width: 100px;
+        height: 99px;
+    }
+    .img31 {
+        width: 115px;
+        height: 99px;
+    }
+    .img32 {
+        width: 105px;
+        height: 99px;
+    }
+    .img33 {
+        width: 121px;
+        height: 99px;
+    }
+    .img34 {
+        width: 215px;
+        height: 86px;
+    }
+    .img35 {
+        width: 75px;
+        height: 86px;
+    }
+    .img36 {
+        width: 75px;
+        height: 86px;
+    }
+    .img37 {
+        width: 75px;
+        height: 86px;
+    }
+}
+
+@media (max-width: 375px) {
+    .img {
+        width: 110px;
+        height: 120px;
+    }
+
+    .imgBlock {
+        width: 220px;
+        height: 130px;
+    }
+
+    .title {
+        font-size: 23px;
+        line-height: 28px;
+    }
+
+    .img11 {
+        width: 140px;
+        height: 106px;
+    }
+
+    .img12 {
+        width: 80px;
+        height: 106px;
+    }
+
+    .img13 {
+        width: 110px;
+        height: 106px;
+    }
+
+    .img14 {
+        width: 110px;
+        height: 106px;
+    }
+
+    .img15 {
+        width: 278px;
+        height: 136px;
+    }
+    .img16 {
+        width: 80.5px;
+        height: 67px;
+    }
+    .img17 {
+        width: 109.5px;
+        height: 67px;
+    }
+    .img18 {
+        width: 110px;
+        height: 67px;
+    }
+    .img19 {
+        width: 160px;
+        height: 69px;
+    }
+    .img20 {
+        width: 140px;
+        height: 69px;
+    }
+    .img21 {
+        width: 139.5px;
+        height: 99px;
+    }
+    .img22 {
+        width: 100px;
+        height: 99px;
+    }
+    .img23 {
+        width: 100px;
+        height: 99px;
+    }
+    .img24 {
+        width: 100px;
+        height: 99px;
+    }
+    .img25 {
+        width: 239.5px;
+        height: 86px;
+    }
+    .img26 {
+        width: 201px;
+        height: 86px;
+    }
+    .img27 {
+        width: 160px;
+        height: 82px;
+    }
+    .img28 {
+        width: 110px;
+        height: 82px;
+    }
+    .img29 {
+        width: 170px;
+        height: 82px;
+    }
+    .img30 {
+        width: 100px;
+        height: 99px;
+    }
+    .img31 {
+        width: 115px;
+        height: 99px;
+    }
+    .img32 {
+        width: 105px;
+        height: 99px;
+    }
+    .img33 {
+        width: 121px;
+        height: 99px;
+    }
+    .img34 {
+        width: 215px;
+        height: 86px;
+    }
+    .img35 {
+        width: 75px;
+        height: 86px;
+    }
+    .img36 {
+        width: 75px;
+        height: 86px;
+    }
+    .img37 {
+        width: 75px;
+        height: 86px;
+    }
+}

@@ -67,12 +67,28 @@
     right: 0;
     width: 400px;
     z-index: -1;
+    animation: moveHandOne 2s infinite alternate; /* Анимация будет продолжаться бесконечно */
+
 }
+
 .hand_two {
     position: absolute;
     bottom: -466px;
     right: 100px;
     width: 400px;
+    animation: moveHandTwo 2s infinite alternate; /* Анимация будет продолжаться бесконечно */
+}
+
+@keyframes moveHandOne {
+    0% { transform: translateY(0); } /* Начальное положение по оси Y */
+    50% { transform: translateY(-50px); } /* Положение в середине анимации по оси Y */
+    100% { transform: translateY(0); } /* Конечное положение по оси Y */
+}
+
+@keyframes moveHandTwo {
+    0% { transform: translateX(0); } /* Начальное положение по оси X */
+    50% { transform: translateX(50px); } /* Положение в середине анимации по оси X */
+    100% { transform: translateX(0); } /* Конечное положение по оси X */
 }
 
 @media (max-width: 430px) {

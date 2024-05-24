@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, {useEffect, useState} from 'react';
 import styles from './main.module.css'
 import marker from '../../assets/marker.svg'
 import Image from "next/image";
@@ -7,7 +8,6 @@ import hand2 from '../../assets/hand2.svg'
 
 
 const Main = () => {
-
     return (
         <div className={styles.container}>
             <div className={styles.textBlock}>

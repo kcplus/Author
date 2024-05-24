@@ -63,63 +63,63 @@ const Portfolio = () => {
                     <Image src={vector} alt={'VECTOR'} style={{position: 'absolute', right: '580px', top: '172px'}}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image1} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image2} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image3} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image4} alt={''} style={{objectFit: 'cover'}} width={453} height={643}/>
+                    <Image src={image1} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                    <Image src={image2} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                    <Image src={image3} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                    <Image src={image4} alt={''} style={{objectFit: 'cover'}} width={453} height={643} className={styles.img}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image5} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image6} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image7} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image8} alt={''} style={{objectFit: 'cover'}} width={453} height={362}/>
+                    <Image src={image5} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                    <Image src={image6} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                    <Image src={image7} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                    <Image src={image8} alt={''} style={{objectFit: 'cover'}} width={453} height={362} className={styles.img}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522}/>
-                    <Image src={image10} alt={''} style={{objectFit: 'cover'}} width={935} height={522}/>
+                    <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522} className={styles.imgBlock}/>
+                    <Image src={image10} alt={''} style={{objectFit: 'cover'}} width={935} height={522} className={styles.imgBlock}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image11} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image12} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image13} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image14} alt={''} style={{objectFit: 'cover'}} height={568} width={450}/>
+                    <Image src={image11} alt={''} style={{objectFit: 'cover'}} className={styles.img11}/>
+                    <Image src={image12} alt={''} style={{objectFit: 'cover'}} className={styles.img12}/>
+                    <Image src={image13} alt={''} style={{objectFit: 'cover'}} className={styles.img13}/>
+                    <Image src={image14} alt={''} style={{objectFit: 'cover'}} height={568} width={450} className={styles.img14}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image15} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image15} alt={''} style={{objectFit: 'cover'}} className={styles.img15}/>
                     <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                        <Image src={image16} alt={''} style={{objectFit: 'cover'}} width={377} height={365}/>
-                        <Image src={image17} alt={''} style={{objectFit: 'cover'}} width={483} height={366}/>
-                        <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={454} height={366}/>
-                        <Image src={image19} alt={''} style={{objectFit: 'cover'}} height={364}/>
-                        <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={588} height={364}/>
+                        <Image src={image16} alt={''} style={{objectFit: 'cover'}} width={377} height={365} className={styles.img16}/>
+                        <Image src={image17} alt={''} style={{objectFit: 'cover'}} width={483} height={366} className={styles.img17}/>
+                        <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={454} height={366} className={styles.img18}/>
+                        <Image src={image19} alt={''} style={{objectFit: 'cover'}} height={364} className={styles.img19}/>
+                        <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={588} height={364} className={styles.img20}/>
                     </div>
                 </div>
                 <div style={{display: 'flex', marginTop: '0'}}>
-                    <Image src={image21} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image22} alt={''} style={{objectFit: 'cover'}} width={460} height={529}/>
-                    <Image src={image23} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image24} alt={''} style={{objectFit: 'cover'}}/>
+                    <Image src={image21} alt={''} style={{objectFit: 'cover'}} className={styles.img21}/>
+                    <Image src={image22} alt={''} style={{objectFit: 'cover'}} width={460} height={529} className={styles.img22}/>
+                    <Image src={image23} alt={''} style={{objectFit: 'cover'}} className={styles.img23}/>
+                    <Image src={image24} alt={''} style={{objectFit: 'cover'}} className={styles.img24}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image25} alt={''} style={{objectFit: 'cover'}} width={1025} height={466}/>
-                    <Image src={image26} alt={''} style={{objectFit: 'cover'}} width={878}/>
+                    <Image src={image25} alt={''} style={{objectFit: 'cover'}} width={1025} height={466} className={styles.img25}/>
+                    <Image src={image26} alt={''} style={{objectFit: 'cover'}} width={878} className={styles.img26}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image27} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image28} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image29} alt={''} style={{objectFit: 'cover'}} width={740} height={437}/>
+                    <Image src={image27} alt={''} style={{objectFit: 'cover'}} className={styles.img27}/>
+                    <Image src={image28} alt={''} style={{objectFit: 'cover'}} className={styles.img28}/>
+                    <Image src={image29} alt={''} style={{objectFit: 'cover'}} width={740} height={437} className={styles.img29}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image30} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image31} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image32} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image33} alt={''} style={{objectFit: 'cover'}} width={554} height={530}/>
+                    <Image src={image30} alt={''} style={{objectFit: 'cover'}} className={styles.img30}/>
+                    <Image src={image31} alt={''} style={{objectFit: 'cover'}} className={styles.img31}/>
+                    <Image src={image32} alt={''} style={{objectFit: 'cover'}} className={styles.img32}/>
+                    <Image src={image33} alt={''} style={{objectFit: 'cover'}} width={554} height={530} className={styles.img33}/>
                 </div>
                 <div style={{display: 'flex'}}>
-                    <Image src={image34} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image35} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image36} alt={''} style={{objectFit: 'cover'}}/>
-                    <Image src={image37} alt={''} style={{objectFit: 'cover'}} width={299} height={461}/>
+                    <Image src={image34} alt={''} style={{objectFit: 'cover'}} className={styles.img34}/>
+                    <Image src={image35} alt={''} style={{objectFit: 'cover'}} className={styles.img35}/>
+                    <Image src={image36} alt={''} style={{objectFit: 'cover'}} className={styles.img36}/>
+                    <Image src={image37} alt={''} style={{objectFit: 'cover'}} width={299} height={461} className={styles.img37}/>
                 </div>
                 <div style={{marginTop: '250px'}}>
                     <Footer clientPage={true}/>

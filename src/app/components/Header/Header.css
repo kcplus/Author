@@ -34,14 +34,22 @@
     .nav__menu {
         position: fixed;
         top: 0;
-        right: -100%;
-        backdrop-filter: blur(16px);
+        right: -102%;
+        backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(16px);
         width: 80%;
         height: 100%;
         padding: 6rem 3rem 0;
         transition: right 0.4s;
+        z-index: 1;
     }
+    /*.imageBackground {*/
+    /*    background-size: cover;*/
+    /*    position: relative;*/
+    /*    background-image: url('../../assets/colazh.jpg');*/
+    /*    background: rgba(0, 0, 0, 0.8);*/
+    /*    opacity: 0.6;*/
+    /*}*/
 }
 @media (max-width: 414px) {
 

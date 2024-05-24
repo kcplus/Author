@@ -11,31 +11,15 @@
     line-height: 25.07px;
     margin-top: 30px;
     text-decoration: none;
+    align-items: center;
 }
 
-/*.button {
-    border: 0;
-    border-radius: 30px;
-    background: #34eed9;
-    color: #070707;
-    padding: 8px 16px;
-    transform: rotate(-5deg);
-    margin-bottom: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    !*width: 180px;
-    height: 30px;*!
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
 .button {
     border: 0;
     border-radius: 30px;
     background: #34eed9;
     color: #070707;
     padding: 8px 16px;
-    transform: rotate(-5deg);
     margin-bottom: 20px;
     text-decoration: none;
     margin-top: -12px;
@@ -60,5 +44,19 @@
     .nav__list {
         flex-direction: row;
         column-gap: 2.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    li:nth-child(1) {
+        margin-left: -70px;
+    }
+
+    li:nth-child(3) {
+        margin-left: -60px
+    }
+
+    li:nth-child(4) {
+        margin-left: -23px
     }
 }

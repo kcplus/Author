@@ -18,13 +18,11 @@ const Header = ({services, clientPage, contactsPage}: any) => {
             setShowMenu(false);
         }
     };
-    console.log(showMenu, 'SHOW')
 
     return (
         <header className="header">
             <nav className="nav container">
                 <Logo services={services} clientPage={clientPage}/>
-                {/*<div className={'nav__menu'} id="nav-menu">*/}
                 <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
                     <Nav services={services} clientPage={clientPage} contactsPage={contactsPage}/>
                 </div>
