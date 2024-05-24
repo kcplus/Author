@@ -241,3 +241,15 @@
         right: 127px
     }
 }
+
+@media (max-width: 360px) {
+    .styleLine {
+        width: 390px;
+    }
+    .vectorStyle {
+        right: 120px;
+    }
+    .spanStyle {
+        right: 105px;
+    }
+}

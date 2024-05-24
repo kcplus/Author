@@ -74,18 +74,25 @@
 }
 
 @media (max-width: 414px) {
+    .container_boxes {
+        margin-left: 0px;
+
+    }
     .title {
         font-size: 21px;
         line-height: 25px;
+        margin-left: 120px;
+        margin-top: -25px;
+        padding-bottom: 25px;
     }
 }
 
-@media screen and (max-width: 670px) {
-    .no_background {
-        position: static;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-}
+/*@media screen and (max-width: 670px) {*/
+/*    .no_background {*/
+/*        position: static;*/
+/*        background-color: transparent;*/
+/*        border: none;*/
+/*        cursor: pointer;*/
+/*    }*/
+/*}*/
 
