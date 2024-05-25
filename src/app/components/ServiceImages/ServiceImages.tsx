@@ -6,10 +6,14 @@ import arrow from "../../assets/Vector.svg";
 import Button from "../Button/Button";
 import TaplinkButton from "../TaplinkButton/TaplinkButton";
 import Contact from "../Contact/Contact";
+import viberIcon from "../../assets/image 23.svg";
+import whatsupIcon from "../../assets/image 24.svg";
+import telegramIcon from "../../assets/free-icon-telegram-2111646 2.svg";
 
 const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
+    const [width, setWidth] = useState(window.innerWidth)
 
     const onClickHandler = () => {
         setClick(!click)
@@ -46,12 +50,35 @@ const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
             <div className={styles.button}>
                 <Button>Заказать</Button>
             </div>
-            {!click ? (
-                <button className={styles.no_background} onClick={onClickHandler}>
-                    <TaplinkButton/>
-                </button>
+            {width <= 430 ? (
+                <div className={styles.contactBlock}>
+                    <span className={styles.questionsTitle}>Есть вопросы?</span>
+                    <div style={{marginTop: '20px'}}>
+                        <button className={styles.buttonSocial}>
+                            <a href={'viber://chat?number=%2B375444966866'} target={'_blank'}>
+                                <Image src={viberIcon} alt={'Вайбер'} width={64} height={64}/>
+                            </a>
+                        </button>
+                        <button className={styles.buttonSocial}>
+                            <a href={'https://wa.me/375444966866'} target={'_blank'}>
+                                <Image src={whatsupIcon} alt={'Вотсап'} width={64} height={64}/>
+                            </a>
+                        </button>
+                        <button className={styles.buttonSocial}>
+                            <a href={'tg://resolve?domain=authorstudia'} target={'_blank'}>
+                                <Image src={telegramIcon} alt={'Телеграмм'} width={64} height={64}/>
+                            </a>
+                        </button>
+                    </div>
+                </div>
             ) : (
-                <Contact src={cat} onCloseHandler={onCloseHandler} marginTop={marginTop} marginLeft={marginLeft}/>
+                !click ? (
+                    <button className={styles.no_background} onClick={onClickHandler}>
+                        <TaplinkButton/>
+                    </button>
+                ) : (
+                    <Contact src={cat} onCloseHandler={onCloseHandler} marginTop={marginTop} marginLeft={marginLeft}/>
+                )
             )}
         </>
     );

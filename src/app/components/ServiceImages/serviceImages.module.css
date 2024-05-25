@@ -4,6 +4,7 @@
     justify-content: flex-start;
     margin-top: -47px;
 }
+
 .box {
     width: 356px;
     height: 338px;
@@ -13,6 +14,7 @@
     align-items: center;
     cursor: pointer;
 }
+
 .text {
     width: 300px;
     font-weight: 400;
@@ -21,6 +23,7 @@
     line-height: 28.77px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 .image_style {
     position: absolute;
     bottom: 10px;
@@ -28,6 +31,7 @@
     width: 48px;
     height: 45px;
 }
+
 .imageBlock {
     position: absolute;
     z-index: -1;
@@ -35,16 +39,19 @@
     width: 356px;
     height: 338px
 }
+
 .imageBlockEnter {
     position: absolute;
     width: 356px;
     height: 338px
 }
+
 .button {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
+
 .no_background {
     background-color: transparent;
     border: none;
@@ -55,29 +62,174 @@
     height: 300px;
 }
 
+@media (max-width: 430px) {
+    .boxes_block {
+        margin-top: -15px;
+    }
+
+    .imageBlock {
+        width: 167px;
+        height: 140px
+    }
+
+    .box {
+        width: 167px;
+        height: 140px;
+    }
+
+    .imageBlockEnter {
+        width: 167px;
+        height: 140px
+    }
+
+    .text {
+        width: 300px;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
+    .image_style {
+        width: 21px;
+        height: 18px;
+    }
+
+    .buttonSocial {
+        background-color: transparent;
+        border: none;
+        margin-left: -23px;
+    }
+
+    .questionsTitle {
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 400;
+        color: rgba(123, 75, 236, 1)
+    }
+    .contactBlock {
+        margin-top: 90px;
+        margin-left: 185px;
+    }
+}
+
 @media (max-width: 414px) {
     .boxes_block {
         margin-top: -15px;
     }
+
     .imageBlock {
         width: 161px;
         height: 140px
     }
+
     .box {
         width: 161px;
         height: 140px;
     }
+
     .imageBlockEnter {
         width: 161px;
         height: 140px
     }
+
     .text {
-         width: 300px;
-         font-size: 8px;
-         line-height: 9px;
-     }
+        width: 300px;
+        font-size: 8px;
+        line-height: 9px;
+    }
+
     .image_style {
         width: 21px;
         height: 18px;
+    }
+
+    .buttonSocial {
+        background-color: transparent;
+        border: none;
+        margin-left: -23px;
+    }
+
+    .questionsTitle {
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 400;
+        color: rgba(123, 75, 236, 1)
+    }
+    .contactBlock {
+        margin-top: 90px;
+        margin-left: 185px;
+    }
+}
+
+@media (max-width: 412px) {
+    .imageBlock {
+        width: 160px;
+        height: 140px
+    }
+
+    .box {
+        width: 160px;
+        height: 140px;
+    }
+
+    .imageBlockEnter {
+        width: 160px;
+        height: 140px
+    }
+}
+
+@media (max-width: 390px) {
+    .imageBlock {
+        width: 151px;
+        height: 130px
+    }
+
+    .box {
+        width: 151px;
+        height: 130px;
+    }
+
+    .imageBlockEnter {
+        width: 151px;
+        height: 130px
+    }
+    .contactBlock {
+        margin-left: 160px;
+    }
+}
+
+@media (max-width: 375px) {
+    .imageBlock {
+        width: 145px;
+        height: 130px
+    }
+
+    .box {
+        width: 145px;
+        height: 130px;
+    }
+
+    .imageBlockEnter {
+        width: 145px;
+        height: 130px
+    }
+    .contactBlock {
+        margin-left: 160px;
+    }
+}
+
+@media (max-width: 360px) {
+    .imageBlock {
+        width: 140px;
+        height: 130px
+    }
+
+    .box {
+        width: 140px;
+        height: 130px;
+    }
+
+    .imageBlockEnter {
+        width: 140px;
+        height: 130px
     }
 }

@@ -37,7 +37,8 @@ const LightBoxes = () => {
             <Header services={true}/>
             <div className={styles.container_boxes}>
                 <h1 className={styles.title}>Световые короба</h1>
-                <ServiceImages imagesArray={light_boxes_service_arr} marginTop={marginTop} marginLeft={marginLeft} cat={cat}/>
+                <ServiceImages imagesArray={light_boxes_service_arr} marginTop={marginTop} marginLeft={marginLeft}
+                               cat={cat}/>
             </div>
         </div>
     );
