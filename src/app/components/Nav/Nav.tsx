@@ -10,6 +10,7 @@ import Image from "next/image";
 
 const Nav = ({services, clientPage, contactsPage}: any) => {
     const [mouseEnter, setMouseEnter] = useState(false)
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
 
     const scrollToBlock = () => {
         if (services || clientPage || contactsPage === true) {
@@ -33,7 +34,7 @@ const Nav = ({services, clientPage, contactsPage}: any) => {
                     <li key={item.id}>
                         <a className={'nav__link'}
                            href={services === true ? item.href : services || clientPage === true && index === 2 ? '/' : contactsPage === true && index === 2 ? '/' : index === 2 ? '#' : item.href}
-                           style={services === true ? {color: 'black'} : {color: 'white'}}
+                           style={width <= 430 ? {color: 'white'} : services === true ? {color: 'black'} : {color: 'white'}}
                            onClick={item.id === 2 ? scrollToBlock : undefined}
                         >
                             {item.id === 4 ?

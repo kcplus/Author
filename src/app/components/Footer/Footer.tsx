@@ -16,20 +16,14 @@ import payments from '../../assets/виды оплат.svg'
 import vector from '../../assets/Vector.svg'
 
 const Footer = ({clientPage}: any) => {
-    const [width, setWidth] = useState<number>(0)
-
-    useEffect(() => {
-        setWidth(window.innerWidth);
-    }, [window.innerWidth]);
-
-    console.log(width, 'WIDTH');
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
 
     return (
         <div className={styles.container} style={clientPage === true ? {
             background: 'linear-gradient(to bottom, #000000 0%, #666666 100%)',
             marginTop: '0'
         } : {}}>
-            {width === 414 || 375 ? (
+            {width <= 430 ? (
                 <div>
                     <div>
                         <span className={styles.spanStyle}>Жми, чего ждешь?</span>

@@ -13,7 +13,7 @@ import telegramIcon from "../../assets/free-icon-telegram-2111646 2.svg";
 const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
     const [isHovered, setIsHovered] = useState(null);
     const [click, setClick] = useState(false)
-    const [width, setWidth] = useState(window.innerWidth)
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
 
     const onClickHandler = () => {
         setClick(!click)

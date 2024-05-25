@@ -2,12 +2,12 @@
 import Image from "next/image";
 import arrowLeft from "../../assets/VectorLeft.svg";
 import arrowRight from "../../assets/VectorRight.svg";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 
 export const PrevArrow = (props: any) => {
     const {className, style, onClick} = props;
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
     const arrowStyles = {
         display: "block",
         marginLeft: width <= 375 ? '-25px' : width === 390 ? '-25px' : width === 414 ? '-50px' : width === 430 ? '-25px' : width === 412 ? '-50px' : '-410px',
@@ -23,7 +23,7 @@ export const PrevArrow = (props: any) => {
 }
 export const NextArrow = (props: any) => {
     const {className, style, onClick} = props;
-    const [width, setWidth] = useState(window.innerWidth);
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
     const arrowStyles = {
         display: "block",
         marginRight: width <= 375 ? '-25px' : width === 390 ? '-25px' : width === 414 ? '-50px' : width === 430 ? '-25px' : width === 412 ? '-50px' : '-60px',
