@@ -14,6 +14,10 @@
 }
 
 @media (max-width: 430px) {
+    .nav__logo {
+        z-index: 99;
+        position: fixed;
+    }
     .style_logo {
         width: 108px;
         height: 33px;

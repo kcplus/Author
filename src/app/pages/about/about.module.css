@@ -126,6 +126,7 @@
         top: -1135px;
         margin-left: 115px;
         font-size: 8px;
+        z-index: 0;
     }
     .text1 {
         transform: rotate(-90deg);
@@ -203,6 +204,7 @@
         top: -1135px;
         margin-left: 115px;
         font-size: 8px;
+        z-index: 0;
     }
     .text1 {
         transform: rotate(-90deg);
@@ -300,6 +302,7 @@
         top: -1135px;
         margin-left: 115px;
         font-size: 8px;
+        z-index: 0;
     }
     .text1 {
         transform: rotate(-90deg);
