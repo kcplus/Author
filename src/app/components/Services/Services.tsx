@@ -17,7 +17,6 @@ const Services = () => {
                                 <Image key={item.id} src={item.value} alt={item.alt}/>
                             </a>
                         </div>
-
                     </div>
                 ))}
             </div>

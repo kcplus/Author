@@ -129,6 +129,8 @@
         height: 48px;
         margin-top: 170px;
         margin-left: 100px;
+        border-radius: 38px;
+        border-color: black;
     }
     .image {
         position: absolute;
@@ -243,6 +245,8 @@
         height: 48px;
         margin-top: 170px;
         margin-left: 70px;
+        border-radius: 38px;
+        border-color: black;
     }
     .image {
         position: absolute;

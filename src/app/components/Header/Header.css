@@ -37,7 +37,7 @@
     .nav__menu {
         position: fixed;
         top: 0;
-        right: -102%;
+        right: -104%;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(16px);
         background-color: rgba(0, 0, 0, 0.8);

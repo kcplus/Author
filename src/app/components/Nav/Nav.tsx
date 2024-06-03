@@ -33,7 +33,7 @@ const Nav = ({services, clientPage, contactsPage}: any) => {
             {nav_array.map((item, index) => (
                     <li key={item.id}>
                         <a className={'nav__link'}
-                           href={services === true ? item.href : services || clientPage === true && index === 2 ? '/' : contactsPage === true && index === 2 ? '/' : index === 2 ? '#' : item.href}
+                           href={width <= 430 && index === 4 ? 'tel:+375444966866' : services === true ? item.href : services || clientPage === true && index === 2 ? '/' : contactsPage === true && index === 2 ? '/' : index === 2 ? '#' : item.href}
                            style={width <= 430 ? {color: 'white'} : services === true ? {color: 'black'} : {color: 'white'}}
                            onClick={item.id === 2 ? scrollToBlock : undefined}
                         >

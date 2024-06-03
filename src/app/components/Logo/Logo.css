@@ -19,21 +19,24 @@
         position: fixed;
     }
     .style_logo {
-        width: 108px;
-        height: 33px;
+        width: 140px;
+        height: 80px;
+        margin-left: -20px;
     }
 }
 
 @media (max-width: 414px) {
     .style_logo {
-        width: 108px;
-        height: 33px;
+        width: 140px;
+        height: 80px;
+        margin-left: -20px;
     }
 }
 
 @media (max-width: 375px) {
     .style_logo {
-        width: 108px;
-        height: 33px;
+        width: 140px;
+        height: 80px;
+        margin-left: -20px;
     }
 }

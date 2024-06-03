@@ -48,7 +48,7 @@
     }
     .textContainer {
         left: 37px;
-        margin-top: 50px;
+        margin-top: 15px;
     }
     .block {
         margin-left: 0px;
@@ -85,11 +85,11 @@
     }
 .textContainer {
     left: 37px;
-    margin-top: 50px;
+    margin-top: 15px;
 }
     .block {
         margin-left: 0px;
-        margin-top: 230px;
+        margin-top: 270px;
     }
     .imageCreative {
         width: 200px;
@@ -97,7 +97,7 @@
     }
     .spanText {
         font-weight: 400;
-        font-size: 50px;
+        font-size: 65px;
         line-height: 60px;
     }
     .spanTextDouble {
@@ -105,11 +105,16 @@
         line-height: 60px;
     }
     .imageConnected {
-        margin-top: 484px;
+        margin-top: 464px;
         margin-left: 120px;
     }
     .imageConnectedStyle {
         width: 200px;
         height: 50px;
     }
+}
+@media (max-width: 375px) {
+.imageConnected {
+    margin-top: 484px;
+}
 }

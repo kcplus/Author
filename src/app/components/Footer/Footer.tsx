@@ -27,10 +27,12 @@ const Footer = ({clientPage}: any) => {
                 <div>
                     <div>
                         <span className={styles.spanStyle}>Жми, чего ждешь?</span>
-                        <Image src={vector} alt={''} className={styles.vectorStyle}/>
+                        <a href={'/pages/contacts'}>
+                            <Image src={vector} alt={''} className={styles.vectorStyle}/>
+                        </a>
                     </div>
                     <div className={styles.infoBlock} style={clientPage ? {color: 'white'} : {}}>
-                        Готов с нами поработать?
+                        Готовы с нами поработать?
                     </div>
                 </div>
             ) : null}

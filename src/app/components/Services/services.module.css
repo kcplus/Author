@@ -65,8 +65,8 @@
 
 @media (max-width: 390px) {
     .itemBox {
-        width: 135px;
-        height: 100px;
+        width: 140px;
+        height: 120px;
     }
     .item {
         flex: 0 1 calc(300px/3);

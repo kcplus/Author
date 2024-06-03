@@ -5,6 +5,7 @@ import './Header.css'
 import Nav from "../Nav/Nav";
 
 import {IoClose, IoMenu} from "react-icons/io5";
+import { TbMenu } from "react-icons/tb";
 
 const Header = ({services, clientPage, contactsPage}: any) => {
     const [showMenu, setShowMenu] = useState(false);
@@ -38,8 +39,8 @@ const Header = ({services, clientPage, contactsPage}: any) => {
                     </div>
                 ) : (
                     <div className="nav__toggle" id="nav-toggle" onClick={toggleMenu}>
-                        <IoMenu color={services === true ? 'turquoise' : 'white'}
-                                style={{width: '80px', height: '40px'}}/>
+                        <TbMenu color={services === true ? 'turquoise' : 'white'}
+                                style={{width: '80px', height: '60px'}}/>
                     </div>
                 )}
             </nav>

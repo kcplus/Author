@@ -6,9 +6,9 @@ import arrow from "../../assets/Vector.svg";
 import Button from "../Button/Button";
 import TaplinkButton from "../TaplinkButton/TaplinkButton";
 import Contact from "../Contact/Contact";
-import viberIcon from "../../assets/image 23.svg";
-import whatsupIcon from "../../assets/image 24.svg";
-import telegramIcon from "../../assets/free-icon-telegram-2111646 2.svg";
+import viberIcon from '../../assets/vb.jpg'
+import whatsupIcon from "../../assets/wu.jpg";
+import telegramIcon from "../../assets/tg.jpg";
 
 const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
     const [isHovered, setIsHovered] = useState(null);
@@ -53,7 +53,7 @@ const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
             {width <= 430 ? (
                 <div className={styles.contactBlock}>
                     <span className={styles.questionsTitle}>Есть вопросы?</span>
-                    <div style={{marginTop: '20px'}}>
+                    <div style={{marginTop: '20px', marginLeft: '-20px'}}>
                         <button className={styles.buttonSocial}>
                             <a href={'viber://chat?number=%2B375444966866'} target={'_blank'}>
                                 <Image src={viberIcon} alt={'Вайбер'} width={64} height={64}/>

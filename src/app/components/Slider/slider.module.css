@@ -32,10 +32,10 @@
 
 @media (max-width: 414px) {
     .container {
-        margin-top: 290px;
+        margin-top: 270px;
         width: 290px;
         height: 200px;
-        left: 95px
+        left: 80px
     }
     .image {
         width: 290px;
