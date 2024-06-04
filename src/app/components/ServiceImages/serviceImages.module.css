@@ -68,17 +68,17 @@
     }
 
     .imageBlock {
-        width: 167px;
+        width: 160px;
         height: 140px
     }
 
     .box {
-        width: 167px;
+        width: 160px;
         height: 140px;
     }
 
     .imageBlockEnter {
-        width: 167px;
+        width: 160px;
         height: 140px
     }
 
@@ -179,17 +179,17 @@
 
 @media (max-width: 390px) {
     .imageBlock {
-        width: 151px;
+        width: 145px;
         height: 130px
     }
 
     .box {
-        width: 151px;
+        width: 145px;
         height: 130px;
     }
 
     .imageBlockEnter {
-        width: 151px;
+        width: 145px;
         height: 130px
     }
     .contactBlock {

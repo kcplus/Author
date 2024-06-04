@@ -1,13 +1,15 @@
 'use client'
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import styles from './main.module.css'
 import marker from '../../assets/marker.svg'
 import Image from "next/image";
-import hand1 from '../../assets/hand1.svg'
-import hand2 from '../../assets/hand2.svg'
-
+import hand3 from '../../assets/рука1.svg'
+import hand4 from '../../assets/рука2.svg'
+import {MouseParallax} from 'react-just-parallax';
 
 const Main = () => {
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
+    console.log(width, 'W')
     return (
         <div className={styles.container}>
             <div className={styles.textBlock}>
@@ -24,15 +26,35 @@ const Main = () => {
                         Связь с менеджером
                     </button>
                 </a>
-                <div>
-                    <Image src={hand1} alt={"Рука1"} className={styles.hand_one}/>
-                </div>
-                <div>
-                    <Image src={hand2} alt={"Рука2"} className={styles.hand_two}/>
-                </div>
+                {width > 430 ? (
+                    <>
+                        <div>
+                            <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.25}>
+                                <Image src={hand3} alt={"Рука1"} className={styles.hand_one} width={900} height={500}/>
+                            </MouseParallax>
+                        </div>
+                        <div>
+                            <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.10}>
+                                <Image src={hand4} alt={"Рука2"} className={styles.hand_two} width={900} height={650}/>
+                            </MouseParallax>
+                        </div>
+                    </>
+                ) : (
+                    <>
+                        <div>
+                            <Image src={hand3} alt={"Рука1"} className={styles.hand_one} width={900} height={500}/>
+
+                        </div>
+                        <div>
+                            <Image src={hand4} alt={"Рука2"} className={styles.hand_two} width={900} height={650}/>
+                        </div>
+                    </>
+                )
+                }
             </div>
         </div>
-    );
+    )
+        ;
 };
 
 export default Main;

@@ -23,6 +23,7 @@ body {
     font-family: custom-font;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 :root {
     --first-color: hsl(28, 88%, 62%);
@@ -53,12 +54,17 @@ body {
     :root {
         Zoom: 0.6;
     }}
+@media screen and (max-width: 1680px) {
+    body {
+        zoom: 85%;
+    }
+}
 @media screen and (max-width: 1366px) {
     body {
         zoom: 67%;
     }
 }
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 430px) {
     body {
         zoom: 85%;
     }
