@@ -31,6 +31,10 @@
         height: 80px;
         margin-left: -20px;
     }
+    .nav__logo {
+        z-index: 1000;
+        position: fixed;
+    }
 }
 
 @media (max-width: 375px) {

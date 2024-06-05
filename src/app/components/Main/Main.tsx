@@ -9,7 +9,6 @@ import {MouseParallax} from 'react-just-parallax';
 
 const Main = () => {
     const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
-    console.log(width, 'W')
     return (
         <div className={styles.container}>
             <div className={styles.textBlock}>
@@ -30,12 +29,12 @@ const Main = () => {
                     <>
                         <div>
                             <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.25}>
-                                <Image src={hand3} alt={"Рука1"} className={styles.hand_one} width={900} height={500}/>
+                                <Image src={hand3} alt={"Рука1"} className={styles.hand_one} width={900} height={600}/>
                             </MouseParallax>
                         </div>
                         <div>
                             <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.10}>
-                                <Image src={hand4} alt={"Рука2"} className={styles.hand_two} width={900} height={650}/>
+                                <Image src={hand4} alt={"Рука2"} className={styles.hand_two} width={900} height={800}/>
                             </MouseParallax>
                         </div>
                     </>

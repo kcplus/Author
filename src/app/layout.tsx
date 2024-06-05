@@ -1,6 +1,5 @@
 import type {Metadata, Viewport} from "next";
 import "./globals.css";
-import {useParams} from "next/navigation";
 
 export const viewport: Viewport = {
     initialScale: 1,
@@ -53,10 +52,13 @@ export default function RootLayout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="ru">
-        <body>
-        {children}
-        </body>
-        </html>
+            <html lang="ru">
+            <head>
+                <link rel="shortcut icon" href="./assets/logobrows.svg" type="image/x-icon"/>
+            </head>
+            <body>
+            {children}
+            </body>
+            </html>
     );
 }

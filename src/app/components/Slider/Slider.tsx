@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, {useState} from 'react';
 import Slider from "react-slick";
 import img1 from '../../assets/photo1712750514 2.jpg'
 import img2 from '../../assets/гофер 4.jpg'
@@ -7,7 +7,7 @@ import img3 from '../../assets/ewwewe 2.jpg'
 import img4 from '../../assets/Slider/24c85e8d-b73b-480f-aacf-a207bcb1afb7 (1) 2.jpg'
 import img5 from '../../assets/Slider/IMG_0621 2.jpg'
 import img6 from '../../assets/Slider/IMG_20150122_192107 2.jpg'
-import img7 from '../../assets/Slider/слайдер.jpg'
+import img7 from '../../assets/Slider/sliderimg.jpg'
 import img8 from '../../assets/Slider/цыбулька режим работы 2.jpg'
 import Image from "next/image";
 import "slick-carousel/slick/slick.css";
@@ -22,15 +22,6 @@ export const SimpleSlider = () => {
         slidesToScroll: 1,
         prevArrow: <PrevArrow/>,
         nextArrow: <NextArrow/>,
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
     };
     const image_slider_arr = [
         {id: 0, image: img1, alt: 'Каритнка_1'},
@@ -48,9 +39,12 @@ export const SimpleSlider = () => {
         <div className={styles.container}>
             <Slider {...settings}>
                 {image_slider_arr.map((item) => (
-                    <div key={item.id} className={styles.image}>
-                        <Image src={item.image} alt={item.alt} className={styles.image} style={{objectFit: 'contain'}}/>
-                    </div>
+                    <>
+                        <div key={item.id} className={styles.image}>
+                            <Image src={item.image} alt={item.alt} className={styles.image}
+                                   style={{objectFit: 'contain'}}/>
+                        </div>
+                    </>
                 ))}
             </Slider>
         </div>

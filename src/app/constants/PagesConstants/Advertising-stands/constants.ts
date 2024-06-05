@@ -1,7 +1,7 @@
 import image1 from '../../../assets/Pages/Advertising-stands/image 135.jpg'
 import image2 from '../../../assets/Pages/Advertising-stands/image 140.jpg'
 import image3 from '../../../assets/Pages/Advertising-stands/image 137.jpg'
-import image4 from '../../../assets/Pages/Advertising-stands/инф стойка 1.jpg'
+import image4 from '../../../assets/Pages/Advertising-stands/inf.jpg'
 import image5 from '../../../assets/Pages/Advertising-stands/image 139.jpg'
 import image6 from '../../../assets/Pages/Advertising-stands/image 136.jpg'
 import image7 from '../../../assets/Pages/Advertising-stands/image 138.jpg'

@@ -256,6 +256,9 @@
     .styleLine {
         width: 390px;
     }
+    .infoBlock {
+        left: 20px;
+    }
     .vectorStyle {
         right: 80px;
     }

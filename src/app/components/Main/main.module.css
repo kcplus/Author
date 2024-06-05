@@ -63,8 +63,8 @@
 
 .hand_one {
     position: absolute;
-    top: 50px;
-    right: -400px;
+    top: 100px;
+    right: -480px;
     width: 900px;
     z-index: -1;
 
@@ -73,9 +73,10 @@
 .hand_two {
     position: absolute;
     /*bottom: -466px;*/
-    bottom: -700px;
-    right: 100px;
+    bottom: -850px;
+    right: 300px;
     width: 400px;
+    z-index: -1
 }
 
 @media (max-width: 430px) {
@@ -171,10 +172,10 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        width: 267px;
+        width: 310px;
         height: 48px;
         margin-top: 170px;
-        margin-left: 85px;
+        margin-left: 70px;
     }
     .image {
         position: absolute;
@@ -191,6 +192,42 @@
         line-height: 16px;
         font-size: 14px;
         font-weight: 400;
+    }
+}
+
+@media (max-width: 390px) {
+    .textBlock {
+        width: 400px;
+        height: 95px;
+        margin-left: -20px;
+        margin-top: 120px;
+    }
+    .container_text {
+        left: 100px;
+    }
+    .h1, .h2, .h3 {
+        color: #FFF;
+        font-style: normal;
+        font-size: 38px;
+        font-weight: 400;
+        margin-left: 85px;
+    }
+    .text {
+        line-height: 16px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .container_text {
+        margin-top: 20px;
+        width: 380px;
+        left: 70px;
+    }
+    .button {
+        margin-left: 88px;
+    }
+    .image {
+        top: 315px;
+        left: 65px;
     }
 }
 

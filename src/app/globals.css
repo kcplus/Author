@@ -2,18 +2,22 @@
     font-family: 'custom-font';
     src: url("assets/fonts/2237-font.otf") format('opentype');
 }
+
 @font-face {
     font-family: 'custom-font-second';
     src: url("assets/fonts/arubricaxtcn.ttf") format('truetype');
 }
+
 @font-face {
     font-family: 'my-font';
     src: url("assets/fonts/ofont.ru_Unutterable.ttf") format('truetype');
 }
+
 @font-face {
     font-family: 'Bebas';
     src: url("assets/fonts/ofont.ru_Bebas Neue.ttf") format('truetype');
 }
+
 @font-face {
     font-family: 'Moloko';
     src: url("assets/fonts/Moloko.ttf") format('truetype');
@@ -25,6 +29,7 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
 :root {
     --first-color: hsl(28, 88%, 62%);
     --title-color: hsl(0, 0%, 95%);
@@ -38,34 +43,52 @@ body {
     --z-tooltip: 10;
     --z-fixed: 100;
 }
+
 @media (-webkit-device-pixel-ratio: 1.25) {
     :root {
         Zoom: 0.8;
-    }}
+    }
+}
+
 @media (-webkit-device-pixel-ratio: 1.10) {
     :root {
         Zoom: 0.9;
-    }}
+    }
+}
+
 @media (-webkit-device-pixel-ratio: 1.50) {
     :root {
         Zoom: 0.7;
-    }}
+    }
+}
+
 @media (-webkit-device-pixel-ratio: 1.75) {
     :root {
         Zoom: 0.6;
-    }}
+    }
+}
+
 @media screen and (max-width: 1680px) {
     body {
         zoom: 85%;
     }
 }
+
 @media screen and (max-width: 1366px) {
     body {
         zoom: 67%;
     }
 }
+
 @media screen and (max-width: 430px) {
     body {
         zoom: 85%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        zoom: 83.65%;
+        overflow-x: hidden;
     }
 }

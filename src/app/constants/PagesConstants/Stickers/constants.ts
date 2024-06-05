@@ -1,9 +1,9 @@
 import image1 from '../../../assets/Pages/Stickers/image 184.jpg'
 import image2 from '../../../assets/Pages/Stickers/image 185.jpg'
 import image3 from '../../../assets/Pages/Stickers/image 186.jpg'
-import image4 from '../../../assets/Pages/Stickers/диз для соц сетей 3.jpg'
+import image4 from '../../../assets/Pages/Stickers/dizsoc3.jpg'
 import image5 from '../../../assets/Pages/Stickers/уголок охраны труда 1.jpg'
-import image6 from '../../../assets/Pages/Stickers/диз для соц сетей 1.jpg'
+import image6 from '../../../assets/Pages/Stickers/dizsoc1.jpg'
 import image7 from '../../../assets/Pages/Stickers/ваавав 1.jpg'
 import image8 from '../../../assets/Pages/Stickers/eujkjr gjnh 1.jpg'
 

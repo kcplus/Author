@@ -5,6 +5,7 @@
     z-index: 999;
     position: relative;
 }
+
 .textContainer {
     width: 323px;
     height: 628px;
@@ -13,12 +14,14 @@
     color: white;
     margin-top: 140px
 }
+
 .textBlock {
     display: flex;
     flex-direction: column;
     width: 323px;
     height: 628px;
 }
+
 .spanText {
     width: 260px;
     font-family: custom-font-second;
@@ -26,12 +29,14 @@
     font-size: 100px;
     line-height: 100px;
 }
+
 .spanTextDouble {
     font-family: custom-font-second;
     font-weight: 400;
     font-size: 100px;
     line-height: 100px;
 }
+
 .block {
     margin-left: -300px;
 }
@@ -45,35 +50,42 @@
 @media (max-width: 430px) {
     .container {
         /*width: 375px;*/
-        min-height: 650px;
+        min-height: 675px;
         background-color: #000000;
         z-index: 0;
     }
+
     .textContainer {
         left: 37px;
         margin-top: 15px;
     }
+
     .block {
         margin-left: 0px;
-        margin-top: 230px;
+        margin-top: 290px;
     }
+
     .imageCreative {
         width: 200px;
         height: min-content;
     }
+
     .spanText {
         font-weight: 400;
         font-size: 50px;
         line-height: 60px;
     }
+
     .spanTextDouble {
         font-size: 50px;
         line-height: 60px;
     }
+
     .imageConnected {
-        margin-top: 484px;
+        margin-top: 500px;
         margin-left: 120px;
     }
+
     .imageConnectedStyle {
         width: 200px;
         height: 50px;
@@ -83,41 +95,58 @@
 @media (max-width: 414px) {
     .container {
         /*width: 375px;*/
-        min-height: 650px;
+        min-height: 675px;
         background-color: #000000;
     }
-.textContainer {
-    left: 37px;
-    margin-top: 15px;
-}
+
+    .textContainer {
+        left: 37px;
+        margin-top: 15px;
+    }
+
     .block {
         margin-left: 0px;
-        margin-top: 270px;
+        margin-top: 290px;
     }
+
     .imageCreative {
         width: 200px;
         height: min-content;
     }
+
     .spanText {
         font-weight: 400;
         font-size: 65px;
         line-height: 60px;
     }
+
     .spanTextDouble {
         font-size: 50px;
         line-height: 60px;
     }
+
     .imageConnected {
-        margin-top: 464px;
+        margin-top: 500px;
         margin-left: 120px;
     }
+
     .imageConnectedStyle {
         width: 200px;
         height: 50px;
     }
 }
+
 @media (max-width: 375px) {
-.imageConnected {
-    margin-top: 484px;
+    .imageConnected {
+        margin-top: 484px;
+    }
 }
+
+@media (max-width: 360px) {
+    .container {
+        min-height: 675px;
+    }
+    .imageConnected {
+        margin-top: 500px;
+    }
 }

@@ -29,13 +29,13 @@ const Header = ({services, clientPage, contactsPage}: any) => {
         <header className="header">
             <nav className="nav container">
                 <Logo services={services} clientPage={clientPage}/>
-                <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} id="nav-menu">
+                <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} style={{zIndex: '999'}} id="nav-menu">
                     {/*<div className={'imageBackground'}>*/}
                     <Nav services={services} clientPage={clientPage} contactsPage={contactsPage}/>
                     {/*</div>*/}
                 </div>
                 {showMenu === true ? (
-                    <div className="nav__toggle" id="nav-toggle" onClick={closeMenu}>
+                    <div className="nav__toggle" id="nav-toggle" onClick={closeMenu} style={{zIndex: '1000'}} >
                         <Image src={close} alt={'Закрыть'} color={services === true ? 'turquoise' : 'white'}
                                style={{width: '80px', height: '40px', marginRight: '10px'}}/>
                     </div>
@@ -45,12 +45,12 @@ const Header = ({services, clientPage, contactsPage}: any) => {
                             <Image src={services === true ? vectcolot : top} alt={''} style={{
                                 width: '60px',
                                 height: '20px',
-                                marginRight: '10px',
+                                marginRight: '13px',
                             }}/>
                             <Image src={services === true ? vectcolot : bottom} alt={''} style={{
                                 width: '60px',
                                 height: '20px',
-                                marginRight: '10px',
+                                marginRight: '13px',
                             }}
                             />
                         </div>

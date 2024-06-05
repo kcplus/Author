@@ -53,7 +53,7 @@ const ServiceImages = ({imagesArray, marginTop, marginLeft, cat}: any) => {
             {width <= 430 ? (
                 <div className={styles.contactBlock}>
                     <span className={styles.questionsTitle}>Есть вопросы?</span>
-                    <div style={{marginTop: '20px', marginLeft: '-30px'}}>
+                    <div style={{marginTop: '20px', marginLeft: '-20px'}}>
                         <button className={styles.buttonSocial}>
                             <a href={'viber://chat?number=%2B375444966866'} target={'_blank'}>
                                 <Image src={viberIcon} alt={'Вайбер'} width={64} height={64}/>

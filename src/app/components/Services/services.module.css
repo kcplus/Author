@@ -17,7 +17,7 @@
     margin-left: 120px;
 }
 .item {
-    flex: 0 1 calc(100%/5);
+    flex: 0 1 calc(100% / 5);
 }
 .itemBox {
     width: 250px;
@@ -27,6 +27,10 @@
 .itemBox img {
     width: 100%; /* Задаем фиксированную ширину */
     height: 100%; /* Задаем фиксированную высоту */
+}
+
+.item:nth-child(7) {
+    margin-top: 30px;
 }
 
 @media (max-width: 430px) {
@@ -39,10 +43,13 @@
     }
     .itemBox {
         width: 150px;
-        height: 100px;
+        height: 120px;
     }
     .gallery {
         margin-left: 16px;
+    }
+    .item:nth-child(7) {
+        margin-top: 15px;
     }
 }
 
@@ -56,10 +63,13 @@
     }
     .itemBox {
         width: 150px;
-        height: 100px;
+        height: 120px;
     }
     .gallery {
         margin-left: 16px;
+    }
+    .item:nth-child(7) {
+        margin-top: 15px;
     }
 }
 

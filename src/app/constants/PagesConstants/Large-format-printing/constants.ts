@@ -10,7 +10,7 @@ import image9 from '../../../assets/Pages/Large-printing/image 195.jpg'
 import image10 from '../../../assets/Pages/Large-printing/image 192.jpg'
 import image11 from '../../../assets/Pages/Large-printing/image 197.jpg'
 import image12 from '../../../assets/Pages/Large-printing/image 194.jpg'
-import image13 from '../../../assets/Pages/Large-printing/печать на самоклейке 1.jpg'
+import image13 from '../../../assets/Pages/Large-printing/pechat-samkl.jpg'
 import image14 from '../../../assets/Pages/Large-printing/image 199.jpg'
 import image15 from '../../../assets/Pages/Large-printing/image 198.jpg'
 

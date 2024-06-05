@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, {useState} from 'react';
 import Header from "../../components/Header/Header";
 import vector from '../../assets/Vector.svg'
 import Image from "next/image";
@@ -54,6 +54,16 @@ import Footer from "../../components/Footer/Footer";
 
 
 const Portfolio = () => {
+    const [modalImage, setModalImage] = useState(null);
+    const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0)
+
+    const openModal = (imageSrc: any) => {
+        setModalImage(imageSrc);
+    };
+
+    const closeModal = () => {
+        setModalImage(null);
+    };
     return (
         <>
             <div style={{width: '100%', height: '100%', position: 'relative', backgroundColor: 'black'}}>
@@ -62,65 +72,244 @@ const Portfolio = () => {
                     <h1 className={styles.title}>Наши работы</h1>
                     <Image src={vector} alt={'VECTOR'} className={styles.vectorStyles}/>
                 </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image1} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
-                    <Image src={image2} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
-                    <Image src={image3} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
-                    <Image src={image4} alt={''} style={{objectFit: 'cover'}} width={453} height={643} className={styles.img}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image5} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
-                    <Image src={image6} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
-                    <Image src={image7} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
-                    <Image src={image8} alt={''} style={{objectFit: 'cover'}} width={453} height={362} className={styles.img}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522} className={styles.imgBlock}/>
-                    <Image src={image10} alt={''} style={{objectFit: 'cover'}} width={935} height={522} className={styles.imgBlock}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image11} alt={''} style={{objectFit: 'cover'}} className={styles.img11}/>
-                    <Image src={image12} alt={''} style={{objectFit: 'cover'}} className={styles.img12}/>
-                    <Image src={image13} alt={''} style={{objectFit: 'cover'}} className={styles.img13}/>
-                    <Image src={image14} alt={''} style={{objectFit: 'cover'}} height={568} width={450} className={styles.img14}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image15} alt={''} style={{objectFit: 'cover'}} className={styles.img15}/>
-                    <div style={{display: 'flex', flexWrap: 'wrap'}}>
-                        <Image src={image16} alt={''} style={{objectFit: 'cover'}} width={377} height={365} className={styles.img16}/>
-                        <Image src={image17} alt={''} style={{objectFit: 'cover'}} width={483} height={366} className={styles.img17}/>
-                        <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={454} height={366} className={styles.img18}/>
-                        <Image src={image19} alt={''} style={{objectFit: 'cover'}} height={364} className={styles.img19}/>
-                        <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={588} height={364} className={styles.img20}/>
-                    </div>
-                </div>
-                <div style={{display: 'flex', marginTop: '0'}}>
-                    <Image src={image21} alt={''} style={{objectFit: 'cover'}} className={styles.img21}/>
-                    <Image src={image22} alt={''} style={{objectFit: 'cover'}} width={460} height={529} className={styles.img22}/>
-                    <Image src={image23} alt={''} style={{objectFit: 'cover'}} className={styles.img23}/>
-                    <Image src={image24} alt={''} style={{objectFit: 'cover'}} className={styles.img24}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image25} alt={''} style={{objectFit: 'cover'}} width={1025} height={466} className={styles.img25}/>
-                    <Image src={image26} alt={''} style={{objectFit: 'cover'}} width={878} className={styles.img26}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image27} alt={''} style={{objectFit: 'cover'}} className={styles.img27}/>
-                    <Image src={image28} alt={''} style={{objectFit: 'cover'}} className={styles.img28}/>
-                    <Image src={image29} alt={''} style={{objectFit: 'cover'}} width={740} height={437} className={styles.img29}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image30} alt={''} style={{objectFit: 'cover'}} className={styles.img30}/>
-                    <Image src={image31} alt={''} style={{objectFit: 'cover'}} className={styles.img31}/>
-                    <Image src={image32} alt={''} style={{objectFit: 'cover'}} className={styles.img32}/>
-                    <Image src={image33} alt={''} style={{objectFit: 'cover'}} width={554} height={530} className={styles.img33}/>
-                </div>
-                <div style={{display: 'flex'}}>
-                    <Image src={image34} alt={''} style={{objectFit: 'cover'}} className={styles.img34}/>
-                    <Image src={image35} alt={''} style={{objectFit: 'cover'}} className={styles.img35}/>
-                    <Image src={image36} alt={''} style={{objectFit: 'cover'}} className={styles.img36}/>
-                    <Image src={image37} alt={''} style={{objectFit: 'cover'}} width={299} height={461} className={styles.img37}/>
-                </div>
+                {width <= 500 ? (
+                    <>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image1} alt={''} style={{objectFit: 'cover'}} className={styles.img}
+                                   onClick={() => openModal(image1)}/>
+                            <Image src={image2} alt={''} style={{objectFit: 'cover'}} className={styles.img}
+                                   onClick={() => openModal(image2)}/>
+                            <Image src={image3} alt={''} style={{objectFit: 'cover'}} className={styles.img}
+                                   onClick={() => openModal(image3)}/>
+                            <Image src={image4} alt={''} style={{objectFit: 'cover'}} width={453} height={643}
+                                   className={styles.img} onClick={() => openModal(image4)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image5} alt={''} style={{objectFit: 'cover'}} className={styles.img}
+                                   onClick={() => openModal(image5)}/>
+                            <Image src={image6} alt={''} style={{objectFit: 'cover'}} className={styles.img}
+                                   onClick={() => openModal(image6)}/>
+                            <Image src={image7} alt={''} style={{objectFit: 'cover'}} className={styles.img}
+                                   onClick={() => openModal(image7)}/>
+                            <Image src={image8} alt={''} style={{objectFit: 'cover'}} width={453} height={362}
+                                   className={styles.img}
+                                   onClick={() => openModal(image8)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522}
+                                   className={styles.imgBlock} onClick={() => openModal(image9)}/>
+                            <Image src={image10} alt={''} style={{objectFit: 'cover'}} width={935} height={522}
+                                   className={styles.imgBlock} onClick={() => openModal(image10)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image11} alt={''} style={{objectFit: 'cover'}} className={styles.img11}
+                                   onClick={() => openModal(image11)}/>
+                            <Image src={image12} alt={''} style={{objectFit: 'cover'}} className={styles.img12}
+                                   onClick={() => openModal(image12)}/>
+                            <Image src={image13} alt={''} style={{objectFit: 'cover'}} className={styles.img13}
+                                   onClick={() => openModal(image13)}/>
+                            <Image src={image14} alt={''} style={{objectFit: 'cover'}} height={568} width={450}
+                                   className={styles.img14} onClick={() => openModal(image14)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image15} alt={''} style={{objectFit: 'cover'}} className={styles.img15}
+                                   onClick={() => openModal(image15)}/>
+                            <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                                <Image src={image16} alt={''} style={{objectFit: 'cover'}} width={377} height={365}
+                                       className={styles.img16} onClick={() => openModal(image16)}/>
+                                <Image src={image17} alt={''} style={{objectFit: 'cover'}} width={483} height={366}
+                                       className={styles.img17} onClick={() => openModal(image17)}/>
+                                <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={454} height={366}
+                                       className={styles.img18} onClick={() => openModal(image18)}/>
+                                <Image src={image19} alt={''} style={{objectFit: 'cover'}} height={364}
+                                       className={styles.img19} onClick={() => openModal(image19)}/>
+                                <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={588} height={364}
+                                       className={styles.img20} onClick={() => openModal(image20)}/>
+                            </div>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex', marginTop: '0'}}>
+                            <Image src={image21} alt={''} style={{objectFit: 'cover'}} className={styles.img21}
+                                   onClick={() => openModal(image21)}/>
+                            <Image src={image22} alt={''} style={{objectFit: 'cover'}} width={460} height={529}
+                                   className={styles.img22} onClick={() => openModal(image22)}/>
+                            <Image src={image23} alt={''} style={{objectFit: 'cover'}} className={styles.img23}
+                                   onClick={() => openModal(image23)}/>
+                            <Image src={image24} alt={''} style={{objectFit: 'cover'}} className={styles.img24}
+                                   onClick={() => openModal(image24)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image25} alt={''} style={{objectFit: 'cover'}} width={1025} height={466}
+                                   className={styles.img25} onClick={() => openModal(image25)}/>
+                            <Image src={image26} alt={''} style={{objectFit: 'cover'}} width={878}
+                                   className={styles.img26} onClick={() => openModal(image26)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image27} alt={''} style={{objectFit: 'cover'}} className={styles.img27}
+                                   onClick={() => openModal(image27)}/>
+                            <Image src={image28} alt={''} style={{objectFit: 'cover'}} className={styles.img28}
+                                   onClick={() => openModal(image28)}/>
+                            <Image src={image29} alt={''} style={{objectFit: 'cover'}} width={740} height={437}
+                                   className={styles.img29} onClick={() => openModal(image29)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image30} alt={''} style={{objectFit: 'cover'}} className={styles.img30}
+                                   onClick={() => openModal(image30)}/>
+                            <Image src={image31} alt={''} style={{objectFit: 'cover'}} className={styles.img31}
+                                   onClick={() => openModal(image31)}/>
+                            <Image src={image32} alt={''} style={{objectFit: 'cover'}} className={styles.img32}
+                                   onClick={() => openModal(image32)}/>
+                            <Image src={image33} alt={''} style={{objectFit: 'cover'}} width={554} height={530}
+                                   className={styles.img33} onClick={() => openModal(image33)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged"/>
+                                </div>
+                            )}
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image34} alt={''} style={{objectFit: 'cover'}} className={styles.img34}
+                                   onClick={() => openModal(image34)}/>
+                            <Image src={image35} alt={''} style={{objectFit: 'cover'}} className={styles.img35}
+                                   onClick={() => openModal(image35)}/>
+                            <Image src={image36} alt={''} style={{objectFit: 'cover'}} className={styles.img36}
+                                   onClick={() => openModal(image36)}/>
+                            <Image src={image37} alt={''} style={{objectFit: 'cover'}} width={299} height={461}
+                                   className={styles.img37} onClick={() => openModal(image37)}/>
+
+                            {modalImage && (
+                                <div className={styles.modal} onClick={closeModal}>
+                                    <Image src={modalImage} alt="Enlarged" style={{objectFit: 'cover'}}/>
+                                </div>
+                            )}
+                        </div>
+                    </>
+                ) : (
+                    <>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image1} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                            <Image src={image2} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                            <Image src={image3} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                            <Image src={image4} alt={''} style={{objectFit: 'cover'}} width={453} height={643}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image5} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                            <Image src={image6} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                            <Image src={image7} alt={''} style={{objectFit: 'cover'}} className={styles.img}/>
+                            <Image src={image8} alt={''} style={{objectFit: 'cover'}} width={453} height={362}
+                                   className={styles.img}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image9} alt={''} style={{objectFit: 'cover'}} width={965} height={522}
+                                   className={styles.imgBlock}/>
+                            <Image src={image10} alt={''} style={{objectFit: 'cover'}} width={935} height={522}
+                                   className={styles.imgBlock}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image11} alt={''} style={{objectFit: 'cover'}} className={styles.img11}/>
+                            <Image src={image12} alt={''} style={{objectFit: 'cover'}} className={styles.img12}/>
+                            <Image src={image13} alt={''} style={{objectFit: 'cover'}} className={styles.img13}/>
+                            <Image src={image14} alt={''} style={{objectFit: 'cover'}} height={568} width={450}
+                                   className={styles.img14}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image15} alt={''} style={{objectFit: 'cover'}} className={styles.img15}/>
+                            <div style={{display: 'flex', flexWrap: 'wrap'}}>
+                                <Image src={image16} alt={''} style={{objectFit: 'cover'}} width={377} height={365}
+                                       className={styles.img16}/>
+                                <Image src={image17} alt={''} style={{objectFit: 'cover'}} width={483} height={366}
+                                       className={styles.img17}/>
+                                <Image src={image18} alt={''} style={{objectFit: 'cover'}} width={454} height={366}
+                                       className={styles.img18}/>
+                                <Image src={image19} alt={''} style={{objectFit: 'cover'}} height={364}
+                                       className={styles.img19}/>
+                                <Image src={image20} alt={''} style={{objectFit: 'cover'}} width={588} height={364}
+                                       className={styles.img20}/>
+                            </div>
+                        </div>
+                        <div style={{display: 'flex', marginTop: '0'}}>
+                            <Image src={image21} alt={''} style={{objectFit: 'cover'}} className={styles.img21}/>
+                            <Image src={image22} alt={''} style={{objectFit: 'cover'}} width={460} height={529}
+                                   className={styles.img22}/>
+                            <Image src={image23} alt={''} style={{objectFit: 'cover'}} className={styles.img23}/>
+                            <Image src={image24} alt={''} style={{objectFit: 'cover'}} className={styles.img24}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image25} alt={''} style={{objectFit: 'cover'}} width={1025} height={466}
+                                   className={styles.img25}/>
+                            <Image src={image26} alt={''} style={{objectFit: 'cover'}} width={878}
+                                   className={styles.img26}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image27} alt={''} style={{objectFit: 'cover'}} className={styles.img27}/>
+                            <Image src={image28} alt={''} style={{objectFit: 'cover'}} className={styles.img28}/>
+                            <Image src={image29} alt={''} style={{objectFit: 'cover'}} width={740} height={437}
+                                   className={styles.img29}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image30} alt={''} style={{objectFit: 'cover'}} className={styles.img30}/>
+                            <Image src={image31} alt={''} style={{objectFit: 'cover'}} className={styles.img31}/>
+                            <Image src={image32} alt={''} style={{objectFit: 'cover'}} className={styles.img32}/>
+                            <Image src={image33} alt={''} style={{objectFit: 'cover'}} width={554} height={530}
+                                   className={styles.img33}/>
+                        </div>
+                        <div style={{display: 'flex'}}>
+                            <Image src={image34} alt={''} style={{objectFit: 'cover'}} className={styles.img34}/>
+                            <Image src={image35} alt={''} style={{objectFit: 'cover'}} className={styles.img35}/>
+                            <Image src={image36} alt={''} style={{objectFit: 'cover'}} className={styles.img36}/>
+                            <Image src={image37} alt={''} style={{objectFit: 'cover'}} width={299} height={461}
+                                   className={styles.img37}/>
+                        </div>
+                    </>
+                )}
                 <div style={{marginTop: '250px'}}>
                     <Footer clientPage={true}/>
                 </div>
