@@ -6,18 +6,21 @@ import Examples from "./components/Examples/Examples";
 import Services from "./components/Services/Services";
 import Clients from "./components/Clients/Clinets";
 import Footer from "./components/Footer/Footer";
+import {Suspense, useEffect} from "react";
 
 export default function Home() {
     return (
-            <div>
-                <OverlayImage>
-                    <Header/>
-                    <Main/>
-                </OverlayImage>
-                <Examples/>
+        <div>
+            <OverlayImage>
+                <Header/>
+                <Main/>
+            </OverlayImage>
+            <Examples/>
+            <Suspense>
                 <Services/>
-                <Clients/>
-                <Footer/>
-            </div>
+            </Suspense>
+            <Clients/>
+            <Footer/>
+        </div>
     );
 }

@@ -4,7 +4,7 @@ import styles from './main.module.css'
 import marker from '../../assets/marker.svg'
 import Image from "next/image";
 import hand3 from '../../assets/рука1.svg'
-import hand4 from '../../assets/рука2.svg'
+import hand4 from '../../assets/рука2.2.svg'
 import {MouseParallax} from 'react-just-parallax';
 
 const Main = () => {

@@ -3,18 +3,22 @@ import React, {useEffect} from 'react';
 import styles from './services.module.css'
 import Image from "next/image";
 import {services_array} from "../../constants/Constants";
+import {useSearchParams} from "next/navigation";
 
 const Services = () => {
-    // useEffect(() => {
-    //     var previousPageURL = document.referrer;
-    //     var mainPage = document.URL
-    //         if (previousPageURL.includes("/pages")) {
-    //         const targetElement = document.getElementById('services');
-    //         if (targetElement) {
-    //             targetElement.scrollIntoView({ behavior: 'smooth' });
-    //         }
-    //     }
-    // }, []);
+    const searchParams = useSearchParams();
+
+    useEffect(() => {
+        const params = searchParams.get('services');
+
+        if (params) {
+            const targetElement = document.getElementById('services');
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [searchParams]);
+
     return (
         <div className={styles.container} id={'services'}>
             <h2 className={styles.mainText}>НАШИ УСЛУГИ</h2>

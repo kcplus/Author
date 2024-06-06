@@ -23,11 +23,11 @@ const About = () => {
                         <Image src={poster} alt={'Постер'} width={900} height={1500} className={styles.posterStyle}/>
                         <div className={styles.colorTextBlock}>
                         <span className={`${styles.textStyle} ${styles.text1}`}>
-                            <span className={styles.textTest}>БОЛЕЕ 5000 м2</span> переработанно материалов</span>
+                            <span className={styles.textTest}><span style={{color: 'white'}}>БОЛЕЕ</span> 5000 м2</span> переработанно материалов</span>
                             <span className={`${styles.textStyle} ${styles.text2}`}>
-                            <span className={styles.textTest}>БОЛЕЕ 80 км</span> раскроя по периметру</span>
+                            <span className={styles.textTest}><span style={{color: 'white'}}>БОЛЕЕ</span> 80 км</span> раскроя по периметру</span>
                             <span className={`${styles.textStyle} ${styles.text3}`}>
-                            <span className={styles.textTest}>БОЛЕЕ 2000</span> вывесок изготовлено</span>
+                            <span className={styles.textTest}><span style={{color: 'white'}}>БОЛЕЕ</span> 2000</span> вывесок изготовлено</span>
                         </div>
                     </div>
                     <div className={styles.textBlock}>

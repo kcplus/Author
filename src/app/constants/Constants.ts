@@ -54,7 +54,7 @@ export const clients_array = [
 export const nav_array = [
     {id: 0, value: 'О нас', href: '/pages/about'},
     {id: 1, value: 'Портфолио', href: '/pages/portfolio'},
-    {id: 2, value: 'Услуги', href: '/'},
+    {id: 2, value: 'Услуги', href: '/?services=true'},
     {id: 3, value: 'Контакты', href: '/pages/contacts'},
     {id: 4, value: 'Позвонить', href: '/pages/contacts'},
 ]

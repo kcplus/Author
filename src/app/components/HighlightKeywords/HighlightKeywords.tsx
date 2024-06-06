@@ -13,7 +13,7 @@ const HighlightKeywords = ({textArray}: any) => {
                         if (word.replace(/[.,]/g, '') === 'АВТОР' || word.replace(/[.,]/g, '') === 'СТУДИЯ') {
                             return <span key={index} style={{color: '#8416FB'}}>{word} </span>;
                         } else {
-                            return <span key={index} style={{color: 'turquoise'}}>{word} </span>;
+                            return <span key={index} style={{color: 'rgba(69, 248, 250, 1)'}}>{word} </span>;
                         }
                     } else {
                         return <span key={index}>{word} </span>;

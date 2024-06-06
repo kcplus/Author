@@ -30,9 +30,7 @@ const Header = ({services, clientPage, contactsPage}: any) => {
             <nav className="nav container">
                 <Logo services={services} clientPage={clientPage}/>
                 <div className={`nav__menu ${showMenu ? "show-menu" : ""}`} style={{zIndex: '999'}} id="nav-menu">
-                    {/*<div className={'imageBackground'}>*/}
                     <Nav services={services} clientPage={clientPage} contactsPage={contactsPage}/>
-                    {/*</div>*/}
                 </div>
                 {showMenu === true ? (
                     <div className="nav__toggle" id="nav-toggle" onClick={closeMenu} style={{zIndex: '1000'}} >
