@@ -28,12 +28,12 @@ const Main = () => {
                 {width > 430 ? (
                     <>
                         <div>
-                            <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.25}>
+                            <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.17}>
                                 <Image src={hand3} alt={"Рука1"} className={styles.hand_one} width={900} height={600}/>
                             </MouseParallax>
                         </div>
                         <div>
-                            <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.10}>
+                            <MouseParallax enableOnTouchDevice isAbsolutelyPositioned strength={0.27}>
                                 <Image src={hand4} alt={"Рука2"} className={styles.hand_two} width={900} height={800}/>
                             </MouseParallax>
                         </div>
